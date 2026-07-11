@@ -31,16 +31,17 @@ Emoji yerine kullanılacak 12 zarif amblem (4 aile: İlkbahar, Yaz, Sonbahar, K�
 
 ### PART C — EDİTÖRYAL GÖRSELLER (uygulamayı dolduracak)
 **İmza motif:** renk analizinin klasik "drape" jesti — yüze/omuza tutulan renkli kumaş parçaları. Bunu ana görsel dil yap.
-**Sanat yönü seçeneği (ikisinden biri, tutarlı uygula):**
-- **A) Editöryal illüstrasyon (önerilen):** zarif, minimal, sınırlı renk; stilize kadın portreleri + soyut renk drape/kumaş kompozisyonları. Marka-sahibi ve hızlı üretilebilir.
-- **B) Art-directed model fotoğrafı:** gerçek bir kişiyi temsil ETMEYEN, yapay/model görseller; yumuşak doğal ışık, nötr krem fon, yüze tutulan renkli kumaş drape'leri.
+**Sanat yönü: KARIŞIK (hibrit) — iki katman, tutarlı uygulanır:**
+- **Fotoğraf katmanı (hero/mood görselleri için):** gerçek bir kişiyi temsil ETMEYEN, yapay/art-directed model görselleri; yumuşak doğal ışık, nötr krem fon, yüze tutulan renkli kumaş drape'leri. Onboarding hero'ları ve 4 mevsim mood görselleri bu katmandadır.
+- **İllüstrasyon katmanı (ikon/amblem/boş-durum/yükleme için):** zarif, minimal çizgi + sınırlı renk; soyut renk-drape/kumaş kompozisyonları. İkon seti, mevsim amblemleri, boş durum ve analiz yükleme motifi bu katmandadır.
+İki katman aynı marka paletini (krem + antrasit + altın) ve aynı zarafeti paylaşsın; fotoğraf ile illüstrasyon yan yana geldiğinde tutarlı bir dünya hissi versin.
 **Önemli:** Uygulama ten alt-tonunu analiz ettiği için görsellerde **farklı ten renklerini ve alt-tonlarını** temsil et (çeşitlilik). Gerçek, tanınabilir bir kişiyi betimleme.
 
-**Üretilecek görseller (yerleştikleri yerler):**
-1. **Onboarding 3 hero görseli** — Slide 1 (rengi keşfet: drape jesti), Slide 2 (makyaj/saç/takı: renk paleti + güzellik detayları), Slide 3 (paletini taşı: zarif renk kartı kompozisyonu).
-2. **4 mevsim mood görseli** (İlkbahar sıcak-aydınlık, Yaz serin-soft, Sonbahar sıcak-toprak, Kış soğuk-berrak) — dashboard ve sonuç hero'da kullanılacak arka plan/şerit görselleri. Berrak Kış'ı net üret.
-3. **Analiz yükleme görseli** — açılan renk yelpazesi / dönen ince altın halka motifi.
-4. **Boş durum illüstrasyonu** — "Henüz analiz yok" için zarif, minimal bir görsel (boş renk kartı / bekleyen drape).
+**Üretilecek görseller (yerleştikleri yerler + katman):**
+1. **Onboarding 3 hero görseli** *(fotoğraf katmanı)* — Slide 1 (rengi keşfet: drape jesti), Slide 2 (makyaj/saç/takı: renk paleti + güzellik detayları), Slide 3 (paletini taşı: zarif renk kartı kompozisyonu).
+2. **4 mevsim mood görseli** *(fotoğraf katmanı)* (İlkbahar sıcak-aydınlık, Yaz serin-soft, Sonbahar sıcak-toprak, Kış soğuk-berrak) — dashboard ve sonuç hero'da kullanılacak arka plan/şerit görselleri. Berrak Kış'ı net üret.
+3. **Analiz yükleme görseli** *(illüstrasyon katmanı)* — açılan renk yelpazesi / dönen ince altın halka motifi.
+4. **Boş durum illüstrasyonu** *(illüstrasyon katmanı)* — "Henüz analiz yok" için zarif, minimal bir görsel (boş renk kartı / bekleyen drape).
 
 ---
 
