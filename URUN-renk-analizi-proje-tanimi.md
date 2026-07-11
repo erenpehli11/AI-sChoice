@@ -14,7 +14,8 @@ Türkçe-native ve Türk pazarına (Trendyol/yerel markalar) entegre bir mobil a
 
 - **Hedef kitle:** Türkiye + global; ağırlıklı 16-40 yaş, stil/güzellikle ilgilenen kadınlar (ikincil: erkek grooming).
 - **Değer vaadi:** "Sana yakışan rengi 30 saniyede öğren, bir daha yanlış renk alma."
-- **İş modeli:** Hard paywall, $9,99/ay + $39,99/yıl, 5-9 gün trial, RevenueCat.
+- **Platform:** **Yalnızca Android / Google Play Store.** Tasarım Material Design (Material 3) konvansiyonlarına uyar: alt navigasyon çubuğu, üst app bar + sistem geri davranışı, Google ile giriş, Play Billing. (iOS yok.) Önerilen stack: Flutter veya Jetpack Compose (Kotlin) + RevenueCat.
+- **İş modeli:** Hard paywall, $9,99/ay + $39,99/yıl (Play'de ₺ lokalize), 5-9 gün trial, RevenueCat + Google Play Billing.
 - **Büyüme:** Sıfır-reklam; paylaşılabilir sonuç kartı + tek Instagram/TikTok içerik hesabı + Türkçe ASO.
 
 ---
@@ -113,7 +114,7 @@ Alternatifler (Türkçe):
 - "Teninin dilini konuş."
 - "Senin mevsimin hangisi?"
 
-App Store alt-başlık (ASO odaklı): *"Kişisel renk analizi — mevsimini ve paletini keşfet"*
+Play Store kısa açıklama (ASO odaklı): *"Kişisel renk analizi — mevsimini ve paletini keşfet"*
 
 İngilizce (global): *"Find the colors made for you."* / *"Your season, decoded."*
 
@@ -124,7 +125,7 @@ App Store alt-başlık (ASO odaklı): *"Kişisel renk analizi — mevsimini ve p
 ### A. Açılış & Değer (3)
 1. **Splash** — logo + slogan, kısa animasyon.
 2. **Onboarding değer ekranı** — 3 kaydırmalı slide (pager): ne yapar, nasıl çalışır, örnek sonuç kartı.
-3. **Başla / Giriş** — misafir devam veya "Apple ile giriş"; KVKK/gizlilik onayı.
+3. **Başla / Giriş** — misafir devam veya "Google ile giriş"; KVKK/gizlilik onayı.
 
 ### B. Quiz & Çekim (5)
 4. **Quiz giriş** — "3 soru, 30 saniye" güven mesajı.

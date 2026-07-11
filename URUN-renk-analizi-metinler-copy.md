@@ -6,12 +6,14 @@
 
 ---
 
-## 0. Sloganlar & App Store
+## 0. Sloganlar & Play Store
+
+> Platform: **yalnızca Google Play Store (Android)**. Faturalandırma RevenueCat + Google Play Billing.
 
 - **Ana slogan:** Sana yakışan renk, sende saklı.
 - **App adı:** Nüans
-- **App Store başlık:** Nüans — Kişisel Renk Analizi
-- **App Store alt-başlık (ASO):** Mevsimini keşfet, sana yakışan renkleri bul
+- **Play Store başlık:** Nüans — Kişisel Renk Analizi
+- **Play Store kısa açıklama (ASO):** Mevsimini keşfet, sana yakışan renkleri bul
 - **Yedek sloganlar:** "Doğru renk her şeyi değiştirir." · "Rengini keşfet, tarzını bul." · "Teninin dilini konuş."
 - **Global:** Find the colors made for you.
 
@@ -41,7 +43,7 @@
 ### 3. Giriş
 - Başlık: Başlayalım
 - Metin: Sonuçların cihazında güvende kalır.
-- Buton 1: **Apple ile devam et**
+- Buton 1: **Google ile devam et**
 - Buton 2: Misafir olarak devam et
 - Footer: Devam ederek [Kullanım Koşulları] ve [Gizlilik Politikası]'nı kabul edersin.
 
@@ -220,7 +222,7 @@
 - **Birden çok yüz:** Karede tek kişi olsun. · [Tekrar dene]
 - **Bağlantı yok:** İnternet bağlantısı yok. · Bağlantını kontrol edip tekrar dene. · [Tekrar dene]
 - **Analiz hatası:** Bir şeyler ters gitti. · Birazdan tekrar dene. · [Tekrar dene]
-- **Satın alım geri yükleme boş:** Aktif abonelik bulamadık. · Doğru Apple hesabıyla giriş yaptığından emin ol.
+- **Satın alım geri yükleme boş:** Aktif abonelik bulamadık. · Doğru Google hesabıyla giriş yaptığından emin ol.
 - **İptal/çıkış onayı:** Emin misin? · Paletin ve geçmişin cihazından silinecek. · [Vazgeç] · [Çıkış yap]
 
 ---
