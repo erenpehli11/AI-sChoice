@@ -105,7 +105,7 @@
 - Faydalar:
   - ✓ Kişisel renk paletin — yakışanlar + kaçınılacaklar
   - ✓ Makyaj, saç ve takı önerilerin
-  - ✓ Paletinle alışveriş
+  - ✓ Kombin ve nötr renk rehberin
   - ✓ Paylaşılabilir sonuç kartın
   - ✓ Sınırsız yeniden analiz
 - Plan 1 (öne çıkan): **Yıllık — {fiyat_yil}/yıl** · rozet: *En avantajlı · 3 gün ücretsiz*
@@ -173,23 +173,19 @@
 
 ## E. Ana kullanım
 
+> Alt navigasyon (Material bottom nav, 3 hedef): **Paletim · Geçmiş · Ayarlar**.
+
 ### 19. Ana ekran / Paletim
 - Selamlama: Merhaba 👋
 - Alt: Senin mevsimin: **{Mevsim} {emoji}**
-- Kısayol kartları: Paletim · Makyajım · Alışveriş · Yeniden analiz
+- Kısayol kartları: Makyajım · Saç & Takı · Kombin · Yeniden analiz
 
-### 20. Paletinle alışveriş
-- Başlık: Paletine uygun parçalar
-- Alt: Renklerine göre seçtik.
-- Filtre: Üst · Alt · Elbise · Aksesuar
-- Bilgi notu: Bağlantılar Trendyol, Zara gibi sitelere gider. Nüans satış yapmaz.
-
-### 21. Geçmiş / Yeniden analiz
+### 20. Geçmiş / Yeniden analiz
 - Başlık: Analizlerin
 - Boş durum: Henüz analiz yok. İlk analizini yap.
 - Buton: **Yeni analiz**
 
-### 22. Ayarlar & Abonelik
+### 21. Ayarlar & Abonelik
 - Başlık: Ayarlar
 - Satırlar: Aboneliğim · Dil · Bildirimler · Gizlilik Politikası · Kullanım Koşulları · Destek · Çıkış yap
 - Abonelik durumu: Aktif — {plan}, {tarih} tarihinde yenilenir · Yönet

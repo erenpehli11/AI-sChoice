@@ -59,7 +59,7 @@ Sonucun bölümleri (Alt-ton · Palet · Makyaj · Saç & Takı · Kombin) aynı
 Başlık (serif): "Tüm renk dünyanı aç" · Alt başlık: "Sana özel paletin, makyaj, saç ve kombin önerilerin hazır." · Beş faydalı madde (her birinde altın tik):
 "✓ Kişisel renk paletin — yakışanlar + kaçınılacaklar"
 "✓ Makyaj, saç ve takı önerilerin"
-"✓ Paletinle alışveriş"
+"✓ Kombin ve nötr renk rehberin"
 "✓ Paylaşılabilir sonuç kartın"
 "✓ Sınırsız yeniden analiz"
 İki seçilebilir plan kartı (Material seçim kartı):

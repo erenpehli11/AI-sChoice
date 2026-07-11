@@ -10,7 +10,7 @@
 
 Kullanıcının bir selfie'siyle **kişisel renk mevsimini** (12-sezon sistemi) belirleyip;
 ona yakışan giysi, makyaj, saç ve takı renklerini **paylaşılabilir bir kartla** sunan,
-Türkçe-native ve Türk pazarına (Trendyol/yerel markalar) entegre bir mobil abonelik uygulaması.
+Türkçe-native, Türk kullanıcıya doğal danışman diliyle konuşan bir mobil abonelik uygulaması.
 
 - **Hedef kitle:** Türkiye + global; ağırlıklı 16-40 yaş, stil/güzellikle ilgilenen kadınlar (ikincil: erkek grooming).
 - **Değer vaadi:** "Sana yakışan rengi 30 saniyede öğren, bir daha yanlış renk alma."
@@ -34,8 +34,9 @@ Her alan iki katman döndürür: **(a) kısa verdict** (paylaşılabilir) + **(b
 8. **Kombin & nötrler** — Senin nötrlerin + vurgu renkleri + kontrast önerisi
 9. **Yüz şekli (bonus)** — Oval/kare/kalp + yakışan yaka/gözlük/saç kesimi
 
-**Türk-pazarı farklılaştırması:** "Paletinle alışveriş" (Trendyol/LC Waikiki/Zara), yerel makyaj
-markası eşleştirme (Flormar/Golden Rose/Note), doğal Türkçe danışman dili.
+**Türk-pazarı farklılaştırması:** doğal Türkçe danışman dili, yerel makyaj markası *tavsiyesi*
+(Flormar/Golden Rose/Note — sadece metin öneri, link/alışveriş yok), paylaşılabilir sonuç kartı.
+(Not: harici alışveriş/link verme özelliği kapsamdan çıkarıldı.)
 
 ---
 
@@ -148,11 +149,11 @@ Play Store kısa açıklama (ASO odaklı): *"Kişisel renk analizi — mevsimini
 17. **Kombin & nötrler (+ yüz şekli)** — nötrlerin, vurgu renkleri, yüz şekli bonusu.
 18. **Paylaşılabilir kart / Share** — dikey story kartı + paylaş sayfası.
 
-### E. Ana kullanım (4)
+### E. Ana kullanım (3) — alt navigasyon: Paletim · Geçmiş · Ayarlar
 19. **Ana ekran / Paletim** — analiz sonrası kalıcı dashboard; palet + hızlı erişim.
-20. **Paletinle alışveriş** — Trendyol/Zara/LC Waikiki ürün önerileri (renk-eşleşmeli).
-21. **Geçmiş / Yeniden analiz** — önceki sonuçlar + yeni analiz başlat.
-22. **Ayarlar & Abonelik** — abonelik yönetimi, dil, gizlilik, destek.
+20. **Geçmiş / Yeniden analiz** — önceki sonuçlar + yeni analiz başlat.
+21. **Ayarlar & Abonelik** — abonelik yönetimi, dil, gizlilik, destek.
+> Not: Eski "Paletinle alışveriş" (Trendyol/Zara link) ekranı kapsamdan çıkarıldı. Toplam ekran 22 → 21.
 
 ### Yardımcı durumlar (ana sayıya dahil değil, tasarımda gerekli)
 - Boş durum (henüz analiz yok), hata (ışık kötü/yüz bulunamadı), offline, yükleme iskeletleri, paywall-restore.
@@ -165,7 +166,7 @@ Play Store kısa açıklama (ASO odaklı): *"Kişisel renk analizi — mevsimini
 ## 9. Ekran akış özeti
 
 Splash → Onboarding → Giriş → Quiz(×2) → Selfie rehberi → Çekim → Analiz → Teaser → **Paywall** →
-Sonuç hero → (detay sekmeleri 13-17) → Paylaş kartı → Ana ekran/Paletim → (alışveriş / geçmiş / ayarlar).
+Sonuç hero → (detay sekmeleri 13-17) → Paylaş kartı → Ana ekran/Paletim → (geçmiş / ayarlar).
 
 ---
 
