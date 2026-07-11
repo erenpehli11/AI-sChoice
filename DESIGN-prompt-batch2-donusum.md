@@ -45,6 +45,9 @@ Arayüz renklerle YARIŞMAZ; nötr, sofistike, sakin zemin — renk paletleri "s
 ### TON
 Sıcak, kişisel, güven veren, "sen" hitabı, abartısız.
 
+### NAVİGASYON KURALI (önemli)
+Sonucun bölümleri (Alt-ton · Palet · Makyaj · Saç & Takı · Kombin) aynı içeriğin alt görünümleridir → **üstte yapışkan sekme şeridi (top tabs)** ile gezilir. **Bottom navigation bar KULLANILMAZ**; o, uygulamanın üst düzey hedefleri (Paletim/Alışveriş/Geçmiş/Ayarlar) için sonraki batch'e ayrılmıştır. Bu batch'teki hiçbir ekranda alt navigasyon çubuğu olmasın.
+
 ---
 
 ## TASARLANACAK 4 EKRAN (metinler birebir)
@@ -66,7 +69,15 @@ Altta büyük ana buton (altın): "Ücretsiz dene" · hemen altında küçük gr
 (Not: fiyatlar örnek yer tutucudur; gerçekte Google Play lokalize gösterir. Ekranda ince "Google Play üzerinden faturalandırılır" hissi olabilir.)
 
 **Ekran 3 — Sonuç ana ekran (hero) — AÇIK + KOYU iki varyant**
-Üstte büyük serif: "Sen: Berrak Kış ❄️" · Altında tek satır tanım: "Yüksek kontrast; canlı-soğuk renkler seni parlatır." · Altında TAM, net renk paleti şeridi (8-10 swatch, yukarıdaki Berrak Kış soğuk-canlı tonları). İki buton yan yana: "Paylaş" (altın, ana) ve "Detayları gör" (ikincil). Ekranın altında pasif sekme başlıkları görünsün: "Alt-ton · Palet · Makyaj · Saç & Takı · Kombin". Bu ekran uygulamanın vitrinidir — en cilalı, en editoryal ekran olsun. Hem açık hem koyu tema varyantını ver.
+Sonuç ekranı TEK uzun kaydırılabilir sayfadır; bölümler arasında geçiş **üstteki yapışkan (sticky) sekme şeridiyle** olur — ASLA alttaki bottom navigation bar ile değil.
+Yukarıdan aşağıya düzen:
+- Büyük serif başlık: "Sen: Berrak Kış ❄️"
+- Tek satır tanım: "Yüksek kontrast; canlı-soğuk renkler seni parlatır."
+- **Yapışkan ÜST SEKME şeridi** (Material scrollable TabRow, 5 öğe kaydırılabilir): "Alt-ton · Palet · Makyaj · Saç & Takı · Kombin". Aktif sekme (ilk: Palet) altın renkte + altında ince altın gösterge çizgisi; diğerleri nötr. Bu şerit sayfa kaydıkça üstte sabit kalır.
+- Aktif bölümün içeriği olarak TAM, net renk paleti şeridi (8-10 swatch, Berrak Kış soğuk-canlı tonları).
+- Ana buton (altın): "Paylaş" · yanında ikincil: "Detayları gör" (aşağı, bölümlere kaydırır).
+- **ÖNEMLİ:** Ekranın en altına HİÇBİR bottom navigation bar KOYMA. Alt bölge temiz kalsın (yalnızca Android jest tutamağı). Uygulama-seviyesi alt navigasyon (Paletim/Alışveriş/Geçmiş/Ayarlar) sonraki batch'e aittir ve burada görünmez.
+Bu ekran uygulamanın vitrinidir — en cilalı, en editoryal ekran olsun. Hem açık hem koyu tema varyantını ver.
 
 **Ekran 4 — Paylaşılabilir kart (share) — 9:16 dikey**
 Instagram Story oranında (9:16) dikey, markalı bir paylaşım kartı tasarla: üstte "Ben bir Berrak Kış ❄️", ortada şık renk paleti kompozisyonu, altta küçük "Sen hangi mevsimsin? · Nüans". Sosyal medyada paylaşılacak; estetik, imrendirici, markalı olsun. Kartın altında Android paylaşım alt-sayfası (Material bottom sheet) göster: başlık "Sonucunu paylaş" ve seçenekler "Instagram Story · Kaydet · Diğer".
@@ -82,4 +93,4 @@ Instagram Story oranında (9:16) dikey, markalı bir paylaşım kartı tasarla: 
 ---
 
 ## Bizim kilitli kararlarımız (referans — hepsi yukarıya gömüldü)
-Yalnızca Android/Play · Material 3 · Nüans · slogan "Sana yakışan renk, sende saklı." · editöryal güzellik galerisi · krem `#F7F3EE` + antrasit `#2A2622` + şampanya altını `#C9A66B` (+ koyu tema) · serif başlık + sans gövde · 12-mevsim (örnek Berrak Kış ❄️) · RevenueCat + Google Play Billing, yıllık öne çıkan + 3 gün trial · paylaşılabilir kart = büyüme motoru.
+Yalnızca Android/Play · Material 3 · Nüans · slogan "Sana yakışan renk, sende saklı." · editöryal güzellik galerisi · krem `#F7F3EE` + antrasit `#2A2622` + şampanya altını `#C9A66B` (+ koyu tema) · serif başlık + sans gövde · 12-mevsim (örnek Berrak Kış ❄️) · RevenueCat + Google Play Billing, yıllık öne çıkan + 3 gün trial · paylaşılabilir kart = büyüme motoru · **sonuç bölümleri = üst yapışkan sekmeler, bottom-nav DEĞİL**.
