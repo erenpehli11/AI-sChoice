@@ -11,6 +11,15 @@
 
 ---
 
+## 0. v3 kararları (kullanıcı)
+
+- **Şehir:** Gri bir sanayi şehri. Kulüp zamanla şehrin neşesi oluyor.
+- **[TD] ve [OĞUL]:** [TD] kendi oğluyla pek ilgilenmiyor. Yetişkin [OĞUL], [GENÇ]'i abisi gibi görüyor ve ona kızgın değil. Anlatıcının sesi kırgın değil, bağışlayıcı.
+- **1. bölümün sonu:** [TD] görüşme için kulübe geliyor ve haczi görüyor. Bu haciz ilk kez olmuyor, kulüpte bir rutin gibi.
+- **[BAŞKAN]:** Kulübü almaya **mecbur bırakılıyor.** Amaç kulübü biraz büyütüp hem bahis hem kara para işini kulüp üzerinden yürütmek.
+- **İlk 100 bölüm:** Şehir-kulüp ilişkisi, kulübün durumu ve engellere rağmen yükselişi.
+- **Büyük gizli bilgi:** Kulübün maddi durumu aslında o kadar kötü değil. [BAŞKAN] onu olduğundan kötü gösteriyor.
+
 ## 1. Format
 
 - **Platform:** YouTube Shorts + Instagram Reels, dikey 9:16
