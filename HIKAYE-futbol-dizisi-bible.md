@@ -32,6 +32,12 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0c. Yan karakterler (v5)
+
+- **Malzemeci:** Kalıcı karakter. Yıllardır parasız çalışıyor ama kulübü bırakmıyor. Detaylar sonra.
+- **Yardımcı antrenör:** İlerleyen bölümlerde gelen genç bir üniversite öğrencisi. Bir antrenman ya da maç sırasında tribünden doğru bir taktik uyarıyı [TD]'nin duyacağı şekilde bağırıyor. Maçtan sonra [TD] onu yanına çağırıp iş teklif ediyor. Detaylar sonra.
+- Öncelik 3 ana karakterde. Diğer yan karakterler zamanla konuşulacak.
+
 ## 1. Format
 
 - **Platform:** YouTube Shorts + Instagram Reels, dikey 9:16
