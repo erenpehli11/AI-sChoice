@@ -1,4 +1,9 @@
-# Futbol Hikâyesi — Hikâye Kitabı (Bible) · v1
+# Futbol Hikâyesi — Hikâye Kitabı (Bible) · v2
+
+> **v2 kararları (kullanıcı):** Ton karanlık değil, acı-tatlı. 1. bölümün kancası başkanın kulübü satın alması ve
+> teknik direktörü çağırması. Haciz 1. bölümün sonunda. Bahis oynayan genç futbolcu değil, **babası.**
+> Başkanın sakatlıktaki payı şimdilik rafta. Görseller final aşamasında Claude tarafından çizilecek.
+> Bu aşamada senaryo yazılmıyor, proje oturtuluyor. (`HIKAYE-bolum-01.md` eski bir taslak, geçersiz.)
 
 > Çalışma dokümanı. İsimler henüz belli değil, yer tutucu kullanılıyor:
 > **[TD]** teknik direktör · **[BAŞKAN]** · **[GENÇ]** genç futbolcu · **[OĞUL]** anlatıcı.
@@ -82,10 +87,11 @@
 | **D** | **Kimlik/yaş meselesi.** Abisinin ya da başka bir çocuğun kimliğiyle oynuyor. | Futbolda bilinen, gerçekçi bir konu. Sözleşme anında büyük bir kriz çıkıyor. | Çözüm bulmak zor. Karakteri "hilekâr" yapma riski var. |
 | **E** | **Ablası onun için fedakârlık yapıyor.** Ablanın işi ya da ilişkisi karanlık ağla bağlantılı ve çocuk bunu bilmiyor. | Duygusal açıdan güçlü. Yan karakter derinleşiyor. | Çocuğun kendi sırrı değil, ablanın sırrı oluyor. |
 
-**Önerim: A + B (temel) ve C (ileri bir arc için saklı).**
-- Arc 1: Çocuk para için gece maçlarında oynuyor (B). Sebebi ailenin borcu.
-- Arc 1 finali / arc 2: Borcun kime olduğu ortaya çıkıyor (A). Alacaklı, [BAŞKAN]'ın hesap verdiği ağ. [BAŞKAN] "değerli varlığını" korumak mı, patronlarına boyun eğmek mi zorunda kalacak?
-- C, ileride bir "her şey yolundayken" darbesi olarak elde tutuluyor.
+**KARAR (v2): Bahis oynayan kişi babası.**
+- Babası bahis bağımlısı ve ailenin borcu bu yüzden büyüyor. [GENÇ], babasının kaybettiğini futbolla geri kazanmak zorunda olduğunu düşünüyor. Egosu da kısmen bundan geliyor: "Ben onun gibi olmayacağım."
+- **Tema aynası:** [TD] oğlunu yokluğuyla, [GENÇ]'in babası ise oğlunu bağımlılığıyla yarı yolda bırakmış. İki baba, iki oğul.
+- Borcun karanlık ağla bağlantısı (A) ileride kullanılabilecek bir seçenek olarak duruyor. Ton hafif tutulacağı için bu taraf arka planda kalacak.
+- C (sağlık sorunu) yedekte.
 
 ---
 
@@ -105,7 +111,13 @@
 
 ---
 
-## 7. Arc 1 — bölüm akışı (taslak, ilk 12 bölüm)
+## 6b. Ton
+
+- **Acı-tatlı (dramedi).** Ted Lasso'nun sıcaklığına daha yakın, Deha'nın karanlığına değil.
+- Karanlık unsurlar (kara para, borç) **arka planda bir gölge** gibi duruyor. Hikâyenin önünde insanlar, mizah ve futbol var.
+- Mizah kaynakları: soyunma odası, malzemeci, [BAŞKAN]'ın çekiciliği, [GENÇ]'in kibri, küçük [OĞUL]'un masum cümleleri.
+
+## 7. Arc 1 — bölüm akışı (v1 taslağı. 1. bölüm v2'de değişti: kanca kulübün satın alınması, son haciz)
 
 | # | Odak | Olay | Bölüm sonu |
 |---|---|---|---|
@@ -139,7 +151,9 @@ Sonraki bölümler: Takıma uyum, egonun yarattığı çatışmalar, ilk maç. [
 ## 9. Açık kararlar
 
 - [ ] İsimler: [TD], [BAŞKAN], [GENÇ], [OĞUL], kulüp
-- [ ] [GENÇ]'in sırrı (öneri: A + B, C yedekte)
-- [ ] [BAŞKAN]'ın sakatlık geçmişinde payı var mı?
+- [x] [GENÇ]'in sırrı → bahis oynayan baba
+- [~] [BAŞKAN]'ın sakatlıktaki payı → rafta
+- [ ] Anlatıcının ortaya çıkış anı: 1. bölümün sonu mu (haciz ile birlikte), yoksa 2. bölümün sonu mu?
+- [ ] Görsel üslup (bkz. sohbet: çizgi roman / hareketli illüstrasyon önerisi)
 - [ ] Anlatıcının "şimdiki zamanı": Kaç yıl sonra anlatıyor, bugün ne yapıyor? (İleride açılacak.)
 - [ ] Hikâyenin geçtiği şehir (kurgusal mı, gerçek bir şehir mi?)
