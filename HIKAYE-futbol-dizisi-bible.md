@@ -32,6 +32,12 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0d. v6 kararları (kullanıcı)
+
+- **Çizim stili:** A (Avrupa çizgi romanı) + C (yumuşak karikatür) karışımı. Kerem'in saçları daha beyaz, Yusuf'un saçı daha belirgin.
+- **[OĞUL]:** Hikâyenin başında **13 yaşında** (ilkokul fikri iptal).
+- **Tarihler:** Hikâyenin hangi yılda geçtiği belirtilmiyor.
+
 ## 0c. Yan karakterler (v5)
 
 - **Malzemeci:** Kalıcı karakter. Yıllardır parasız çalışıyor ama kulübü bırakmıyor. Detaylar sonra.
