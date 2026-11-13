@@ -20,6 +20,18 @@
 - **İlk 100 bölüm:** Şehir-kulüp ilişkisi, kulübün durumu ve engellere rağmen yükselişi.
 - **Büyük gizli bilgi:** Kulübün maddi durumu aslında o kadar kötü değil. [BAŞKAN] onu olduğundan kötü gösteriyor.
 
+## 0b. v4 kararları (kullanıcı)
+
+- **Haciz:** [TD]'nin kulübe geldiği ilk gün oluyor, [BAŞKAN]'ın kulübü satın aldığı gün değil. Satın alma ile [TD]'nin gelişi arasında bir zaman sıçraması var.
+- **[BAŞKAN]'ı mecbur bırakan güç:** İsimsiz bir güç. Kayınpeder, bu güç ile [BAŞKAN] arasında aracı.
+- **Lig:** Doğrudan **TFF 3. Lig** (profesyonel lig, maçlara bahis oynanabiliyor). Süper Amatör fikrinden vazgeçildi.
+- Maç sonuçları ve sezon gidişatı daha sonra konuşulacak.
+
+**3. Lig gerçekleri (2025-26, araştırma):**
+- 64 takım, 4 bölgesel grup, her grupta 16 takım. Grup birincileri doğrudan 2. Lig'e çıkıyor, play-off ile ek takımlar yükseliyor. Format sezondan sezona değişiyor, yazım öncesi tekrar teyit edilmeli.
+- Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
+- Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
+
 ## 1. Format
 
 - **Platform:** YouTube Shorts + Instagram Reels, dikey 9:16
