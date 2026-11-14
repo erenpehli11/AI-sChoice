@@ -30,12 +30,30 @@
   > **BARIŞ:** *(sessizce)* Sol kanat hocam.
   > **UFUK:** *(kapı açılır, kask elinde, nefes nefese)* Sol bek hocam! *(Barış'ın omzuna kolunu atar)* Biz ikimiz soldayız. O çizgide kalır, ben içeri dalarım.
 
-**Kapanış (öneri):**
-> **YUSUF:** Peki… topu kim taşıyor?
+**Kapanış:**
+> **YUSUF:** Peki… sizden aldığını Tolga'ya kim ulaştırıyor?
 
-Sessizlik. Herkes birbirine bakıyor. *(Takımda 10 numara olmadığı ortaya çıkıyor, Emir'e zemin.)*
+Sessizlik. Kadir, Tolga'ya bakıyor. Tolga yere bakıyor. *(Takımda 10 numara olmadığı ortaya çıkıyor, Emir'e zemin.)*
+> **YUSUF:** Hadi sahaya çıkalım. Bir de orada görelim kim nerede oynuyormuş.
 
-## Devamı (sahne 5 ve sonrası): sonra konuşulacak
+## Sahne 5 · Kerem ve Yusuf (taslak v1, ~12 sn)
+Kerem'in ofisi. Yusuf eşofmanlı, terli. Kerem masada, kahve makinesi çalışıyor.
+> **YUSUF:** Takım iyi, Kero. Bu işi yaparız. Ama eksiğiz. Bize en az beş oyuncu daha lazım.
+> **KEREM:** *(gülümser, iki elini açar)* Beş oyuncu mu? Yusuf, otobüsü bile götürdüler. *(kısa bir sessizlik)* Bedavaya bul, imzayı ben atarım.
+
+*(Sahte yoksulluk burada işliyor: Kerem'in kahve makinesi çalışırken "para yok" diyor. İzleyici fark etmiyor. Yusuf'u da parasız oyuncu aramaya, yani Emir'e doğru itiyor.)*
+
+## Sahne 6 · Emir (taslak v1, ~10 sn) — bölüm Emir ile bitiyor
+*(Kullanıcının aklında bir fikir var. Bu yalnızca öneri, konuşulacak.)*
+Akşam, mahalle. Emir tek başına bir duvara top sektiriyor. Dudağında kavgadan kalma yara kabuğu. Duvarın üstünde küçük kardeşi oturuyor.
+> **KARDEŞİ:** Abi, senin takımın neden yok?
+> **EMİR:** *(topu durdurur, kardeşine bakmadan)* Beni alacak takım daha kurulmadı.
+
+Top tekrar duvara çarpıyor. Ekran siyaha geçiyor.
+
+**Alternatif:** Emir büyük bir kulübün altyapı seçmesinde harika oynuyor ama "kavgacı" diye reddediliyor.
+
+## Devamı: tadilat ilerleyen bölümlerde (ekipçe)
 
 v1'deki öneriler yalnızca taslak olarak duruyor:
 - **Karanlık soyunma odası:** "Antrenmandan sonra kimse eve gitmiyor." / Kaleci: "Hocam, o kablolar yanlış." / "O zaman doğrusunu sen tak."
