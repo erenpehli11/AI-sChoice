@@ -32,6 +32,14 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0e. v7 kararları (kullanıcı)
+
+- **[BAŞKAN]'ın bir kızı var** ("çocuğu yok" bilgisi iptal). İleride [GENÇ] ile bir bağı olacak. Şimdilik sadece not.
+- **Öneri zinciri:** [GENÇ]'i, kendi küçük kardeşi [OĞUL]'a (Ömer) öneriyor. [TD]'ye doğrudan değil.
+- **[GENÇ]'in babası:** Genel olarak kupon (iddaa) oynuyor ve kaybediyor. Mahalle maçlarına bahis **yok.**
+- **Mahalle sahası:** Düz toprak saha, ışık yok, filesiz kale. Türkiye gerçekleri.
+- **[TD]'nin kulübe bağlandığı an:** "Düdük" sahnesi (bkz. `HIKAYE-bolum-02-03-kurgu.md`).
+
 ## 0d. v6 kararları (kullanıcı)
 
 - **Çizim stili:** A (Avrupa çizgi romanı) + C (yumuşak karikatür) karışımı. Kerem'in saçları daha beyaz, Yusuf'un saçı daha belirgin.
