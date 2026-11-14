@@ -150,7 +150,7 @@
 - Karanlık unsurlar (kara para, borç) **arka planda bir gölge** gibi duruyor. Hikâyenin önünde insanlar, mizah ve futbol var.
 - Mizah kaynakları: soyunma odası, malzemeci, [BAŞKAN]'ın çekiciliği, [GENÇ]'in kibri, küçük [OĞUL]'un masum cümleleri.
 
-## 7. Arc 1 — bölüm akışı (v1 taslağı. 1. bölüm v2'de değişti: kanca kulübün satın alınması, son haciz)
+## 7. Arc 1 — bölüm akışı (ESKİ, GEÇERSİZ: Yalnızca ilk fikirleri gösteriyor. Kesinleşmiş tek bölüm `HIKAYE-bolum-01.md`.)
 
 | # | Odak | Olay | Bölüm sonu |
 |---|---|---|---|
