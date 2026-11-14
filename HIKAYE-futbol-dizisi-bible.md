@@ -32,7 +32,24 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
-## 0g. Kadro önerisi v2 (4. bölüm soyunma odası için, henüz karar değil)
+## 0h. KADRO — onaylı v3 (kullanıcı revizeleriyle)
+
+> 4. bölümde soyunma odasında Yusuf'un sorusu: **"Mevkiniz nedir?"** Cevaplar bu soruya göre yazılacak. Oyuncular ileride daha detaylı hazırlanacak.
+
+| İsim (lakap) | Yaş | Mevki | Meslek | Karakter | Futbolcu referansı |
+|---|---|---|---|---|---|
+| **Murat Kalkavan** ("Kaptan") | **34** | Stoper | Fabrika işçisi | Sessiz lider | Milan Škriniar |
+| **Cengiz** ("Şalter") | 26 | Kaleci | Elektrikçi | Takımın komiği | Dominik Livaković |
+| **Barış** | 19 | Sol kanat | Fırında sabah 4 vardiyası | Utangaç, çalışkan. 3. bölümdeki "Sol!" sahnesinin oyuncusu | — |
+| **Kadir** ("Berber") | 23 | **Top kesen orta saha** | Berber | **Kendine güvenen görev adamı.** "Top keser, saç keser." | — |
+| **Tolga** | 24 | Forvet | İnşaatta boyacı | Gol orucunda, özgüvensiz. **Zamanında çok yetenekli bilinen ama sakatlıklar yüzünden kariyeri geriye giden biri** | — |
+| **Ufuk** ("Kurye") | 20 | Sol bek, **sağ ayaklı** | **Motorlu** kurye | Hızlı ama hep geç kalıyor | — |
+
+- **Bilinçli boşluk:** Takımda topu taşıyan bir 10 numara yok. Emir'in gelişine zemin.
+- **Tolga ve Yusuf:** İkisinin de kariyeri sakatlıkla gerilemiş. İleride kullanılabilecek bir ayna.
+- 3. Lig kuralı: 25 yaş üstü 2 oyuncu var (Murat 34, Cengiz 26). Sınır 5.
+
+## 0g. Kadro önerisi v2 (ESKİ, yerini 0h aldı)
 
 | İsim (lakap) | Yaş | Mevki | Meslek | Karakter | "Neden hâlâ buradasın?" cevabı |
 |---|---|---|---|---|---|
