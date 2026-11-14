@@ -32,6 +32,20 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0g. Kadro önerisi v2 (4. bölüm soyunma odası için, henüz karar değil)
+
+| İsim (lakap) | Yaş | Mevki | Meslek | Karakter | "Neden hâlâ buradasın?" cevabı |
+|---|---|---|---|---|---|
+| Murat Kalkavan ("Kaptan") | 31 | Stoper | Çelik fabrikası, gece vardiyası, kaynakçı | Sessiz lider, az konuşur | Vardiyadan çıkıp buraya geliyorum hocam. Uyumadığım tek yer burası. |
+| Cengiz ("Şalter") | 26 | Kaleci | Elektrikçi | Takımın komiği | Bütün gün zaten elektrik çarpıyor hocam. Burada en azından top çarpıyor. |
+| Barış | 19 | Sol kanat ("Sol!" sahnesindeki) | Fırında sabah 4 vardiyası | Utangaç, çalışkan | *(önüne bakarak)* Simit getiriyorum hocam. Bir de… gol atmak istiyorum. |
+| Kadir ("Berber") | 23 | Orta saha | Berber | Geveze, takımın moral kaynağı | Herkesin saçını ben keserim hocam. Kimin ne derdi var, ben bilirim. |
+| Tolga | 24 | Forvet | İnşaatta boyacı | Gol orucunda, kendine güvensiz | On bir maçtır gol atamıyorum hocam. Ama tribünleri ben boyarım. |
+| Ufuk ("Kurye") | 20 | Sol bek | Motorlu kurye | Hızlı ama hep geç kalıyor | *(kask elinde, nefes nefese içeri dalar)* Geldim hocam! Ne soruyordunuz? |
+
+- **Bilinçli boşluk:** Takımda topu taşıyan bir 10 numara yok. İleride Emir'in gelişine zemin hazırlıyor.
+- 3. Lig kuralına uygun: 25 yaş üstü oyuncu sayısı 5'i geçmiyor (burada 2).
+
 ## 0f. v8 kararları (kullanıcı) + takım önerisi
 
 **Kararlar:**
