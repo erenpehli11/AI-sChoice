@@ -13,7 +13,7 @@
 | 5 | **Atkı** (~5 sn) | Antrenmanın sonu. Yusuf düdüğü çalıyor. Geri vermeye getirdiği atkı farkında olmadan boynunda. Gri sahnede tek renk. *(Ses yok, sadece düdük.)* | — |
 | 6 | **Fikstür** (~8 sn) | Malzemeci fikstür kâğıdını uzatıyor. | **MALZEMECİ:** Hocam, ilk maç iki hafta sonra. Deplasman. **YUSUF:** Otobüs? **MALZEMECİ:** *(çayını yudumlar)* Hangi otobüs? |
 | 7 | **Kerem** (~8 sn) | Kerem ofisinin penceresinden sahayı izliyor, Yusuf'u düdük çalarken görüyor. İçten bir gülümseme. Masada Yusuf'un dün içmeden bıraktığı kahve fincanı duruyor. Kerem onu alıp bir yudum alıyor. Masadaki telefonu titriyor. Kerem bakmadan telefonu ters çeviriyor ve izlemeye devam ediyor. | **KEREM:** *(kendi kendine, gülümseyerek)* Soğumuş. |
-| 8 | **Mesaj** (~13 sn) | Akşam, Yusuf'un salonu. Atkı hâlâ boynunda. Telefonda okunmamış mesaj: "Baba, cumartesi geliyor musun?" Yusuf yazıp siliyor, yeniden yazıp siliyor. Sonunda gönderiyor: **"Bu cumartesi sen gel. Sahaya."** | **ANLATICI:** O mesajı üç kere yazıp sildi. Dördüncüde gönderdi. |
+| 8 | **Mesaj** (~13 sn) | Akşam, Yusuf'un salonu. Atkı hâlâ boynunda. Telefonda okunmamış mesaj: "Baba, cumartesi geliyor musun?" Yusuf yazıp siliyor, yeniden yazıp siliyor. Sonunda gönderiyor: **"Geliyorum. Seni bir yere götüreceğim."** | **ANLATICI:** O mesajı üç kere yazıp sildi. Dördüncüde gönderdi. |
 
 ---
 
