@@ -3,7 +3,7 @@
 > **Süre:** ~66 sn · **Sahne:** 6 · **Ses:** Anlatıcı ~40 kelime + 9 kısa replik
 > **Çizim stili:** A + C karışımı
 > **İsimler çalışma adıdır:** Yusuf Demirci, Kerem Sezer, Emir Kılıç, Karaocak Demirspor
-> **v2 değişiklikleri (kullanıcı):** Mahalle sahası daha az yoksul (kale fileli, eski ama sağlam). Tek futbol anı Emir'in golü, bacak arası çıkarıldı. Laf atma golün hemen ardından geliyor. Kahvehane tek bir kısa ana indi. Bölüm 88 sn'den ~66 sn'ye indi.
+> **v2 değişiklikleri (kullanıcı):** Kulübün kalesi fileli, mahalle kalesi filesiz. Kerem golü tribünden izledi. Emir'in babası siyah saçlı, sakallı, biraz vazgeçmiş bir adam. Tek futbol anı Emir'in golü, bacak arası çıkarıldı. Laf atma golün hemen ardından geliyor. Kahvehane tek bir kısa ana indi. Bölüm 88 sn'den ~66 sn'ye indi.
 
 ---
 
@@ -24,12 +24,12 @@ Kerem, Yusuf'u sahaya çıkarıyor. Çim ölmüş, yer yer toprak görünüyor. 
 Yusuf kulübeye bakıyor ama cevap vermiyor.
 
 **SAHNE 3 · Geçiş** (32–35 sn)
-Yusuf'un bakışı boş kaleye kayıyor. Kamera kaleye yaklaşıyor.
-**Eşleşme kesmesi:** Başka bir kale, akşamüstü. Eski, yer yer yamalı bir file. Bir top fileye gömülüyor.
+Yusuf'un bakışı kulübün boş, fileli kalesine kayıyor. Kamera kaleye yaklaşıyor.
+**Eşleşme kesmesi:** Başka bir kale, akşamüstü. Mahallenin filesiz, paslı direkleri. Kale boş, maç sürüyor.
 
 **SAHNE 4 · Gol** (35–48 sn)
 Mahallenin düz toprak sahası. Gün batıyor, her adımda toz kalkıyor. Saha kenarındaki duvarın üstünde birkaç çocuk oturmuş izliyor. Aralarında Emir'in küçük kardeşi de var.
-Geriye dönüp golün nasıl geldiğini görüyoruz: Emir (15-16 yaşlarında, kıvırcık saçlı, eski bir eşofman altı) topu alıyor. Birini, ikincisini, üçüncüsünü geçiyor. Üçüncüsü iri yarı bir savunmacı, tozun içine düşüyor. Solunda tamamen boş bir arkadaşı var ama Emir ona bakmıyor bile. Sol ayağıyla vuruyor, top fileye gidiyor.
+Emir (15-16 yaşlarında, kıvırcık saçlı, eski bir eşofman altı) topu alıyor. Birini, ikincisini, üçüncüsünü geçiyor. Üçüncüsü iri yarı bir savunmacı, tozun içine düşüyor. Solunda tamamen boş bir arkadaşı var ama Emir ona bakmıyor bile. Sol ayağıyla vuruyor. Top filesiz direklerin arasından geçip arkadaki duvara çarpıyor. Gol.
 > **ARKADAŞI:** Pas versene!
 > **EMİR:** Verseydim gol olur muydu?
 > **ANLATICI:** Mahallede Emir Kılıç'ı herkes iki şeyle tanırdı. Sol ayağı… ve sol kroşesi.
@@ -43,7 +43,7 @@ Sonra sol kroşe. Saha birbirine giriyor, toz bulutu, bağıranlar, ayıranlar.
 Duvardaki küçük kardeş gözlerini kapatmıyor. İzliyor.
 
 **SAHNE 6 · Kahvehane** (60–66 sn)
-Tek bir kare. Mahalle kahvesi, bir masada buruşturulmuş bir kupon ve onu bırakan bir el: Emir'in babası.
+Tek bir kare. Mahalle kahvesi, bir masada buruşturulmuş bir kupon ve onu bırakan bir el: Emir'in babası (siyah saçlı, sakallı, biraz vazgeçmiş bir adam).
 > **ANLATICI:** O akşam Emir'in babası yine kaybetti. Ama kaybettiği şey para değildi.
 
 Ekran siyaha geçiyor.
