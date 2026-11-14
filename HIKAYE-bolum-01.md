@@ -34,7 +34,7 @@ Telefon dördüncü kez çalıyor. Bu sefer açıyor.
 Bölünmüş ekran: Solda Kerem'in parlak, sıcak tonlu ofisi. Sağda Yusuf'un loş, gri salonu.
 > **KEREM:** Yusuf. Bir kahveme gel. Sadece bir kahve.
 > **YUSUF:** Kero… Ben o işleri bıraktım.
-> **KEREM:** Kahve diyorum oğlum. Kahve.
+> **KEREM:** Kahve diyorum oğlum. Kahve. *(kısa bir sessizlik)* Sen sade içerdin, değil mi?
 
 **SAHNE 7 · Duvar** (48–53 sn)
 Yusuf telefonu kapatıp duvardaki çerçeveye bakıyor: genç haliyle, turuncu-siyah formayla gol sevinci. Çerçevenin köşesine sıkıştırılmış küçük bir okul fotoğrafı var: 13 yaşında bir çocuk. Fotoğrafın üstü tozlu. *(Ses yok.)*
