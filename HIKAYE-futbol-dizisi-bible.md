@@ -35,7 +35,7 @@
 ## 0e. v7 kararları (kullanıcı)
 
 - **[BAŞKAN]'ın bir kızı var** ("çocuğu yok" bilgisi iptal). İleride [GENÇ] ile bir bağı olacak. Şimdilik sadece not.
-- **Öneri zinciri:** [GENÇ]'i, kendi küçük kardeşi [OĞUL]'a (Ömer) öneriyor. [TD]'ye doğrudan değil.
+- **Öneri zinciri:** [GENÇ]'in küçük kardeşi, [GENÇ]'i [OĞUL]'a (Ömer) öneriyor. [TD]'ye doğrudan değil.
 - **[GENÇ]'in babası:** Genel olarak kupon (iddaa) oynuyor ve kaybediyor. Mahalle maçlarına bahis **yok.**
 - **Mahalle sahası:** Düz toprak saha, ışık yok, filesiz kale. Türkiye gerçekleri.
 - **[TD]'nin kulübe bağlandığı an:** "Düdük" sahnesi (bkz. `HIKAYE-bolum-02-03-kurgu.md`).
