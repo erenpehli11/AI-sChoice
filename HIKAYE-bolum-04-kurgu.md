@@ -12,7 +12,30 @@
 | 2 | **Defter** (~7 sn) | Yusuf buruşuk paralarını sayıyor, yetmiyor. Nalbur Yusuf'un elini kapatıp parayı geri itiyor, eski bir defter çıkarıp bir şey yazıyor ve kapatıyor. Kapakta elle yapıştırılmış, solmuş bir arma ve "KARAOCAK DEMİRSPOR" yazısı var. Yusuf görünce gülümsüyor. | **NALBUR:** Kalanı deftere. |
 | 3 | **Fısıltı** (~10 sn) | Yusuf kollarında poşetler, elinde boya kovalarıyla aksayarak stadyuma yürüyor. Antrenmana gelen birkaç oyuncu onu uzaktan görüp duruyor. | **OYUNCU 1:** *(fısıltıyla)* Kabul etti galiba. **OYUNCU 2:** Elinde boya var oğlum. Kabul etti tabii. **KALECİ:** Hoca boya mı yapacak? |
 
-## Devamı (sahne 4 ve sonrası): sonra uzun uzun konuşulacak
+## Sahne 4 · Soyunma odası (taslak v1)
+
+**Yusuf'un konuşması:**
+> **YUSUF:** Ben Yusuf. Bazılarınız beni hatırlıyor, bazılarınız babasından duydu. Taktiği, sistemi sonra konuşacağız. Şimdilik bir şeyi bilin yeter: Bu takım güzel futbol oynayacak. Maçta önce tribündekiler keyif alacak, maçtan sonra da siz. Kazansak da kaybetsek de bu soyunma odasından kimse mutsuz çıkmayacak.
+> **YUSUF:** Mevkiniz nedir?
+
+**Cevaplar (kullanıcının yönlendirmesiyle):**
+- Kaptan ağzını açmadan Cengiz atlıyor:
+  > **CENGİZ:** Kaleci hocam. Kaptanın kaçırdıklarını ben tutuyorum.
+
+  Kaptan ona yan gözle bakıyor, bir şey demiyor.
+- Kadir ve Tolga biraz üstten:
+  > **KADİR:** *(kollarını kavuşturmuş)* Altı numara. Top keserim, saç keserim. İkisinde de hata yapmam.
+  > **TOLGA:** *(başını kaldırmadan)* Forvet. Bir zamanlar beni izlemeye gelirlerdi hocam.
+- Sol taraf, altın ikili:
+  > **BARIŞ:** *(sessizce)* Sol kanat hocam.
+  > **UFUK:** *(kapı açılır, kask elinde, nefes nefese)* Sol bek hocam! *(Barış'ın omzuna kolunu atar)* Biz ikimiz soldayız. O çizgide kalır, ben içeri dalarım.
+
+**Kapanış (öneri):**
+> **YUSUF:** Peki… topu kim taşıyor?
+
+Sessizlik. Herkes birbirine bakıyor. *(Takımda 10 numara olmadığı ortaya çıkıyor, Emir'e zemin.)*
+
+## Devamı (sahne 5 ve sonrası): sonra konuşulacak
 
 v1'deki öneriler yalnızca taslak olarak duruyor:
 - **Karanlık soyunma odası:** "Antrenmandan sonra kimse eve gitmiyor." / Kaleci: "Hocam, o kablolar yanlış." / "O zaman doğrusunu sen tak."
