@@ -49,7 +49,10 @@ Akşam, mahalle. Emir tek başına bir duvara top sektiriyor. Dudağında kavgad
 > **KARDEŞİ:** Abi, senin takımın neden yok?
 > **EMİR:** *(topu durdurur, kardeşine bakmadan)* Beni alacak takım daha kurulmadı.
 
-Top tekrar duvara çarpıyor. Ekran siyaha geçiyor.
+Top tekrar duvara çarpıyor. Kamera duvarın üstündeki kardeşe kayıyor.
+> **ANLATICI:** Kardeşi her akşam o duvarın üstünden abisini izlerdi. Ona bir takım bulacak kişinin kendisi olacağını bilmeden.
+
+Ekran siyaha geçiyor.
 
 **Alternatif:** Emir büyük bir kulübün altyapı seçmesinde harika oynuyor ama "kavgacı" diye reddediliyor.
 
