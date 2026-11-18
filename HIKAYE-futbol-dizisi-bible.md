@@ -32,6 +32,13 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0j. v10 notları (kullanıcı geri bildirimi, KALICI)
+
+- **ELLER:** Mevcut eller kabul edilmedi. Her çizimde ellere özel dikkat gösterilecek. Yeni el kütüphanesi onaylanana kadar eller mümkün olduğunca kadraj dışında, cepte ya da bir nesnenin arkasında tutulacak.
+- **Futbol sahneleri:** Sürekli koşu animasyonu yapılmayacak. Yeni bir anlatım yöntemi seçilecek (öneriler sohbette).
+- **Ton:** Dünya beklenenden daha karanlık çıkıyor. Kullanıcı bunu kabul etti, daha uzun soluklu bir eser.
+- Çizim dili ve mekânlar beğenildi.
+
 ## 0i. v9 kararları (kullanıcı)
 
 - **Kerem siyah saçlı** (önceki "saçları beyazlamış" notu iptal). Yusuf ile karışmaması için.
