@@ -1,4 +1,6 @@
-# Bölüm 1 — "Bir Kahve" · Taslak v3
+# Bölüm 1 — "Bir Kahve" · Taslak v4
+
+> **v4 (kullanıcı onayı):** Bölüm ~63 sn'ye kısaltıldı. Anlatıcıdan "Duman, beton, insanlar." ve "O sabah da sızlıyordu." çıkarıldı. Kerem siyah saçlı.
 
 > **Süre:** ~88 sn · **Sahne:** 8 · **Ses:** Anlatıcı ~100 kelime + 7 kısa replik
 > **Çizim stili:** A + C karışımı (çizgi roman konturu ve oranları + karikatürün ifade gücü)
@@ -39,8 +41,8 @@ Yusuf telefonu kapatıyor. Ceketini alırken duvardaki çerçeveye bakıyor: gen
 
 **SAHNE 5 · Şehir ve yol** (48–60 sn)
 Yusuf gri Karaocak'ta yürüyor: bacalar, beton bloklar, vardiya düdüğü. Solmuş bir duvar resmindeki turuncu arma şehirdeki tek renk. Sol bacağı hafifçe aksıyor.
-> **ANLATICI:** Karaocak'ta her şey griydi. Duman, beton, insanlar. Cumartesileri turuncuya dönerdi. Eskiden.
-> **ANLATICI:** Sol dizi yağmurdan önce hep sızlardı. O sabah da sızlıyordu.
+> **ANLATICI:** Karaocak'ta her şey griydi. Cumartesileri turuncuya dönerdi. Eskiden.
+> **ANLATICI:** Sol dizi yağmurdan önce hep sızlardı.
 
 **SAHNE 6 · Kapı** (60–72 sn)
 Stadyum kapısı. Bir çekici, armalı kulüp otobüsünü kaldırıyor. İcra memuru elinde dosyayla bekliyor. Yaşlı malzemeci, elinde çay tepsisiyle hiç telaşsız memura yaklaşıyor.

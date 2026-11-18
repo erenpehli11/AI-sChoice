@@ -1,5 +1,5 @@
 const path=require('path');const fs=require('fs');const {chromium}=require('playwright');
-const FPS=30, TOTAL=90.4;
+const FPS=30, TOTAL=65.4;
 (async()=>{const [a,b,dir]=[+process.argv[2],+process.argv[3],process.argv[4]];
 fs.mkdirSync(path.join(__dirname,dir),{recursive:true});
 const br=await chromium.launch();const p=await br.newPage({viewport:{width:540,height:960},deviceScaleFactor:2});

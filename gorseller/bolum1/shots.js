@@ -623,52 +623,53 @@ function titleCard(u) {
 }
 
 // =============================== TIMELINE ===============================
+const sp = (fn, k = 1, off = 0) => (u, t) => fn(u * k + off, t);
 const SHOTS = [
-  [0.0, 6.6, shot1], [6.6, 11.4, shot2a], [11.4, 15.0, shot2b],
-  [15.0, 18.0, shot3a], [18.0, 20.4, shot3b], [20.4, 24.8, shot3c], [24.8, 27.4, shot3d],
-  [27.4, 31.6, shot4a], [31.6, 34.6, shot4b], [34.6, 45.2, shot4c], [45.2, 48.4, shot4d],
-  [48.4, 54.6, shot5a], [54.6, 60.4, shot5b],
-  [60.4, 66.0, shot6a], [66.0, 70.0, shot6b], [70.0, 72.4, shot6c],
-  [72.4, 76.6, shot7a], [76.6, 80.4, shot7b], [80.4, 88.0, shot8], [88.0, 90.4, titleCard]
+  [0.0, 4.5, sp(shot1, 6.6 / 4.5)], [4.5, 8.3, sp(shot2a, 1.26)], [8.3, 10.5, sp(shot2b, 1, .9)],
+  [10.5, 12.5, sp(shot3a)], [12.5, 14.4, sp(shot3b, 1.26)], [14.4, 17.8, sp(shot3c, 1.29)], [17.8, 19.6, sp(shot3d, 1.44)],
+  [19.6, 22.4, sp(shot4a, 1.5)], [22.4, 24.4, sp(shot4b, 1.5)], [24.4, 33.4, sp(shot4c, 1.178)], [33.4, 35.4, sp(shot4d, 1.6)],
+  [35.4, 39.4, sp(shot5a, 1.2)], [39.4, 42.4, sp(shot5b, 1, 2.8)],
+  [42.4, 45.8, sp(shot6a, 1.2)], [45.8, 49.2, sp(shot6b)], [49.2, 50.8, sp(shot6c)],
+  [50.8, 54.2, sp(shot7a, 1.235)], [54.2, 56.6, sp(shot7b, 1.3)], [56.6, 63.6, sp(shot8, 1.086)], [63.6, 65.4, (u) => titleCard(u)]
 ];
-const FLASHES = [3.55, 4.25, 4.75, 5.55, 7.9, 8.5, 9.3, 10.1, 10.9, 11.6, 12.2];
+const FLASHES = [2.6, 3.2, 3.8, 5.3, 5.9, 6.6, 7.3, 7.9, 8.5];
 const SUBS = [
-  [0.35, 3.35, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
-  [3.45, 4.85, '', 'Ya çok seversin…', ''],
-  [4.95, 6.5, '', '…ya da başka', 'çaren yoktur.'],
-  [7.4, 9.4, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
-  [9.6, 12.8, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
-  [18.2, 20.3, 'YUSUF', 'Sol bek içeri kayacak…', ''],
-  [21.9, 23.5, 'YUSUF', 'Bak. Bak.', ''],
-  [27.8, 31.3, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
-  [34.8, 37.5, 'KEREM', 'Yusuf. Bir kahveme gel.', 'Sadece bir kahve.'],
-  [37.8, 40.1, 'YUSUF', 'Kero…', 'Ben o işleri bıraktım.'],
-  [40.4, 42.2, 'KEREM', 'Kahve diyorum oğlum.', 'Kahve.'],
-  [43.0, 44.9, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
-  [48.8, 51.6, '', 'Karaocak\'ta her şey griydi.', 'Duman, beton, insanlar.'],
-  [51.8, 54.4, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
-  [55.0, 57.4, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
-  [57.6, 60.0, '', 'O sabah da sızlıyordu.', ''],
-  [66.3, 67.8, 'MALZEMECİ', 'Şekerli mi?', ''],
-  [68.0, 69.6, 'MEMUR', 'İki.', ''],
-  [72.8, 76.4, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
-  [80.8, 83.4, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
-  [83.6, 85.2, '', 'Kahveyi hiç içmedi.', ''],
-  [85.4, 87.6, '', 'Ama bir daha da', 'oradan ayrılmadı.']
+  [0.2, 2.3, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
+  [2.4, 3.3, '', 'Ya çok seversin…', ''],
+  [3.4, 4.45, '', '…ya da başka', 'çaren yoktur.'],
+  [4.9, 6.6, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
+  [6.8, 9.6, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
+  [12.6, 14.3, 'YUSUF', 'Sol bek içeri kayacak…', ''],
+  [15.6, 16.9, 'YUSUF', 'Bak. Bak.', ''],
+  [19.8, 22.3, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
+  [24.57, 26.86, 'KEREM', 'Yusuf. Bir kahveme gel.', 'Sadece bir kahve.'],
+  [27.12, 29.07, 'YUSUF', 'Kero…', 'Ben o işleri bıraktım.'],
+  [29.32, 30.85, 'KEREM', 'Kahve diyorum oğlum.', 'Kahve.'],
+  [31.53, 33.2, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
+  [35.6, 37.2, '', 'Karaocak\'ta her şey griydi.', ''],
+  [37.3, 39.3, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
+  [39.6, 42.2, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
+  [46.1, 47.4, 'MALZEMECİ', 'Şekerli mi?', ''],
+  [47.8, 49.0, 'MEMUR', 'İki.', ''],
+  [51.0, 54.0, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
+  [56.9, 59.4, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
+  [59.6, 60.9, '', 'Kahveyi hiç içmedi.', ''],
+  [61.1, 63.2, '', 'Ama bir daha da', 'oradan ayrılmadı.']
 ];
-const CAPTIONS = [[15.2, 17.8, 'Birkaç hafta sonra.']];
-const TOTAL = 90.4;
+const CAPTIONS = [[10.6, 12.4, 'Birkaç hafta sonra.']];
+const TOTAL = 65.4;
+const END_T = 63.6;
 
 function renderFrame(t) {
   let body = '';
   for (const [a, b, fn] of SHOTS) if (t >= a && t < b) { body = fn(t - a, t); break; }
-  if (!body) body = titleCard(t - 88);
+  if (!body) body = titleCard(t - END_T);
   let s = DEFS + body;
-  if (t < 88) s += `<rect width="1080" height="1920" fill="url(#vig)"/>`;
+  if (t < END_T) s += `<rect width="1080" height="1920" fill="url(#vig)"/>`;
   // flashes (press)
   const f = flashAmt(t, FLASHES); if (f > 0) s += `<rect width="1080" height="1920" fill="#fff" opacity="${f.toFixed(3)}"/>`;
   // fade to black before title
-  if (t > 86.9 && t < 88) s += `<rect width="1080" height="1920" fill="#000" opacity="${E((t - 86.9) / .8)}"/>`;
+  if (t > END_T - .7 && t < END_T) s += `<rect width="1080" height="1920" fill="#000" opacity="${E((t - (END_T - .7)) / .6)}"/>`;
   // short dip between shots to soften hard cuts? (kept as hard cuts)
   for (const [a, b, txt] of CAPTIONS) if (t > a && t < b) { const o = Math.min(C((t - a) / .2), C((b - t) / .2)); s += `<g opacity="${o}"><rect x="60" y="150" width="420" height="68" rx="8" fill="#000" opacity=".55"/><text x="86" y="196" font-family="Inter" font-weight="700" font-style="italic" font-size="36" fill="#efe8dc">${txt}</text></g>`; }
   let sh = null; for (const x of SUBS) if (t >= x[0] && t <= x[1]) sh = x;
