@@ -222,9 +222,9 @@ function titleCard2(u) { return `<rect width="1080" height="1920" fill="#0b0b0c"
 const SHOTS2 = [
   [0.0, 4.5, e2s1a], [4.5, 5.6, e2s1b], [5.6, 13.0, e2s1c],
   [13.0, 21.5, e2s2a], [21.5, 24.5, e2s2b], [24.5, 28.0, e2s2c],
-  [28.0, 31.0, e2s3], [31.0, 38.0, e2s4a], [38.0, 39.6, e2s4b], [39.6, 41.8, e2s4c], [41.8, 45.4, e2s4d],
-  [45.4, 49.4, e2s5a], [49.4, 51.0, e2s5b], [51.0, 53.8, e2s5c], [53.8, 55.8, e2s5d],
-  [55.8, 61.8, e2s6], [61.8, 63.6, (u) => titleCard2(u)]
+  [28.0, 31.0, e2s3], [31.0, 40.2, (u, t) => goalSeq(u, t)], [40.2, 41.8, e2s4b], [41.8, 44.0, e2s4c], [44.0, 47.6, e2s4d],
+  [47.6, 51.6, e2s5a], [51.6, 53.2, e2s5b], [53.2, 56.0, e2s5c], [56.0, 58.0, e2s5d],
+  [58.0, 64.0, e2s6], [64.0, 65.8, (u) => titleCard2(u)]
 ];
 const SUBS2 = [
   [5.8, 7.2, 'KEREM', 'Sade. Unutmadım.', ''],
@@ -235,15 +235,15 @@ const SUBS2 = [
   [19.0, 21.2, 'KEREM', 'Bütün şehir bağırmıştı.', ''],
   [21.7, 24.2, 'YUSUF', 'Ben artık sadece', 'izliyorum, Kero.'],
   [24.7, 27.0, 'KEREM', 'O zaman gel…', 'buradan izle.'],
-  [38.1, 39.5, 'ARKADAŞI', 'Pas versene!', ''],
-  [39.7, 41.6, 'EMİR', 'Verseydim gol olur muydu?', ''],
-  [41.9, 43.7, '', 'Mahallede Emir Kılıç\'ı', 'herkes iki şeyle tanırdı.'],
-  [43.8, 45.3, '', 'Sol ayağı…', 've sol kroşesi.'],
-  [45.6, 48.9, 'SAVUNMACI', 'Babana sor bakalım,', 'bu hafta kaç kupon yattı?'],
-  [56.0, 58.6, '', 'O akşam Emir\'in babası', 'yine kaybetti.'],
-  [58.8, 61.2, '', 'Ama kaybettiği şey', 'para değildi.']
+  [40.3, 41.7, 'ARKADAŞI', 'Pas versene!', ''],
+  [41.9, 43.8, 'EMİR', 'Verseydim gol olur muydu?', ''],
+  [44.1, 45.9, '', 'Mahallede Emir Kılıç\'ı', 'herkes iki şeyle tanırdı.'],
+  [46.0, 47.5, '', 'Sol ayağı…', 've sol kroşesi.'],
+  [47.8, 51.1, 'SAVUNMACI', 'Babana sor bakalım,', 'bu hafta kaç kupon yattı?'],
+  [58.2, 60.8, '', 'O akşam Emir\'in babası', 'yine kaybetti.'],
+  [61.0, 63.4, '', 'Ama kaybettiği şey', 'para değildi.']
 ];
-const END2 = 61.8, TOTAL2 = 63.6;
+const END2 = 64.0, TOTAL2 = 65.8;
 
 function renderFrame2(t) {
   let body = '';
