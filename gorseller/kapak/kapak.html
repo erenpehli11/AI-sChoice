@@ -6,8 +6,8 @@
 // Instagram/TikTok profil ızgarası 9:16 kapağın ortasını ~3:4 kırpar: güvenli alan y 240..1680
 function logo(x, y, s = 1) {
   return `<g transform="translate(${x} ${y}) scale(${s})" font-family="Inter" font-weight="900">
-    <circle cx="0" cy="-46" r="58" fill="none" stroke="${ORANGE}" stroke-width="16"/><path d="M-24 -26 Q0 -96 24 -26 Q0 -40 -24 -26Z" fill="${ORANGE}"/>
-    <text x="74" y="0" font-size="128" letter-spacing="10" fill="#efe8dc">CAK</text></g>`;
+    <text x="0" y="0" text-anchor="middle" font-size="150" letter-spacing="18" fill="#efe8dc">OCAK</text>
+    <rect x="-250" y="30" width="500" height="10" fill="${ORANGE}"/>${crest(0, 112, 50)}</g>`;
 }
 function objCup() {
   return `<g><ellipse cx="0" cy="150" rx="250" ry="56" fill="#efe9dc" ${S(8)}/><ellipse cx="0" cy="140" rx="200" ry="38" fill="none" ${LN(4, '#b9b1a0')}/>
@@ -39,15 +39,15 @@ function cover(n, title, obj, tint) {
   s += `<rect x="150" y="1300" width="34" height="400" fill="#2a2c2b"/><rect x="860" y="1240" width="44" height="460" fill="#2a2c2b"/><rect y="1700" width="1080" height="220" fill="#151615"/>`;
   // giant number (outline + fill) — the grid's anchor
   const num = String(n).padStart(2, '0');
-  s += `<text x="540" y="1060" text-anchor="middle" font-family="Inter" font-weight="900" font-size="640" letter-spacing="-20" fill="${ORANGE}" opacity=".95">${num}</text>`;
-  s += `<text x="540" y="1060" text-anchor="middle" font-family="Inter" font-weight="900" font-size="640" letter-spacing="-20" fill="none" stroke="#15120f" stroke-width="14">${num}</text>`;
+  s += `<text x="540" y="1120" text-anchor="middle" font-family="Inter" font-weight="900" font-size="600" letter-spacing="-20" fill="${ORANGE}" opacity=".95">${num}</text>`;
+  s += `<text x="540" y="1120" text-anchor="middle" font-family="Inter" font-weight="900" font-size="600" letter-spacing="-20" fill="none" stroke="#15120f" stroke-width="14">${num}</text>`;
   // object over the number
-  s += `<g transform="translate(560 1080)">${obj()}</g>`;
+  s += `<g transform="translate(560 1120) scale(.94)">${obj()}</g>`;
   // title block (inside safe area)
   s += `<rect x="90" y="1400" width="900" height="150" rx="10" fill="#efe8dc"/><text x="540" y="1505" text-anchor="middle" font-family="Inter" font-weight="900" font-size="84" letter-spacing="4" fill="#15120f">${title}</text>`;
   s += `<text x="540" y="1620" text-anchor="middle" font-family="Inter" font-weight="800" font-size="40" letter-spacing="14" fill="#efe8dc" opacity=".85">BÖLÜM ${n}</text>`;
   // series logo top (inside safe area)
-  s += logo(390, 380, .9);
+  s += logo(550, 400, .95);
   return s;
 }
 const COVERS = { 1: ['BİR KAHVE', objCup, '#f5c97e'], 2: ['SOL KROŞE', objBall, '#d79a72'], 3: ['DÜDÜK', objWhistle, '#9cc3d8'], 4: ['VERESİYE', objDefter, '#e0b48f'] };

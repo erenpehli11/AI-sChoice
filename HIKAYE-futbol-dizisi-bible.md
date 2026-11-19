@@ -32,6 +32,13 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0k. v11 kararları (kullanıcı)
+
+- **Dizinin adı: OCAK.** Logo: "OCAK" tam yazılı, altında turuncu çizgi ve küçük kulüp arması (armanın "O" harfinin yerine geçtiği eski logo okunmadığı için iptal edildi).
+- **Kapak şablonu:** Dev turuncu bölüm numarası, bölüm simgesi, bölüm adı bandı ve "BÖLÜM X". Profil ızgarasının 3:4 güvenli alanının içinde.
+- **Eller:** El kütüphanesi v2 (`gorseller/eller/`) kabul edildi.
+- **Yayın:** Cumartesi başlıyor. İlk 4 bölümde maç yok. 2D maç motoru maçlarda ve taktik anlarında kullanılacak.
+
 ## 0j. v10 notları (kullanıcı geri bildirimi, KALICI)
 
 - **ELLER:** Mevcut eller kabul edilmedi. Her çizimde ellere özel dikkat gösterilecek. Yeni el kütüphanesi onaylanana kadar eller mümkün olduğunca kadraj dışında, cepte ya da bir nesnenin arkasında tutulacak.
