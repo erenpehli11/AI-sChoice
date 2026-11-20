@@ -2,7 +2,7 @@
 const CW = 1080, CH = 1350, NS = 10;
 const CREAM = '#efe8dc';
 const bg = (inner, vb) => `<svg x="0" y="0" width="${CW}" height="${CH}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice">${DEFS}${inner}</svg>`;
-const panel = (inner, x, y, w, h, vb) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice">${DEFS}${inner}</svg>`;
+const panel = (inner, x, y, w, h, vb) => `<svg x="${x}" y="${y}" width="${w}" height="${h}" viewBox="${vb}" preserveAspectRatio="xMidYMid slice">${DEFS}${DEFS2}${inner}</svg>`;
 const shade = (from, to, op = .85, col = '#0b0b0c') => {
   const id = 'sh' + Math.round(Math.random() * 1e9);
   return `<defs><linearGradient id="${id}" x1="0" y1="${from < to ? 0 : 1}" x2="0" y2="${from < to ? 1 : 0}"><stop offset="0" stop-color="${col}" stop-opacity="${op}"/><stop offset="1" stop-color="${col}" stop-opacity="0"/></linearGradient></defs><rect x="0" y="${Math.min(from, to)}" width="${CW}" height="${Math.abs(to - from)}" fill="url(#${id})"/>`;
@@ -34,10 +34,12 @@ const SLIDES = [
   () => {
     let s = `<rect width="${CW}" height="${CH}" fill="#16171a"/>`;
     s += T(64, 225, ['Üç insan.', 'Bir kulüp.'], { fs: 78, fw: 900 });
+    const portrait = (bgFill, body) => `<rect width="1080" height="1920" fill="${bgFill}"/><rect x="0" y="1150" width="1080" height="770" fill="#000" opacity=".12"/><g transform="translate(540 880) scale(2.5)">${body}</g>`;
+    const VB = '240 430 600 1040';
     const P = [
-      [shot3b(1, 15.8), '230 360 620 1075', 'YUSUF', ['Sakatlıktan sonra', 'hayattan çekilmiş', 'eski bir futbolcu.']],
-      [shot2a(1.5, 11), '200 300 680 1180', 'KEREM', ['Onu "sadece bir', 'kahve" için çağıran', 'çocukluk arkadaşı.']],
-      [`<image href="frames2/f01500.png" x="0" y="0" width="1080" height="1920"/>`, '250 540 580 1005', 'EMİR', ['Sol ayağıyla', 'mahallede kaybolan', '15 yaşında bir çocuk.']],
+      [portrait('url(#skyGrey)', yusufBodyOut() + yusufHead({ look: .05 })), VB, 'YUSUF', ['Sakatlıktan sonra', 'hayattan çekilmiş', 'eski bir futbolcu.']],
+      [portrait('#6b4e3a', keremBody() + keremHead({ smile: .7 })), VB, 'KEREM', ['Onu "sadece bir', 'kahve" için çağıran', 'çocukluk arkadaşı.']],
+      [portrait('#8a5a4a', emirBody() + emirHead({ smirk: 1 })), VB, 'EMİR', ['Sol ayağıyla', 'mahallede kaybolan', '15 yaşında bir çocuk.']],
     ];
     P.forEach(([inner, vb, name, cap], i) => {
       const x = 64 + i * 326, y = 400, w = 300, h = 520;
@@ -83,7 +85,7 @@ const SLIDES = [
     let s = `<rect width="${CW}" height="${CH}" fill="${ORANGE}"/>`;
     s += `<g transform="translate(860 1120)" opacity=".2">${crest(0, 0, 210)}</g>`;
     s += T(64, 330, ['Senaryo,', 'karakterler', 've hikâye', 'bana aittir.'], { fs: 118, fw: 900, fill: '#1b1b1d', lh: 132 });
-    s += T(64, 950, ['Yapay zekâ sadece fırçam.', 'Hikâyeyi o yazmadı.', 'Ben yazdım. Yıllar önce.'], { fs: 44, fw: 700, fill: '#1b1b1d', lh: 60 });
+    s += T(64, 950, ['Yapay zekâ sadece fırçam.', 'Ben yazdım. Yıllar önce.'], { fs: 44, fw: 700, fill: '#1b1b1d', lh: 60 });
     return s + chrome(8, false);
   },
   // 9 — kusursuz değil
