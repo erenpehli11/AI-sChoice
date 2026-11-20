@@ -34,8 +34,19 @@
 
 ## 0l. Sesler (kullanıcı)
 
-- **Anlatıcı / Ömer: Enes.** Kullanıcının diğer videolarında (ontwoos, onbooks) kullandığı ses. ElevenLabs çalışma alanında kayıtlı olan ses muhtemelen "Enes – Confident, Clear, Assertive, Charismatic" (voice_id `sZXOZNdVMeHi5J0uiQF7`). Teyit edilecek.
-- Diğer karakterler için adaylar dinletildi. Seçim bekleniyor. Emir için Enes artık kullanılmayacak.
+Kesin ses kadrosu (ElevenLabs, model `eleven_v4`):
+
+| Karakter | Ses | voice_id |
+|---|---|---|
+| Anlatıcı / Ömer (yetişkin) | Enes – Energetic and Lively | `W3uaElFBxHYNIC54Z4ty` |
+| Yusuf Demirci | Atlas | `jsAsQQM7mnaoyDprCcPp` |
+| Kerem Sezer | Macit | `rZGP0MToC5gVn6b5aCYN` |
+| Emir "Kibrit" Kılıç | Emir (genç) | `jFBxZxrA15JdanQEbGbB` |
+| Malzemeci | Ergun | `0DihkedLJYKoWg7H1u4d` |
+| Haciz memuru (yan rol) | Tan | `WDG9NaZ0U8Jp4ULwYYSd` |
+
+- Bölüm 1 sesleri ElevenLabs akışında: "OCAK – Bölüm 1 sesleri" (`Fu0kPVMu1yExN5OQze5P`).
+- Ağız hareketleri ses dalgasının zarfına bağlanır (`env1.js`: `talk(kim, t)`). Zamanlama sese göre ayarlanır, ses zamanlamaya göre değil.
 
 ## 0k. v11 kararları (kullanıcı)
 
