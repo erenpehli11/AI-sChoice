@@ -32,6 +32,11 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0l. Sesler (kullanıcı)
+
+- **Anlatıcı / Ömer: Enes.** Kullanıcının diğer videolarında (ontwoos, onbooks) kullandığı ses. ElevenLabs çalışma alanında kayıtlı olan ses muhtemelen "Enes – Confident, Clear, Assertive, Charismatic" (voice_id `sZXOZNdVMeHi5J0uiQF7`). Teyit edilecek.
+- Diğer karakterler için adaylar dinletildi. Seçim bekleniyor. Emir için Enes artık kullanılmayacak.
+
 ## 0k. v11 kararları (kullanıcı)
 
 - **Dizinin adı: OCAK.** Logo: "OCAK" tam yazılı, altında turuncu çizgi ve küçük kulüp arması (armanın "O" harfinin yerine geçtiği eski logo okunmadığı için iptal edildi).
