@@ -224,7 +224,7 @@ const SHOTS2 = [
   [13.0, 21.5, e2s2a], [21.5, 24.5, e2s2b], [24.5, 28.0, e2s2c],
   [28.0, 31.0, e2s3], [31.0, 40.2, (u, t) => goalSeq(u, t)], [40.2, 41.8, e2s4b], [41.8, 44.0, e2s4c], [44.0, 47.6, e2s4d],
   [47.6, 51.6, e2s5a], [51.6, 53.2, e2s5b], [53.2, 56.0, e2s5c], [56.0, 58.0, e2s5d],
-  [58.0, 64.0, e2s6], [64.0, 65.8, (u) => titleCard2(u)]
+  [58.0, 64.0, e2s6], [64.0, 66.8, (u) => titleCard(u, 2, 'SOL KROŞE', 'DÜDÜK')]
 ];
 const SUBS2 = [
   [5.8, 7.2, 'KEREM', 'Sade. Unutmadım.', ''],
@@ -243,12 +243,12 @@ const SUBS2 = [
   [58.2, 60.8, '', 'O akşam Emir\'in babası', 'yine kaybetti.'],
   [61.0, 63.4, '', 'Ama kaybettiği şey', 'para değildi.']
 ];
-const END2 = 64.0, TOTAL2 = 65.8;
+const END2 = 64.0, TOTAL2 = 66.8;
 
 function renderFrame2(t) {
   let body = '';
   for (const [a, b, fn] of SHOTS2) if (t >= a && t < b) { body = fn(t - a, t); break; }
-  if (!body) body = titleCard2(t - END2);
+  if (!body) body = titleCard(t - END2, 2, 'SOL KROŞE', 'DÜDÜK');
   let s = DEFS + DEFS2 + body;
   if (t < END2) s += `<rect width="1080" height="1920" fill="url(#vig)"/>`;
   if (t > END2 - .6 && t < END2) s += `<rect width="1080" height="1920" fill="#000" opacity="${E((t - (END2 - .6)) / .5)}"/>`;

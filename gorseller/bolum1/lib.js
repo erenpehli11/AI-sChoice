@@ -15,6 +15,7 @@ const SKIN_Y = 'url(#skinY)', SKIN_K = 'url(#skinK)', SKIN_O = 'url(#skinO)';
 
 // ---------- FINGER: segments with ink outline + nail at tip ----------
 function finger(points, w, skin, nail = true) {
+  points = points.map((q, i) => i === points.length - 1 ? [q[0] + .7, q[1] + .7] : q);
   const d = pts2d(points);
   let s = limb(d, w, skin, 6);
   // knuckle creases

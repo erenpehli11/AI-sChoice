@@ -157,8 +157,8 @@ function shot1(u) { // 0..6.6
   s += `<line x1="230" y1="1240" x2="480" y2="1240" ${LN(2)}/><line x1="560" y1="1240" x2="850" y2="1240" ${LN(2)}/>`;
   s += `<text x="560" y="1272" font-family="Inter" font-weight="600" font-size="18" fill="#6b625a">K. SEZER</text>`;
   s += `<path d="${SIG.d}" stroke="#1d2a52" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${SIG.L}" stroke-dashoffset="${SIG.L * (1 - p)}"/>`;
-  s += `<g transform="translate(${hx + 40 + 60 * lift} ${hy + 50 + 90 * lift}) scale(${sc}) rotate(-38)" opacity="${.3 - .12 * lift}" filter="url(#blur)">${handPen('#000', '#000', '#000', '#000')}</g>`;
-  s += `<g transform="translate(${hx + jit} ${hy}) scale(${sc}) rotate(-38)">${handPen(SKIN_K)}</g>`;
+  s += `<g transform="translate(${hx + 40 + 60 * lift} ${hy + 50 + 90 * lift}) scale(${sc}) rotate(-38)" opacity="${.3 - .12 * lift}" filter="url(#blur)">${hPenV2('#000', '#000', '#000')}</g>`;
+  s += `<g transform="translate(${hx + jit} ${hy}) scale(${sc}) rotate(-38)">${hPenV2(SKIN_K, 'url(#suit)')}</g>`;
   s += `</g></g>`;
   s += `<rect width="1080" height="1920" fill="url(#lamp)"/>`;
   return s;
@@ -199,7 +199,7 @@ function shot2a(u) { // 0..4.8
   s += limb(`M180 300 L${(rx + 180) / 2 + 40 * raise} ${(ry + 300) / 2 + 30} L${rx} ${ry}`, 64, '#30333b');
   s += `<g transform="translate(0 ${-raise * 6})">${keremHead({ smile: 1, mouth: (u > .8 && u < 2.8) ? (.5 + .5 * Math.sin(u * 22)) * .8 : 0, brow: raise })}</g>`;
   s += scarf(lx - 30, ly - 40, rx + 30, ry - 40, lerp(40, 10, raise), u);
-  s += `<g transform="translate(${lx} ${ly - 40})">${handFist(SKIN_K)}</g><g transform="translate(${rx} ${ry - 40}) scale(-1 1)">${handFist(SKIN_K)}</g>`;
+  s += `<g transform="translate(${lx} ${ly - 40}) scale(.75)">${hFist(SKIN_K)}</g><g transform="translate(${rx} ${ry - 40}) scale(-.75 .75)">${hFist(SKIN_K)}</g>`;
   s += `</g>`;
   // table + mics
   s += `<rect x="40" y="1300" width="1000" height="40" fill="#5a3a24" ${S(5)}/><rect x="60" y="1340" width="960" height="320" fill="#2f4a3a" ${S(5)}/>`;
@@ -259,9 +259,9 @@ function yusufSitting(o = {}) { // origin head centre, scale ~1
   // right arm (viewer left) resting on thigh; left arm (viewer right) hand rubbing knee brace
   const rub = o.rub || 0;
   s += limb(`M-200 300 L-230 440 L-130 560`, 70, '#5f6763');
-  s += `<g transform="translate(-120 566)">${handFist(SKIN_Y)}</g>`;
+  s += `<g transform="translate(-118 566) scale(.6)">${hFist(SKIN_Y)}</g>`;
   s += limb(`M200 300 L236 450 L${120 + rub * 12} ${600 + rub * 6}`, 70, '#5f6763');
-  s += `<g transform="translate(${112 + rub * 12} ${614 + rub * 6}) rotate(-90)">${handFist(SKIN_Y)}</g>`;
+  s += `<g transform="translate(${108 + rub * 10} ${612 + rub * 5}) scale(-.6 .6)">${hFist(SKIN_Y)}</g>`;
   s += `<g transform="translate(0 ${o.nod || 0})">${yusufHead(o)}</g>`;
   s += `<path d="M-230 520 C-240 330 -190 230 -60 200 L-46 110 C-80 120 -102 60 -102 8 C-104 -62 -82 -128 0 -128 L0 520Z" fill="#9cc3d8" opacity="${o.tv || .1}"/>`;
   return s;
@@ -273,7 +273,7 @@ function shot3a(u, t) { // 0..3.0
   s += `<rect x="-20" y="260" width="250" height="560" fill="url(#skyGrey)" ${S(6)}/><rect x="20" y="520" width="60" height="300" fill="#7b8180" ${S(3)}/><rect x="110" y="420" width="34" height="400" fill="#646a69" ${S(3)}/><path d="M-20 260 L230 260 L230 820 L-20 820" ${LN(10, '#4b3a2c')}/>`;
   s += `<path d="M150 230 L270 230 Q240 520 290 880 L150 880Z" fill="#8d6e5a" ${S(4)}/>`;
   // frame on wall right
-  s += `<rect x="760" y="330" width="250" height="200" fill="#7a5a3c" ${S(5)}/><rect x="780" y="350" width="210" height="160" fill="#b9b19c"/><g transform="translate(885 470) scale(.38)"><path d="M-18 -150 L18 -150 L24 -70 L-24 -70Z" fill="${ORANGE}"/><path d="M-18 -146 L-56 -196 M18 -146 L56 -196" stroke="${ORANGE}" stroke-width="16" stroke-linecap="round"/><circle cx="0" cy="-168" r="16" fill="#d6a586"/></g>`;
+  s += `<g transform="translate(880 440) scale(.6)">${goalPhoto()}</g>`;
   s += `<circle cx="120" cy="1000" r="300" fill="url(#warm)" opacity=".7"/>`;
   s += sofaBack();
   s += `<g transform="translate(540 760) scale(.95)">${yusufSitting({ look: -0.7, rub: Math.sin(u * 5), tv: .12 + .05 * Math.sin(t * 9) })}</g>`;
@@ -394,7 +394,7 @@ function shot4b(u) { // 0..3.0 — rings, hand grabs, lifts
   let s = `<g transform="${camT(540, 960, z)}">${tableTop()}`;
   s += `<g transform="translate(${566} ${1034}) rotate(-6)" opacity="${.45 * (1 - lift)}" filter="url(#blur)"><rect x="-190" y="-400" width="380" height="800" rx="44" fill="#000"/></g>`;
   s += `<g transform="translate(${px} ${py}) rotate(${rot})">${phoneArt('call', u)}`;
-  if (u > 1.2) s += `<g transform="translate(20 ${-330 - 700 * (1 - reach)}) scale(1.5)">${handGrab(SKIN_Y, 'url(#sweater)')}</g>`;
+  if (u > 1.2) s += `<g transform="translate(0 ${-280 - 700 * (1 - reach)}) rotate(-90) scale(1.5)">${hGrip(SKIN_Y, 'url(#sweater)', 150)}</g>`;
   s += `</g></g>`;
   return s;
 }
@@ -408,14 +408,14 @@ function shot4c(u, t) { // 0..10.6
   // TOP: Kerem in office
   s += `<clipPath id="top"><rect x="0" y="0" width="1080" height="950"/></clipPath><g clip-path="url(#top)">`;
   s += `<image href="${IMG_OFFICE}" x="-80" y="-330" width="1240" height="2204" preserveAspectRatio="none"/>`;
-  s += `<g transform="translate(560 ${470 + Math.sin(t * 1.3) * 3}) scale(1.15) rotate(-4)">${keremBody()}<g>${keremHead({ smile: u > 7.8 && u < 8.6 ? .45 : .9, mouth: kM })}</g><g transform="translate(-150 20) rotate(-6) scale(-1 1)">${handPhoneEar(SKIN_K)}</g></g>`;
+  s += `<g transform="translate(560 ${470 + Math.sin(t * 1.3) * 3}) scale(1.15) rotate(-4)">${keremBody()}<g>${keremHead({ smile: u > 7.8 && u < 8.6 ? .45 : .9, mouth: kM })}</g><g transform="translate(-160 46) rotate(-42)"><rect x="-40" y="-90" width="80" height="180" rx="14" fill="#15181b" ${S(4)}/><g transform="scale(-1 1)">${hGrip(SKIN_K, 'url(#suit)', 80)}</g></g></g>`;
   s += `<rect width="1080" height="950" fill="#000" opacity="${kSpeak ? 0 : .22}"/></g>`;
   // BOTTOM: Yusuf at home
   s += `<clipPath id="bot"><rect x="0" y="970" width="1080" height="950"/></clipPath><g clip-path="url(#bot)">`;
   s += `<image href="${IMG_HOME}" x="-200" y="250" width="1400" height="2489" preserveAspectRatio="none"/>`;
   s += `<rect x="0" y="970" width="1080" height="950" fill="#0e1214" opacity=".18"/>`;
   const yLook = u > 8.6 ? -0.6 : 0;
-  s += `<g transform="translate(560 1300) scale(1.15)">${yusufBodyHome()}<g>${yusufHead({ look: yLook, mouth: yM, blink: (u > 6.1 && u < 6.25) ? 1 : 0 })}</g><g transform="translate(-150 20) rotate(-6) scale(-1 1)">${handPhoneEar(SKIN_Y)}</g></g>`;
+  s += `<g transform="translate(560 1300) scale(1.15)">${yusufBodyHome()}<g>${yusufHead({ look: yLook, mouth: yM, blink: (u > 6.1 && u < 6.25) ? 1 : 0 })}</g><g transform="translate(-160 46) rotate(-42)"><rect x="-40" y="-90" width="80" height="180" rx="14" fill="#15181b" ${S(4)}/><g transform="scale(-1 1)">${hGrip(SKIN_Y, 'url(#sweater)', 80)}</g></g></g>`;
   s += `<rect x="0" y="970" width="1080" height="950" fill="#000" opacity="${yM > 0 || (u > 3 && u < 5.7) ? 0 : .22}"/></g>`;
   s += `<rect x="0" y="950" width="1080" height="20" fill="#0b0b0c"/>`;
   return s;
@@ -433,6 +433,13 @@ function goalPhoto() {
   s += `<g transform="translate(0 -80)">${yusufHead({ young: true })}</g></g>`;
   s += `<rect x="-200" y="-150" width="400" height="300" fill="#f0d9a8" opacity=".25"/></g>`;
   s += `<path d="M-200 -150 L200 150" ${LN(2, '#fff', .2)}/>`;
+  return s;
+}
+function shot4c2(u) { // the unread message, once more
+  let s = `<g transform="${camT(540, 960, 1.15 + .05 * E(u / .9))}"><rect width="1080" height="1920" fill="#5d4433"/><path d="M0 1200 Q540 1100 1080 1200 L1080 1920 L0 1920Z" fill="#6f523d"/>`;
+  s += `<g transform="translate(540 980) rotate(8)"><rect x="-200" y="-410" width="400" height="820" rx="52" fill="#15181b" stroke="#000" stroke-width="6"/><rect x="-190" y="-400" width="380" height="800" rx="44" fill="url(#phoneScreen)"/>`;
+  s += `<rect x="-170" y="-120" width="340" height="150" rx="22" fill="#e9eef2" opacity=".93"/><circle cx="-128" cy="-60" r="24" fill="#3f6fc4"/><text x="-92" y="-74" font-family="Inter" font-weight="800" font-size="28" fill="#14181c">Ömer</text><text x="-92" y="-38" font-family="Inter" font-weight="500" font-size="22" fill="#4a535a">Baba, cumartesi</text><text x="-92" y="-8" font-family="Inter" font-weight="500" font-size="22" fill="#4a535a">geliyor musun?</text><circle cx="148" cy="-96" r="9" fill="#3f6fc4"/>`;
+  s += `<text x="0" y="90" text-anchor="middle" font-family="Inter" font-weight="700" font-size="24" fill="#9fb0bc">1 okunmamış mesaj</text></g></g>`;
   return s;
 }
 function shot4d(u) { // 0..3.2
@@ -474,7 +481,7 @@ function shot5a(u, t) { // 0..6.2 — wide: city, workers, mural, Yusuf walking
   s += `<rect x="0" y="1500" width="1080" height="420" fill="#6f706c"/><rect x="0" y="1500" width="1080" height="18" fill="#8d8e89"/>`;
   for (let x = -40; x < 1100; x += 160) s += `<rect x="${x + ((u * 40) % 160)}" y="1690" width="90" height="12" fill="#c9c8c0" opacity=".5"/>`;
   // workers (silhouettes) walking left mid-distance
-  for (let i = 0; i < 5; i++) { const x = 980 - u * 70 - i * 80, b = Math.sin(u * 8 + i) * 4; s += `<g transform="translate(${x} ${1290 + b}) scale(.28)">${bodyStand('#4e5459', '#3a3e43', 130)}<circle cx="0" cy="-560" r="70" fill="#4e5459" ${S(5)}/><rect x="-74" y="-640" width="148" height="40" rx="20" fill="#5d6366"/></g>`; }
+  for (let i = 0; i < 5; i++) { const x = 1000 - u * 70 - i * 95 + (i % 2) * 20, y = 1290 + (i % 2) * 14; s += `<g transform="translate(${x} ${y - 70}) scale(-.5 .5)">${runner(u * 1.1 + i * .23, { shirt: '#4e5459', shirtF: '#3f4549', pants: '#33373b', pantsF: '#2a2d30', skin: '#a98a74', hair: '#2a2d30', speed: .32, lean: 2 })}</g>`; }
   // Yusuf walking (medium), left to right
   const x = lerp(140, 640, u / 6.2);
   s += `<g transform="translate(${x} 1480) scale(.58)">${yusufWalk(u * .9, 1)}</g>`;
@@ -540,6 +547,7 @@ function shot6a(u, t) { // 0..5.6 wide
   let s = `<g transform="${camT(540, 1300, 1 + .04 * E(u / 5.6))}">` + gateScene(lift, 0, t);
   s += `<g transform="translate(880 1560) scale(.42)">${smallMemur()}</g>`;
   const kx = lerp(1120, 990, E((u - 1) / 4)); s += `<g transform="translate(${kx} ${1560 + Math.sin(u * 7) * 3}) scale(-.4 .4)">${smallKitman(u)}</g>`;
+  const yx = lerp(-160, 230, E(u / 3.4)); s += `<g transform="translate(${yx} ${1580 - 440 * .46}) scale(.46)">${yusufWalk(Math.min(u * .9, 2.5), 1)}</g>`;
   s += `</g>`;
   return s;
 }
@@ -554,7 +562,7 @@ function shot6b(u, t) { // 0..4.0 two-shot
   s += `<path d="M-230 700 C-240 330 -190 232 -62 204 L62 204 C190 232 240 330 230 700Z" fill="url(#grey)" ${S(6)}/><path d="M-50 204 L0 330 L50 204Z" fill="#f2efe6" ${S(4)}/><path d="M-12 220 L0 400 L12 220Z" fill="#7a2f22" ${S(3)}/>`;
   s += `<path d="M-46 112 L-48 208 Q0 236 48 208 L46 112Z" fill="#cc9c78" ${S(5)}/>${memurHead({ mouth: mM })}`;
   s += `<rect x="-200" y="360" width="140" height="180" fill="#d8c79a" ${S(5)}/>`;
-  if (u > 1.9) s += `<g transform="translate(150 ${lerp(560, 300, E((u - 1.9) / .3))})">${handTwo(SKIN_K, 'url(#grey)')}</g>`;
+  if (u > 1.9) s += `<g transform="translate(150 ${lerp(560, 300, E((u - 1.9) / .3))})">${hTwoV2(SKIN_K, 'url(#grey)')}</g>`;
   s += `</g>`;
   // kit man (right) with tray
   s += `<g transform="translate(800 1260) scale(1.05)">`;
@@ -612,53 +620,59 @@ function shot7b(u, t) { // 0..3.8 close, wet eyes
 function shot8(u, t) { // 0..7.6
   const z = 1.18 - .16 * E(u / 7.6);
   let s = `<g transform="${camT(540, 1300, z)}">` + gateScene(0, null, t, { oil: true });
-  s += `<g transform="translate(460 1640) scale(.78)">${yusufBack()}</g>`;
+  s += `<g transform="translate(460 1640) scale(.78 ${.78 * (1 + .008 * Math.sin(u * 2.2))})">${yusufBack()}</g>`;
+  for (let i = 0; i < 6; i++) { const ph = ((u * .9 + i * .37) % 1); s += `<ellipse cx="${300 + i * 90}" cy="${1720 + (i % 3) * 30}" rx="${10 + ph * 40}" ry="${3 + ph * 10}" fill="none" stroke="#c9ccc8" stroke-width="2" opacity="${.6 * (1 - ph) * C(u / 2)}"/>`; }
   s += `</g>`;
-  s += rain(t, C(u / 3) * .55, 19);
+  s += rain(t, C(u / 3) * .85, 19);
   s += `<rect width="1080" height="1920" fill="#2a3035" opacity=".12"/>`;
   return s;
 }
-function titleCard(u) {
-  return `<rect width="1080" height="1920" fill="#0b0b0c"/><g opacity="${E(u / .5)}"><rect x="420" y="890" width="10" height="70" fill="${ORANGE}"/><text x="450" y="948" font-family="Inter" font-weight="900" font-size="64" letter-spacing="10" fill="#efe8dc">BÖLÜM 1</text></g>`;
+function titleCard(u, n = 1, name = 'BİR KAHVE', next = 'SOL KROŞE') {
+  const o = E(u / .5), o2 = E((u - .6) / .5);
+  return `<rect width="1080" height="1920" fill="#0b0b0c"/><g opacity="${o}" font-family="Inter" text-anchor="middle">
+    <text x="540" y="820" font-weight="900" font-size="150" letter-spacing="18" fill="#efe8dc">OCAK</text><rect x="290" y="850" width="500" height="10" fill="${ORANGE}"/>${crest(540, 932, 50)}
+    <text x="540" y="1100" font-weight="800" font-size="44" letter-spacing="10" fill="#efe8dc" opacity=".9">BÖLÜM ${n} · ${name}</text></g>
+    <g opacity="${o2}" font-family="Inter" text-anchor="middle"><rect x="240" y="1220" width="600" height="110" rx="55" fill="${ORANGE}"/><text x="540" y="1292" font-weight="900" font-size="46" fill="#fff">Yarın: ${next}</text></g>`;
 }
+
 
 // =============================== TIMELINE ===============================
 const sp = (fn, k = 1, off = 0) => (u, t) => fn(u * k + off, t);
 const SHOTS = [
   [0.0, 4.5, sp(shot1, 6.6 / 4.5)], [4.5, 8.3, sp(shot2a, 1.26)], [8.3, 10.5, sp(shot2b, 1, .9)],
   [10.5, 12.5, sp(shot3a)], [12.5, 14.4, sp(shot3b, 1.26)], [14.4, 17.8, sp(shot3c, 1.29)], [17.8, 19.6, sp(shot3d, 1.44)],
-  [19.6, 22.4, sp(shot4a, 1.5)], [22.4, 24.4, sp(shot4b, 1.5)], [24.4, 33.4, sp(shot4c, 1.178)], [33.4, 35.4, sp(shot4d, 1.6)],
-  [35.4, 39.4, sp(shot5a, 1.2)], [39.4, 42.4, sp(shot5b, 1, 2.8)],
-  [42.4, 45.8, sp(shot6a, 1.2)], [45.8, 49.2, sp(shot6b)], [49.2, 50.8, sp(shot6c)],
-  [50.8, 54.2, sp(shot7a, 1.235)], [54.2, 56.6, sp(shot7b, 1.3)], [56.6, 63.6, sp(shot8, 1.086)], [63.6, 65.4, (u) => titleCard(u)]
+  [19.6, 22.4, sp(shot4a, 1.5)], [22.4, 24.4, sp(shot4b, 1.5)], [24.4, 33.4, sp(shot4c, 1.178)], [33.4, 34.2, sp(shot4c2)], [34.2, 36.2, sp(shot4d, 1.6)],
+  [36.2, 40.2, sp(shot5a, 1.2)], [40.2, 43.2, sp(shot5b, 1, 2.8)],
+  [43.2, 46.6, sp(shot6a, 1.2)], [46.6, 50.0, sp(shot6b)], [50.0, 51.6, sp(shot6c)],
+  [51.6, 55.0, sp(shot7a, 1.235)], [55.0, 57.4, sp(shot7b, 1.3)], [57.4, 64.4, sp(shot8, 1.086)], [64.4, 67.2, (u) => titleCard(u)]
 ];
 const FLASHES = [2.6, 3.2, 3.8, 5.3, 5.9, 6.6, 7.3, 7.9, 8.5];
 const SUBS = [
-  [0.2, 2.3, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
-  [2.4, 3.3, '', 'Ya çok seversin…', ''],
-  [3.4, 4.45, '', '…ya da başka', 'çaren yoktur.'],
-  [4.9, 6.6, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
-  [6.8, 9.6, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
-  [12.6, 14.3, 'YUSUF', 'Sol bek içeri kayacak…', ''],
-  [15.6, 16.9, 'YUSUF', 'Bak. Bak.', ''],
-  [19.8, 22.3, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
+  [0.20, 2.30, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
+  [2.40, 3.30, '', 'Ya çok seversin…', ''],
+  [3.40, 4.45, '', '…ya da başka', 'çaren yoktur.'],
+  [4.90, 6.60, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
+  [6.80, 9.60, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
+  [12.60, 14.30, 'YUSUF', 'Sol bek içeri kayacak…', ''],
+  [15.60, 16.90, 'YUSUF', 'Bak. Bak.', ''],
+  [19.80, 22.30, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
   [24.57, 26.86, 'KEREM', 'Yusuf. Bir kahveme gel.', 'Sadece bir kahve.'],
   [27.12, 29.07, 'YUSUF', 'Kero…', 'Ben o işleri bıraktım.'],
   [29.32, 30.85, 'KEREM', 'Kahve diyorum oğlum.', 'Kahve.'],
-  [31.53, 33.2, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
-  [35.6, 37.2, '', 'Karaocak\'ta her şey griydi.', ''],
-  [37.3, 39.3, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
-  [39.6, 42.2, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
-  [46.1, 47.4, 'MALZEMECİ', 'Şekerli mi?', ''],
-  [47.8, 49.0, 'MEMUR', 'İki.', ''],
-  [51.0, 54.0, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
-  [56.9, 59.4, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
-  [59.6, 60.9, '', 'Kahveyi hiç içmedi.', ''],
-  [61.1, 63.2, '', 'Ama bir daha da', 'oradan ayrılmadı.']
+  [31.53, 33.20, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
+  [36.40, 38.00, '', 'Karaocak\'ta her şey griydi.', ''],
+  [38.10, 40.10, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
+  [40.40, 43.00, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
+  [46.90, 48.20, 'MALZEMECİ', 'Şekerli mi?', ''],
+  [48.60, 49.80, 'MEMUR', 'İki.', ''],
+  [51.80, 54.80, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
+  [57.70, 60.20, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
+  [60.40, 61.70, '', 'Kahveyi hiç içmedi.', ''],
+  [61.90, 64.00, '', 'Ama bir daha da', 'oradan ayrılmadı.']
 ];
 const CAPTIONS = [[10.6, 12.4, 'Birkaç hafta sonra.']];
-const TOTAL = 65.4;
-const END_T = 63.6;
+const TOTAL = 67.2;
+const END_T = 64.4;
 
 function renderFrame(t) {
   let body = '';
