@@ -15,7 +15,7 @@ Adı **OCAK.** Karakterleri, şehri, kulübü, ilk sahnesinden son cümlesine ka
 
 Yıllarca bu dizinin bir gün ekranda olacağına inandım. Dosyalar hazırladım, kapılar çaldım, toplantılara girdim. Bazıları ilgilendi, çoğu cevap bile vermedi. "Güzel ama riskli." "Futbol dizisi tutmaz." "Tanınan bir isim lazım." Bir noktadan sonra sektöre yenik düştüm. Hikâye bir klasörde kaldı.
 
-Ama Yusuf, Kerem, Emir ve Ömer kafamdan hiç çıkmadı.
+Ama Yusuf, Erkan, Emir ve Ömer kafamdan hiç çıkmadı.
 
 Bugün bu diziyi, kendi imkânlarımla, yapay zekâ araçlarını kullanarak yayınlamaya başlıyorum. Bu benim için bir tercih değil, bir mecburiyet. Bir yapım şirketim, bütçem, ekibim yok. Elimde sadece yazdığım hikâye ve onu anlatma inadı var.
 
@@ -201,7 +201,7 @@ Fırça değişti. Hikâye aynı.
 Karaocak'ta her şey griydi. Cumartesileri turuncuya dönerdi… Eskiden.
 
 Yusuf Demirci bir zamanlar bu şehrin sol ayağıydı. Dizi sakatlandı, hayattan çekildi.
-Bir gün çocukluk arkadaşı Kerem arar: "Bir kahveme gel. Sadece bir kahve."
+Bir gün çocukluk arkadaşı Erkan arar: "Bir kahveme gel. Sadece bir kahve."
 
 Bu diziyi yıllar önce yazdım, kimseye satamadım.
 Şimdi kendim anlatıyorum: her gün bir bölüm.

@@ -155,10 +155,12 @@ function shot1(u) { // 0..6.6
   s += `<text x="230" y="1150" font-family="Inter" font-weight="700" font-size="22" fill="${INK}">Devreden</text><text x="560" y="1150" font-family="Inter" font-weight="700" font-size="22" fill="${INK}">Devralan</text>`;
   s += `<path d="M232 1214 q30 -40 60 -6 q20 18 46 -10 q20 -16 40 4" stroke="#3a4c7a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".85"/>`;
   s += `<line x1="230" y1="1240" x2="480" y2="1240" ${LN(2)}/><line x1="560" y1="1240" x2="850" y2="1240" ${LN(2)}/>`;
-  s += `<text x="560" y="1272" font-family="Inter" font-weight="600" font-size="18" fill="#6b625a">K. SEZER</text>`;
+  s += `<text x="560" y="1272" font-family="Inter" font-weight="600" font-size="18" fill="#6b625a">E. SEZER</text>`;
   s += `<path d="${SIG.d}" stroke="#1d2a52" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="${SIG.L}" stroke-dashoffset="${SIG.L * (1 - p)}"/>`;
+  if (!window.NO_HAND) {
   s += `<g transform="translate(${hx + 40 + 60 * lift} ${hy + 50 + 90 * lift}) scale(${sc}) rotate(-38)" opacity="${.3 - .12 * lift}" filter="url(#blur)">${hPenV2('#000', '#000', '#000')}</g>`;
   s += `<g transform="translate(${hx + jit} ${hy}) scale(${sc}) rotate(-38)">${hPenV2(SKIN_K, 'url(#suit)')}</g>`;
+  }
   s += `</g></g>`;
   s += `<rect width="1080" height="1920" fill="url(#lamp)"/>`;
   return s;

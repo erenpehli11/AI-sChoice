@@ -20,13 +20,14 @@ function chrome(n, dark = true) {
   if (n < NS) s += `<text x="${CW - 64}" y="${CH - 56}" text-anchor="end" font-weight="700" font-size="28" fill="${c}" opacity=".8">kaydır →</text>`;
   return s + `</g>`;
 }
+const LOGO = (x, y, w) => { const h = w * 898 / 945; return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${w * .1}" fill="#fbfaf7"/><image href="parasite-logo.png" x="${x + w * .04}" y="${y + h * .04}" width="${w * .92}" height="${h * .92}"/>`; };
 function grain() { return `<rect width="${CW}" height="${CH}" fill="url(#vig)" opacity=".35"/>`; }
 
 const SLIDES = [
   // 1 — kapak
   () => bg(shot8(4.5, 3.1), '0 520 1080 1350') + shade(0, 780, .97) + shade(CH, 1050, .7) +
     T(64, 250, ['Bu hikâyeyi', `${hi('yıllar önce')}`, 'yazdım.'], { fs: 104, fw: 900 }) +
-    T(64, 590, ['Kimse yayınlamadı.', 'Şimdi ben yayınlıyorum.'], { fs: 44, fw: 600 }) + chrome(1),
+    T(64, 590, ['Kimse yayınlamadı.', 'Şimdi ben yayınlıyorum.'], { fs: 44, fw: 600 }) + shade(CH, 1080, .8) + LOGO(64, 1150, 130) + T(214, 1218, ['Parasite Series'], { fs: 30, fw: 800 }) + T(214, 1258, ['iş birliğiyle'], { fs: 26, fw: 500, fill: '#d6cfc3' }) + chrome(1),
   // 2 — şehir
   () => bg(shot5a(1.9, 44), '0 380 1080 1350') + shade(0, 700, .96) +
     T(64, 250, ['Gri bir sanayi şehri.'], { fs: 66 }) + T(64, 350, ['Batmak üzere olan', `bir ${hi('futbol kulübü')}.`], { fs: 66 }) + chrome(2),
@@ -38,7 +39,7 @@ const SLIDES = [
     const VB = '240 430 600 1040';
     const P = [
       [portrait('url(#skyGrey)', yusufBodyOut() + yusufHead({ look: .05 })), VB, 'YUSUF', ['Sakatlıktan sonra', 'hayattan çekilmiş', 'eski bir futbolcu.']],
-      [portrait('#6b4e3a', keremBody() + keremHead({ smile: .7 })), VB, 'KEREM', ['Onu "sadece bir', 'kahve" için çağıran', 'çocukluk arkadaşı.']],
+      [portrait('#6b4e3a', keremBody() + keremHead({ smile: .7 })), VB, 'ERKAN', ['Onu "sadece bir', 'kahve" için çağıran', 'çocukluk arkadaşı.']],
       [portrait('#8a5a4a', emirBody() + emirHead({ smirk: 1 })), VB, 'EMİR', ['Sol ayağıyla', 'mahallede kaybolan', '15 yaşında bir çocuk.']],
     ];
     P.forEach(([inner, vb, name, cap], i) => {
@@ -49,7 +50,7 @@ const SLIDES = [
     return s + chrome(3);
   },
   // 4 — imza
-  () => bg(shot1(2.2, 2.2), '0 140 1080 1350') + shade(0, 560, .6) + shade(0, 860, .97) + shade(CH, 980, .6) +
+  () => (() => { window.NO_HAND = true; const r = bg(shot1(6.6, 6.6), '0 90 1080 1350'); window.NO_HAND = false; return r; })() + `<rect width="${CW}" height="500" fill="#120f0d" opacity=".94"/>` + `<g transform="translate(0 500)">${shade(0, 300, .94, '#120f0d')}</g>` + shade(CH, 1100, .5) +
     T(64, 245, [`Adı ${hi('OCAK')}.`], { fs: 92, fw: 900 }) +
     T(64, 360, ['Karakterleri, şehri, kulübü,', 'ilk sahnesinden son cümlesine', `kadar her şeyi ${hi('ben yazdım.')}`], { fs: 48, fw: 700 }) + chrome(4),
   // 5 — kapılar
@@ -73,7 +74,7 @@ const SLIDES = [
       `<rect x="-350" y="-120" width="700" height="350" fill="#8d877a" opacity=".22"/></g>`;
     for (let i = 0; i < 70; i++) s += `<circle cx="${220 + (i * 137) % 640}" cy="${360 + (i * 89) % 420}" r="${1 + (i % 3)}" fill="#e8e0cf" opacity=".18"/>`;
     s += T(64, 940, ['Bir noktadan sonra', `${hi('sektöre yenik düştüm.')}`, 'Hikâye bir klasörde kaldı.'], { fs: 56, fw: 800 });
-    s += T(64, 1170, ['Ama Yusuf, Kerem, Emir ve Ömer', 'kafamdan hiç çıkmadı.'], { fs: 34, fw: 500, fill: '#bdb6aa', italic: true });
+    s += T(64, 1170, ['Ama Yusuf, Erkan, Emir ve Ömer', 'kafamdan hiç çıkmadı.'], { fs: 34, fw: 500, fill: '#bdb6aa', italic: true });
     return s + chrome(6);
   },
   // 7 — şimdi
@@ -95,12 +96,14 @@ const SLIDES = [
   // 10 — final
   () => {
     let s = `<rect width="${CW}" height="${CH}" fill="#0b0b0c"/>`;
-    s += T(540, 300, ['Karaocak\'ta her şey griydi.'], { fs: 46, fw: 600, fill: '#9a978f', anchor: 'middle', italic: true });
-    s += T(540, 370, [`Cumartesileri ${hi('turuncuya')} dönerdi.`], { fs: 46, fw: 600, anchor: 'middle', italic: true });
-    s += `<g font-family="Inter" text-anchor="middle"><text x="540" y="640" font-weight="900" font-size="170" letter-spacing="20" fill="${CREAM}">OCAK</text><rect x="270" y="676" width="540" height="12" fill="${ORANGE}"/></g>${crest(540, 770, 52)}`;
-    s += `<rect x="190" y="900" width="700" height="120" rx="60" fill="${ORANGE}"/>` + T(540, 980, ['CUMARTESİ BAŞLIYOR'], { fs: 50, fw: 900, fill: '#fff', anchor: 'middle', ls: 2 });
-    s += T(540, 1110, ['İlk bölüm profildeki linkte.'], { fs: 34, fw: 600, anchor: 'middle', fill: '#d6cfc3' });
-    s += T(540, 1170, ['İzle · Paylaş · Yaz'], { fs: 30, fw: 700, anchor: 'middle', fill: ORANGE, ls: 3 });
+    s += T(540, 230, ['Karaocak\'ta her şey griydi.'], { fs: 44, fw: 600, fill: '#9a978f', anchor: 'middle', italic: true });
+    s += T(540, 294, [`Cumartesileri ${hi('turuncuya')} dönerdi.`], { fs: 44, fw: 600, anchor: 'middle', italic: true });
+    s += `<g font-family="Inter" text-anchor="middle"><text x="540" y="520" font-weight="900" font-size="160" letter-spacing="20" fill="${CREAM}">OCAK</text><rect x="280" y="554" width="520" height="12" fill="${ORANGE}"/></g>${crest(540, 642, 48)}`;
+    s += `<rect x="190" y="740" width="700" height="116" rx="58" fill="${ORANGE}"/>` + T(540, 817, ['CUMARTESİ BAŞLIYOR'], { fs: 50, fw: 900, fill: '#fff', anchor: 'middle', ls: 2 });
+    s += T(540, 930, ['İlk bölüm profildeki linkte.'], { fs: 34, fw: 600, anchor: 'middle', fill: '#d6cfc3' });
+    s += T(540, 985, ['İzle · Paylaş · Yaz'], { fs: 30, fw: 700, anchor: 'middle', fill: ORANGE, ls: 3 });
+    s += `<rect x="340" y="1040" width="400" height="2" fill="#3a3a3d"/>` + T(540, 1090, ['PARASITE SERIES İŞ BİRLİĞİYLE'], { fs: 22, fw: 700, anchor: 'middle', fill: '#9a978f', ls: 4 });
+    s += LOGO(450, 1116, 180);
     return s + chrome(10);
   },
 ];

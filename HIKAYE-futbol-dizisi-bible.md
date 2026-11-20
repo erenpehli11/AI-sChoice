@@ -32,6 +32,11 @@
 - Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
 - Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
 
+## 0m. İsim değişikliği ve ortak yapım (kullanıcı)
+
+- **Kerem Sezer'in adı artık Erkan Sezer.** Eski dokümanlarda geçen "Kerem" Erkan'dır. Yusuf'un ona taktığı lakap "Kero" da değişmeli (öneri: "Erko"). Bölüm 1'in sesinde "Kerem Sezer" ve "Kero" geçen iki replik yeniden çekilmeli.
+- **Ortak yapım: Parasite Series.** Paylaşımlarda "Parasite Series iş birliğiyle" ibaresi ve Parasite Series logosu kullanılır.
+
 ## 0l. Sesler (kullanıcı)
 
 Kesin ses kadrosu (ElevenLabs, model `eleven_v4`):
