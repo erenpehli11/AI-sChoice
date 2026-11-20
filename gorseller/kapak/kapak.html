@@ -1,0 +1,55 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style>
+<script src="defs.js"></script><script src="lib.js"></script><script src="shots.js"></script><script src="lib2.js"></script><script src="futbol.js"></script></head>
+<body><svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="540" height="960"></svg>
+<script>
+// ===== Bölüm kapağı şablonu =====
+// Instagram/TikTok profil ızgarası 9:16 kapağın ortasını ~3:4 kırpar: güvenli alan y 240..1680
+function logo(x, y, s = 1) {
+  return `<g transform="translate(${x} ${y}) scale(${s})" font-family="Inter" font-weight="900">
+    <text x="0" y="0" text-anchor="middle" font-size="150" letter-spacing="18" fill="#efe8dc">OCAK</text>
+    <rect x="-250" y="30" width="500" height="10" fill="${ORANGE}"/>${crest(0, 112, 50)}</g>`;
+}
+function objCup() {
+  return `<g><ellipse cx="0" cy="150" rx="250" ry="56" fill="#efe9dc" ${S(8)}/><ellipse cx="0" cy="140" rx="200" ry="38" fill="none" ${LN(4, '#b9b1a0')}/>
+  <path d="M-150 -60 L150 -60 L130 110 Q0 160 -130 110Z" fill="#fbf7ee" ${S(8)}/><path d="M150 -20 q70 0 60 60 q-10 50 -78 40" ${LN(10)}/>
+  <ellipse cx="0" cy="-60" rx="150" ry="34" fill="#3b2216" ${S(7)}/><ellipse cx="-30" cy="-66" rx="50" ry="8" fill="#6a4030" opacity=".8"/>
+  <path d="M-110 60 Q0 90 110 60" ${LN(8, ORANGE, .9)}/><path d="M-40 -110 q-30 -70 10 -130 q30 -50 0 -110 M40 -110 q-30 -70 10 -130 q30 -50 0 -110" ${LN(9, '#fff', .75)}/></g>`;
+}
+function objBall() {
+  return `<g><g fill="#e3cba4" opacity=".9">${[[-200, 130, 90], [200, 140, 80], [-80, 170, 70], [100, 180, 70], [0, 150, 100]].map(([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}"/>`).join('')}</g>
+  ${ballSVG(0, 0, 190, 18)}<g ${LN(12, '#fff', .8)}><path d="M-260 -80 h-160 M-280 0 h-200 M-260 80 h-150"/></g></g>`;
+}
+function objWhistle() {
+  return `<g><path d="M60 -40 C220 -220 160 -420 -40 -460 C-240 -500 -330 -300 -240 -180" ${LN(10, ORANGE)}/><path d="M60 -40 C220 -220 160 -420 -40 -460" ${LN(4, '#9a4a1c', .8)}/>
+  <rect x="-40" y="-70" width="70" height="60" rx="10" fill="#c9ced2" ${S(7)}/>
+  <path d="M-260 -30 L40 -30 L40 60 Q40 150 -60 150 L-160 150 Q-260 150 -260 60Z" fill="url(#chromeW)" ${S(9)}/><path d="M-260 10 L-360 10 L-360 60 L-260 60" fill="#c9ced2" ${S(8)}/><circle cx="-110" cy="70" r="48" fill="#2a2420"/><path d="M-230 0 L20 0" ${LN(6, '#fff', .6)}/></g>`;
+}
+function objDefter() {
+  return `<g transform="rotate(-6)"><rect x="-230" y="-300" width="460" height="600" rx="14" fill="#7a5a3c" ${S(9)}/><rect x="-230" y="-300" width="46" height="600" fill="#5a3f28" ${S(6)}/>
+  <rect x="-140" y="-200" width="320" height="320" fill="#d8cdb6" ${S(6)}/>${crest(20, -50, 120)}<text x="20" y="170" text-anchor="middle" font-family="Inter" font-weight="900" font-size="40" letter-spacing="4" fill="#efe8dc">VERESİYE</text>
+  <path d="M-200 -300 v600 M-206 -260 h20 M-206 -180 h20 M-206 -100 h20 M-206 -20 h20 M-206 60 h20 M-206 140 h20 M-206 220 h20" ${LN(4, '#3a2a1c', .7)}/></g>`;
+}
+function cover(n, title, obj, tint) {
+  let s = `<defs><linearGradient id="chromeW" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d9497"/><stop offset=".45" stop-color="#f2f4f5"/><stop offset="1" stop-color="#7b8285"/></linearGradient>
+  <linearGradient id="cv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b3e3d"/><stop offset="1" stop-color="#1c1d1c"/></linearGradient>
+  <radialGradient id="cvg" cx=".5" cy=".46" r=".5"><stop offset="0" stop-color="${tint}" stop-opacity=".45"/><stop offset="1" stop-color="${tint}" stop-opacity="0"/></radialGradient></defs>`;
+  s += `<rect width="1080" height="1920" fill="url(#cv)"/><rect width="1080" height="1920" fill="url(#cvg)"/>`;
+  // city band
+  const r = rng(n * 7 + 3); for (let i = 0; i < 12; i++) { const x = i * 92 - 10, h = 120 + r() * 220; s += `<rect x="${x}" y="${1700 - h}" width="96" height="${h}" fill="#2a2c2b"/>`; }
+  s += `<rect x="150" y="1300" width="34" height="400" fill="#2a2c2b"/><rect x="860" y="1240" width="44" height="460" fill="#2a2c2b"/><rect y="1700" width="1080" height="220" fill="#151615"/>`;
+  // giant number (outline + fill) — the grid's anchor
+  const num = String(n).padStart(2, '0');
+  s += `<text x="540" y="1120" text-anchor="middle" font-family="Inter" font-weight="900" font-size="600" letter-spacing="-20" fill="${ORANGE}" opacity=".95">${num}</text>`;
+  s += `<text x="540" y="1120" text-anchor="middle" font-family="Inter" font-weight="900" font-size="600" letter-spacing="-20" fill="none" stroke="#15120f" stroke-width="14">${num}</text>`;
+  // object over the number
+  s += `<g transform="translate(560 1120) scale(.94)">${obj()}</g>`;
+  // title block (inside safe area)
+  s += `<rect x="90" y="1400" width="900" height="150" rx="10" fill="#efe8dc"/><text x="540" y="1505" text-anchor="middle" font-family="Inter" font-weight="900" font-size="84" letter-spacing="4" fill="#15120f">${title}</text>`;
+  s += `<text x="540" y="1620" text-anchor="middle" font-family="Inter" font-weight="800" font-size="40" letter-spacing="14" fill="#efe8dc" opacity=".85">BÖLÜM ${n}</text>`;
+  // series logo top (inside safe area)
+  s += logo(550, 400, .95);
+  return s;
+}
+const COVERS = { 1: ['BİR KAHVE', objCup, '#f5c97e'], 2: ['SOL KROŞE', objBall, '#d79a72'], 3: ['DÜDÜK', objWhistle, '#9cc3d8'], 4: ['VERESİYE', objDefter, '#e0b48f'] };
+window.renderCover = (n) => { const [t, o, c] = COVERS[n]; document.getElementById('svg').innerHTML = DEFS + DEFS2 + cover(n, t, o, c); };
+</script></body></html>

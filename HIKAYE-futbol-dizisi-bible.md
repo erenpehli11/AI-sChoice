@@ -1,0 +1,291 @@
+# Futbol Hikâyesi — Hikâye Kitabı (Bible) · v2
+
+> **v2 kararları (kullanıcı):** Ton karanlık değil, acı-tatlı. 1. bölümün kancası başkanın kulübü satın alması ve
+> teknik direktörü çağırması. Haciz 1. bölümün sonunda. Bahis oynayan genç futbolcu değil, **babası.**
+> Başkanın sakatlıktaki payı şimdilik rafta. Görseller final aşamasında Claude tarafından çizilecek.
+> Bu aşamada senaryo yazılmıyor, proje oturtuluyor. (`HIKAYE-bolum-01.md` eski bir taslak, geçersiz.)
+
+> Çalışma dokümanı. İsimler henüz belli değil, yer tutucu kullanılıyor:
+> **[TD]** teknik direktör · **[BAŞKAN]** · **[GENÇ]** genç futbolcu · **[OĞUL]** anlatıcı.
+> Kulüp tamamen kurgusal. Gerçek bir kulüp, kişi ya da olayla bağ kurulmayacak.
+
+---
+
+## 0. v3 kararları (kullanıcı)
+
+- **Şehir:** Gri bir sanayi şehri. Kulüp zamanla şehrin neşesi oluyor.
+- **[TD] ve [OĞUL]:** [TD] kendi oğluyla pek ilgilenmiyor. Yetişkin [OĞUL], [GENÇ]'i abisi gibi görüyor ve ona kızgın değil. Anlatıcının sesi kırgın değil, bağışlayıcı.
+- **1. bölümün sonu:** [TD] görüşme için kulübe geliyor ve haczi görüyor. Bu haciz ilk kez olmuyor, kulüpte bir rutin gibi.
+- **[BAŞKAN]:** Kulübü almaya **mecbur bırakılıyor.** Amaç kulübü biraz büyütüp hem bahis hem kara para işini kulüp üzerinden yürütmek.
+- **İlk 100 bölüm:** Şehir-kulüp ilişkisi, kulübün durumu ve engellere rağmen yükselişi.
+- **Büyük gizli bilgi:** Kulübün maddi durumu aslında o kadar kötü değil. [BAŞKAN] onu olduğundan kötü gösteriyor.
+
+## 0b. v4 kararları (kullanıcı)
+
+- **Haciz:** [TD]'nin kulübe geldiği ilk gün oluyor, [BAŞKAN]'ın kulübü satın aldığı gün değil. Satın alma ile [TD]'nin gelişi arasında bir zaman sıçraması var.
+- **[BAŞKAN]'ı mecbur bırakan güç:** İsimsiz bir güç. Kayınpeder, bu güç ile [BAŞKAN] arasında aracı.
+- **Lig:** Doğrudan **TFF 3. Lig** (profesyonel lig, maçlara bahis oynanabiliyor). Süper Amatör fikrinden vazgeçildi.
+- Maç sonuçları ve sezon gidişatı daha sonra konuşulacak.
+
+**3. Lig gerçekleri (2025-26, araştırma):**
+- 64 takım, 4 bölgesel grup, her grupta 16 takım. Grup birincileri doğrudan 2. Lig'e çıkıyor, play-off ile ek takımlar yükseliyor. Format sezondan sezona değişiyor, yazım öncesi tekrar teyit edilmeli.
+- Kadroda 25 yaş üstü en fazla **5 oyuncu** olabiliyor. Lig zorunlu olarak gençlerle oynuyor. [GENÇ]'in 15-16 yaşında takımda olması bu yüzden çok gerçekçi.
+- Maaşı ödenmeyen 3. Lig futbolcularının bakanlık önünde açıklama yaptığı haberler var. Yani kulübün maddi sıkıntısı gerçek hayattan bir zemin.
+
+## 0m. İsim değişikliği ve ortak yapım (kullanıcı)
+
+- **Kerem Sezer'in adı artık Erkan Sezer.** Eski dokümanlarda geçen "Kerem" Erkan'dır. Yusuf'un ona taktığı lakap "Kero" da değişmeli (öneri: "Erko"). Bölüm 1'in sesinde "Kerem Sezer" ve "Kero" geçen iki replik yeniden çekilmeli.
+- **Ortak yapım: Parasite Series.** Paylaşımlarda "Parasite Series iş birliğiyle" ibaresi ve Parasite Series logosu kullanılır.
+
+## 0l. Sesler (kullanıcı)
+
+Kesin ses kadrosu (ElevenLabs, model `eleven_v4`):
+
+| Karakter | Ses | voice_id |
+|---|---|---|
+| Anlatıcı / Ömer (yetişkin) | Enes – Energetic and Lively | `W3uaElFBxHYNIC54Z4ty` |
+| Yusuf Demirci | Atlas | `jsAsQQM7mnaoyDprCcPp` |
+| Kerem Sezer | Macit | `rZGP0MToC5gVn6b5aCYN` |
+| Emir "Kibrit" Kılıç | Emir (genç) | `jFBxZxrA15JdanQEbGbB` |
+| Malzemeci | Ergun | `0DihkedLJYKoWg7H1u4d` |
+| Haciz memuru (yan rol) | Tan | `WDG9NaZ0U8Jp4ULwYYSd` |
+
+- Bölüm 1 sesleri ElevenLabs akışında: "OCAK – Bölüm 1 sesleri" (`Fu0kPVMu1yExN5OQze5P`).
+- Ağız hareketleri ses dalgasının zarfına bağlanır (`env1.js`: `talk(kim, t)`). Zamanlama sese göre ayarlanır, ses zamanlamaya göre değil.
+
+## 0k. v11 kararları (kullanıcı)
+
+- **Dizinin adı: OCAK.** Logo: "OCAK" tam yazılı, altında turuncu çizgi ve küçük kulüp arması (armanın "O" harfinin yerine geçtiği eski logo okunmadığı için iptal edildi).
+- **Kapak şablonu:** Dev turuncu bölüm numarası, bölüm simgesi, bölüm adı bandı ve "BÖLÜM X". Profil ızgarasının 3:4 güvenli alanının içinde.
+- **Eller:** El kütüphanesi v2 (`gorseller/eller/`) kabul edildi.
+- **Yayın:** Cumartesi başlıyor. İlk 4 bölümde maç yok. 2D maç motoru maçlarda ve taktik anlarında kullanılacak.
+
+## 0j. v10 notları (kullanıcı geri bildirimi, KALICI)
+
+- **ELLER:** Mevcut eller kabul edilmedi. Her çizimde ellere özel dikkat gösterilecek. Yeni el kütüphanesi onaylanana kadar eller mümkün olduğunca kadraj dışında, cepte ya da bir nesnenin arkasında tutulacak.
+- **Futbol sahneleri:** Sürekli koşu animasyonu yapılmayacak. Yeni bir anlatım yöntemi seçilecek (öneriler sohbette).
+- **Ton:** Dünya beklenenden daha karanlık çıkıyor. Kullanıcı bunu kabul etti, daha uzun soluklu bir eser.
+- Çizim dili ve mekânlar beğenildi.
+
+## 0i. v9 kararları (kullanıcı)
+
+- **Kerem siyah saçlı** (önceki "saçları beyazlamış" notu iptal). Yusuf ile karışmaması için.
+- Bölüm hedef süresi ~60 sn.
+
+## 0h. KADRO — onaylı v3 (kullanıcı revizeleriyle)
+
+> 4. bölümde soyunma odasında Yusuf'un sorusu: **"Mevkiniz nedir?"** Cevaplar bu soruya göre yazılacak. Oyuncular ileride daha detaylı hazırlanacak.
+
+| İsim (lakap) | Yaş | Mevki | Meslek | Karakter | Futbolcu referansı |
+|---|---|---|---|---|---|
+| **Murat Kalkavan** ("Kaptan") | **34** | Stoper | Fabrika işçisi | Sessiz lider | Milan Škriniar |
+| **Cengiz** ("Şalter") | 26 | Kaleci | Elektrikçi | Takımın komiği | Dominik Livaković |
+| **Barış** | 19 | Sol kanat | Fırında sabah 4 vardiyası | Utangaç, çalışkan. 3. bölümdeki "Sol!" sahnesinin oyuncusu | — |
+| **Kadir** ("Berber") | 23 | **Top kesen orta saha** | Berber | **Kendine güvenen görev adamı.** "Top keser, saç keser." | — |
+| **Tolga** | 24 | Forvet | İnşaatta boyacı | Gol orucunda, özgüvensiz. **Zamanında çok yetenekli bilinen ama sakatlıklar yüzünden kariyeri geriye giden biri** | — |
+| **Ufuk** ("Kurye") | 20 | Sol bek, **sağ ayaklı** | **Motorlu** kurye | Hızlı ama hep geç kalıyor | — |
+
+- **Bilinçli boşluk:** Takımda topu taşıyan bir 10 numara yok. Emir'in gelişine zemin.
+- **Tolga ve Yusuf:** İkisinin de kariyeri sakatlıkla gerilemiş. İleride kullanılabilecek bir ayna.
+- 3. Lig kuralı: 25 yaş üstü 2 oyuncu var (Murat 34, Cengiz 26). Sınır 5.
+
+## 0g. Kadro önerisi v2 (ESKİ, yerini 0h aldı)
+
+| İsim (lakap) | Yaş | Mevki | Meslek | Karakter | "Neden hâlâ buradasın?" cevabı |
+|---|---|---|---|---|---|
+| Murat Kalkavan ("Kaptan") | 31 | Stoper | Çelik fabrikası, gece vardiyası, kaynakçı | Sessiz lider, az konuşur | Vardiyadan çıkıp buraya geliyorum hocam. Uyumadığım tek yer burası. |
+| Cengiz ("Şalter") | 26 | Kaleci | Elektrikçi | Takımın komiği | Bütün gün zaten elektrik çarpıyor hocam. Burada en azından top çarpıyor. |
+| Barış | 19 | Sol kanat ("Sol!" sahnesindeki) | Fırında sabah 4 vardiyası | Utangaç, çalışkan | *(önüne bakarak)* Simit getiriyorum hocam. Bir de… gol atmak istiyorum. |
+| Kadir ("Berber") | 23 | Orta saha | Berber | Geveze, takımın moral kaynağı | Herkesin saçını ben keserim hocam. Kimin ne derdi var, ben bilirim. |
+| Tolga | 24 | Forvet | İnşaatta boyacı | Gol orucunda, kendine güvensiz | On bir maçtır gol atamıyorum hocam. Ama tribünleri ben boyarım. |
+| Ufuk ("Kurye") | 20 | Sol bek | Motorlu kurye | Hızlı ama hep geç kalıyor | *(kask elinde, nefes nefese içeri dalar)* Geldim hocam! Ne soruyordunuz? |
+
+- **Bilinçli boşluk:** Takımda topu taşıyan bir 10 numara yok. İleride Emir'in gelişine zemin hazırlıyor.
+- 3. Lig kuralına uygun: 25 yaş üstü oyuncu sayısı 5'i geçmiyor (burada 2).
+
+## 0f. v8 kararları (kullanıcı) + takım önerisi
+
+**Kararlar:**
+- 2. bölüm kurgusu ve 3. bölüm önerileri (Düdük anı) onaylandı.
+- Bir süre takım ile Yusuf işlenecek. Takım antrenmandan sonra kulübün tadilat işlerine bakıyor. "Kulübü baştan yaratma" konsepti.
+- Futbolcuların farklı meslekleri var. Takım yavaş yavaş kuruluyor.
+
+**Öneri (henüz karar değil): Meslekleri tadilatta işe yarayan çekirdek kadro**
+- 3. Lig'de kadroda 25 yaş üstü en fazla 5 oyuncu olabiliyor. Kadro çoğunlukla genç, birkaç "abi" var.
+- Ekranda tanınacak 5-6 oyuncu olacak, diğerleri arka planda kalacak.
+
+| Mevki | Yaş | Meslek | Tadilattaki işi | Hikâyedeki işlevi |
+|---|---|---|---|---|
+| Kaptan / stoper | 31 | Çelik fabrikasında gece vardiyası | Kaynakçı: paslı kapıyı, kulübeyi onarır | Takımın abisi, sessiz lider |
+| Kaleci | 26 | Elektrikçi | Soyunma odasına elektriği geri getirir | Takımın komiği |
+| Kanat (Düdük sahnesindeki) | 19 | Fırında sabah 4 vardiyası | Antrenmana simit getirir | Yusuf'un ilk "öğrencisi" |
+| Orta saha | 23 | Berber | Soyunma odasında tıraş, dedikodu merkezi | Takımın moral kaynağı |
+| Forvet | 24 | İnşaatta boyacı | Tribünleri boyar | Gol orucu, kendine güveni yok |
+| Sol bek | 20 | Motorlu kurye | Malzeme taşır, hep geç kalır | Hızlı ama disiplinsiz |
+
+## 0e. v7 kararları (kullanıcı)
+
+- **[BAŞKAN]'ın bir kızı var** ("çocuğu yok" bilgisi iptal). İleride [GENÇ] ile bir bağı olacak. Şimdilik sadece not.
+- **Öneri zinciri:** [GENÇ]'in küçük kardeşi, [GENÇ]'i [OĞUL]'a (Ömer) öneriyor. [TD]'ye doğrudan değil.
+- **[GENÇ]'in babası:** Genel olarak kupon (iddaa) oynuyor ve kaybediyor. Mahalle maçlarına bahis **yok.**
+- **Mahalle sahası:** Düz toprak saha, ışık yok, filesiz kale. Türkiye gerçekleri.
+- **[TD]'nin kulübe bağlandığı an:** "Düdük" sahnesi (bkz. `HIKAYE-bolum-02-03-kurgu.md`).
+
+## 0d. v6 kararları (kullanıcı)
+
+- **Çizim stili:** A (Avrupa çizgi romanı) + C (yumuşak karikatür) karışımı. Kerem'in saçları daha beyaz, Yusuf'un saçı daha belirgin.
+- **[OĞUL]:** Hikâyenin başında **13 yaşında** (ilkokul fikri iptal).
+- **Tarihler:** Hikâyenin hangi yılda geçtiği belirtilmiyor.
+
+## 0c. Yan karakterler (v5)
+
+- **Malzemeci:** Kalıcı karakter. Yıllardır parasız çalışıyor ama kulübü bırakmıyor. Detaylar sonra.
+- **Yardımcı antrenör:** İlerleyen bölümlerde gelen genç bir üniversite öğrencisi. Bir antrenman ya da maç sırasında tribünden doğru bir taktik uyarıyı [TD]'nin duyacağı şekilde bağırıyor. Maçtan sonra [TD] onu yanına çağırıp iş teklif ediyor. Detaylar sonra.
+- Öncelik 3 ana karakterde. Diğer yan karakterler zamanla konuşulacak.
+
+## 1. Format
+
+- **Platform:** YouTube Shorts + Instagram Reels, dikey 9:16
+- **Süre:** 60–90 sn. Seslendirme en fazla ~150–190 kelime (Türkçe ≈ 2,2 kelime/sn, nefes payıyla).
+- **Yayın:** Hafta içi her gün 1 bölüm, hafta sonları 2 bölüm (haftada 9 bölüm).
+- **Yapı:** 30–40 bölümlük "arc" blokları. Her arc'ın kendi büyük finali var.
+- **Üretim:** Yapay zekâ ile görsel/video + yapay zekâ seslendirme.
+- **Her bölümde zorunlu:** İlk 2 sn'de kanca. Bölüm, ortada bırakılan bir soruyla (cliffhanger) ya da bir mini-sonla bitecek. Ekranda "Bölüm X" yazısı olacak. Algoritma bölümleri sırasız göstereceği için her bölüm tek başına da anlaşılabilmeli.
+
+---
+
+## 2. Anlatıcı — [OĞUL]
+
+- [TD]'nin oğlu. Hikâyeyi **yıllar sonra, yetişkin haliyle** anlatıyor.
+- **İzleyici bunu 1. bölümün sonunda öğreniyor:** Okul çıkışında tek başına bekleyen çocuğu görüyoruz ve anlatıcı "O çocuk bendim" diyor.
+- **Ses:** Yetişkin erkek, sakin, biraz yorgun, sıcak. Hiçbir zaman dramatik değil. Acıyı alttan veriyor.
+- **Neden bu kadar güçlü bir araç:**
+  - [TD]'nin pişmanlığı (hayattan çekilmesi) en çok oğlunu etkiledi. Anlatıcı yalnızca bir anlatıcı değil, **pişmanlığın ta kendisi.**
+  - O yıllarda küçük bir çocuk olduğu için **[BAŞKAN]'ı seviyordu** ("çikolata getiren amca"). Anlatıcı, [BAŞKAN]'ı çocukken gördüğü gibi anlatıyor. Böylece izleyici de onu sevecek ve [BAŞKAN]'ın [TD]'ye karşı yaptıkları gizli kalacak. (Bkz. §4 Koz.)
+  - Hikâyenin sonunu bildiği için "O gün bilmiyorduk ki…" gibi cümleler kurabilir. Ama bu cümleleri **seyrek** kullanmalı, arc başına en fazla 2–3 kez. Yoksa etkisini kaybeder.
+- **Kural:** Anlatıcı yalan söylemiyor ama **her şeyi de söylemiyor.** Yalnızca o yaşta gördüğünü ya da sonradan öğrenip anlatmayı seçtiğini anlatıyor.
+
+---
+
+## 3. Karakterler
+
+### [TD] — Teknik direktör
+- **Geçmiş:** Eski futbolcu. **Sol dizinden** sakatlandı ve kariyeri bitti. Bugün hâlâ hafif aksıyor, merdivenlerde dizini tutuyor.
+- **Pişmanlık:** Sakatlıktan sonra hayattan çekildi. Telefonlara çıkmadı, evden çıkmadı, ailesinden uzaklaştı. Evliliği bu yüzden bitti. Oğlunun ilk yıllarını kaçırdı. Bu pişmanlık **açıkça söylenmiyor, yavaş yavaş ortaya çıkıyor.**
+- **Bugün:** Boşanmış. Oğlu ilkokula yeni başladı ve annesiyle kalıyor. [TD]'nin maddi durumu kötü. Futbolculuk dönemi kazancını oğluna bırakmış. Futbolu ekrandan izliyor ve çok özlüyor.
+- **Karakter:** İletişimi güçlü, biraz hayalperest, umutlu (ama **başkaları için** umutlu, kendisi için değil). Çözüm odaklı, değişime açık, prensipli. Sevdikleri ya da bir proje için emeğinden asla kaçmıyor. Maddiyatla arası yok.
+- **Kusuru (hikâyeyi bozan şey):** İnsanlara, özellikle de eski dostu [BAŞKAN]'a inanmaktan vazgeçmiyor. Bu umut onu kör ediyor. Bir de dakikliği yok: oğlunu okuldan almayı sık sık unutuyor, geç kalıyor. Bu küçük ama yürek burkan bir tekrar olacak.
+- **İç çelişkisi:** "Kendinden vazgeçmiş ama başkaları için vazgeçmeyen adam."
+- **Referans:** Ted Lasso'nun insanlara inanma katmanı. Ama futbolu çok iyi biliyor ve o kadar neşeli değil.
+
+### [BAŞKAN]
+- **Geçmiş:** [TD]'nin çocukluk arkadaşı. Futbolun hemen her alanında bulunmuş: oyuncu, menajer, yönetici, ticaret. "Daha büyük olmak" istediği için yolları ayrılmış.
+- **Karakter:** Zeki, bencil, agresif, karizmatik, şeytan tüyü var. **Sürekli kendini ispat etmek istiyor ve hep güçlünün yanında duruyor.** Futbolu gerçekten seviyor.
+- **Özel hayat:** Güçlü bir iş adamının kızıyla evli, çocuğu yok, sadık değil. Kayınpeder hem gücünün kaynağı hem de tasması.
+- **Kulübü neden aldı:** Asıl amaç **kara para aklamak.** Hesap vermesi gereken karanlık insanlar var.
+- **Dönüm noktası (arc 1'in ortası/sonu):** [GENÇ]'in ne kadar büyük bir yetenek olduğunu fark ediyor ve dümen kırıyor. Artık çocuk onun için bir "varlık".
+- **Referans:** Deha'daki İskender Karan (Uğur Polat): karizmatik, insanların zaafını sezen, izleyiciyi bile ikna eden biri.
+- **İzleyiciye nasıl gösterilecek:** Sıcak, komik, cömert, "kurtarıcı" bir eski dost olarak. (Bkz. §4.)
+
+### [GENÇ] — Genç futbolcu
+- **Yaş:** 15–16. Hırçın, egoist, deli dolu bir futbol aşığı. Yeteneğine gereğinden fazla güveniyor.
+- **Aile:** Zor durumda. Bir abla ve bir erkek kardeşi var. (Anne-baba durumu §5'teki sır seçimine göre belirlenecek.)
+- **İnancı:** Dünyaca ünlü olacağına yürekten inanıyor. Futbol onun için bir seçenek değil, zorunluluk.
+- **Oyun seti:** Klasik 10 numara, solak. Oyunu koşarak değil görerek oynuyor. Lefter'in zarafeti, Özil'in pas vizyonu ve "tembel" eleştirisi (beden dili, savunma yapmıyor), Arda Güler'in duran topları ve genç yaşta kendine güveni.
+- **Referans:** Goal!'daki Santiago'nun hikâyesi (yoksulluk, sır, hayalin bedeli) + Gavin Harris'in egosu.
+- **Hikâyedeki girişi:** Kendi hikâyesi ayrı başlıyor. Takımda değil. [TD]'ye biri önerecek, [TD] gidip izleyecek ve onu ikna edecek.
+
+---
+
+## 4. Büyük koz: [BAŞKAN] hakkındaki gizli bilgi
+
+İzleyici [BAŞKAN]'ın [TD]'ye karşı kötü yanlarını **bilmeyecek.** Bu bilgi hikâyenin en büyük kozu.
+
+**Bilgi kontrolü kuralları:**
+1. [BAŞKAN]'ı her zaman ya [TD]'nin ya da çocuk [OĞUL]'un gözünden görüyoruz. İkisi de onu seviyor.
+2. Kara para tarafı **ima** ediliyor ama açıklanmıyor: telefonu kapatınca yüzünün değişmesi, bilinmeyen numaralar, "hallediyorum" cümlesi, gece gelen arabalar. İzleyici "bir şey var" diye düşünüyor ama ne olduğunu bilmiyor.
+3. [TD]'ye yönelik ihanet (sakatlık geçmişinde payı, verilmeyen sözler, arkadan yapılan pazarlıklar) **hiç ima edilmiyor**, ta ki açıklanacağı ana kadar.
+4. Anlatıcı bu konuda **en fazla bir cümleyle** sinyal veriyor, o da çok geç bir anda. Örneğin: "Kerem amcayı o zamanlar çok severdim."
+
+---
+
+## 5. [GENÇ]'in sırrı — öneriler
+
+| # | Sır | Artısı | Riski |
+|---|---|---|---|
+| **A** | **Babasının borcu.** Babası, [BAŞKAN]'ın hesap verdiği **aynı karanlık ağa** borçlu (ya da cezaevinde). Çocuk ailesini kurtarmak için oynuyor. | Üç karakteri tek bir düğümde bağlıyor. [BAŞKAN] bir gün çocuğun kim olduğunu öğrenince müthiş bir sahne çıkıyor. | Kurgu dikkatli kurulmazsa tesadüf gibi görünebilir. |
+| **B** | **Para için yasadışı bahisli maçlarda oynuyor.** Gece, mahalle arası, "para maçları". | Egosunu ve zorunluluğunu aynı anda açıklıyor. Lisans alırsa ortaya çıkma riski var. | Tek başına küçük kalıyor. A ile birlikte güçlü. |
+| **C** | **Gizli bir sağlık sorunu** (kalp ritim bozukluğu ya da dizinde erken hasar). | Santiago'nun astımına benziyor. Sol dizi seçilirse [TD]'nin ayna görüntüsü olur. Lisans muayenesi doğal bir patlama anı. | Ağır ve dram yüklü. Erken açılırsa hikâyeyi yorar. |
+| **D** | **Kimlik/yaş meselesi.** Abisinin ya da başka bir çocuğun kimliğiyle oynuyor. | Futbolda bilinen, gerçekçi bir konu. Sözleşme anında büyük bir kriz çıkıyor. | Çözüm bulmak zor. Karakteri "hilekâr" yapma riski var. |
+| **E** | **Ablası onun için fedakârlık yapıyor.** Ablanın işi ya da ilişkisi karanlık ağla bağlantılı ve çocuk bunu bilmiyor. | Duygusal açıdan güçlü. Yan karakter derinleşiyor. | Çocuğun kendi sırrı değil, ablanın sırrı oluyor. |
+
+**KARAR (v2): Bahis oynayan kişi babası.**
+- Babası bahis bağımlısı ve ailenin borcu bu yüzden büyüyor. [GENÇ], babasının kaybettiğini futbolla geri kazanmak zorunda olduğunu düşünüyor. Egosu da kısmen bundan geliyor: "Ben onun gibi olmayacağım."
+- **Tema aynası:** [TD] oğlunu yokluğuyla, [GENÇ]'in babası ise oğlunu bağımlılığıyla yarı yolda bırakmış. İki baba, iki oğul.
+- Borcun karanlık ağla bağlantısı (A) ileride kullanılabilecek bir seçenek olarak duruyor. Ton hafif tutulacağı için bu taraf arka planda kalacak.
+- C (sağlık sorunu) yedekte.
+
+---
+
+## 6. Kulüp
+
+- Köklü, geçmişte büyük günleri olmuş ama bugün düşmüş, **kurgusal** bir şehir kulübü. Alt ligde.
+- **[TD]'nin eski kulübü:** Futbolculuğunu burada yaptı. Otobüsün en arka koltuğu ondaydı.
+- **İlk bölümlerde gözümüze sokulacak maddi zorluklar** (somut görüntüler):
+  - Kulüp otobüsüne haciz (1. bölümün açılış kancası)
+  - Aylardır ödenmeyen maaşlar, oyuncuların antrenmana çıkmaması
+  - Soyunma odasında elektrik kesik, sıcak su yok
+  - Top sayısı yetersiz, formalar elden ele geçiyor
+  - Ölü çim, kırık tribün koltukları, tozlu kupa vitrini
+  - Malzemeci yıllardır parasız çalışıyor ama bırakmıyor (sıcak bir yan karakter)
+  - Taraftar protestosu, satış söylentileri
+- **Kara para mekanizması:** Ekranda yalnızca genel hatlarıyla ve ima yoluyla anlatılacak ("şişirilmiş transferler", "kimsenin tanımadığı sponsor"). Hikâye bir yöntem anlatmıyor, bir insanı anlatıyor.
+
+---
+
+## 6b. Ton
+
+- **Acı-tatlı (dramedi).** Ted Lasso'nun sıcaklığına daha yakın, Deha'nın karanlığına değil.
+- Karanlık unsurlar (kara para, borç) **arka planda bir gölge** gibi duruyor. Hikâyenin önünde insanlar, mizah ve futbol var.
+- Mizah kaynakları: soyunma odası, malzemeci, [BAŞKAN]'ın çekiciliği, [GENÇ]'in kibri, küçük [OĞUL]'un masum cümleleri.
+
+## 7. Arc 1 — bölüm akışı (ESKİ, GEÇERSİZ: Yalnızca ilk fikirleri gösteriyor. Kesinleşmiş tek bölüm `HIKAYE-bolum-01.md`.)
+
+| # | Odak | Olay | Bölüm sonu |
+|---|---|---|---|
+| 1 | Kulüp + [TD] + [OĞUL] | Otobüse haciz. [TD] haberi evde izliyor. Okuldan gelen bir telefonla aksayarak koşuyor. | "O çocuk bendim." Anlatıcı ortaya çıkıyor. |
+| 2 | Kulüp | Maaşlar, karanlık soyunma odası, protesto. Yönetim kulübü satmaya karar veriyor. | "Kulübü kim alacaktı? Herkes biliyordu, kimse söylemiyordu." |
+| 3 | [BAŞKAN] | Kurtarıcı olarak sahneye çıkıyor. Basın toplantısı, karizma, alkış. Çocuk [OĞUL] onu seviyor. | Kapalı kapı ardında bilinmeyen bir numara arıyor: "Tamam. Hallediyorum." |
+| 4 | [TD] + [BAŞKAN] | [BAŞKAN] [TD]'nin kapısını çalıyor. Yıllar sonra iki dost karşı karşıya. Teklifi yapıyor. | [TD]: "Ben o işi bıraktım." |
+| 5 | [TD] + [OĞUL] | Hafta sonu baba-oğul. Oğul soruyor: "Sen futbolcu muydun?" | [TD] eski formasını dolaptan çıkarıyor. |
+| 6 | Kulüp + [TD] | İlk antrenman günü. 14 oyuncu, 6 top, ölü çim. [TD]'nin çözüm odaklılığı ortaya çıkıyor. | Malzemeci: "Hocam, size bir çocuktan bahsetmem lazım." |
+| 7 | [GENÇ] | **Kendi hikâyesi başlıyor.** Mahalle, aile, abla, kardeş. Gece para maçı, inanılmaz bir gol. | Maçtan sonra eline tutuşturulan para. Yüzünde gülümseme yok. |
+| 8 | [GENÇ] | Bir seçmeden egosu yüzünden kovuluyor. Evde borç baskısı. | Kapıya gelen iki adam. |
+| 9 | [TD] → [GENÇ] | [TD] gidip izliyor. Çamurlu tribüne aksayarak çıkıyor. Çocuk harika oynuyor ama bencil. | [TD]'nin yüzü: yıllardır ilk kez bir şey hissediyor. |
+| 10 | [TD] + [GENÇ] | İlk karşılaşma. Çocuk küçümsüyor: "Senin takımın otobüsü bile yok." | [TD] cevap vermiyor, bir kâğıda bir saat yazıp bırakıyor. |
+| 11 | [GENÇ] | Evde kriz büyüyor. Ablanın fedakârlığı. Çocuk bir karar vermek zorunda. | Çocuk o saatte stadın önünde ama içeri girmiyor. |
+| 12 | [TD] + [GENÇ] | (Hafta sonu çift bölüm) [TD] çocuğu parayla değil, onun en çok istediği şeyle ikna ediyor. | Çocuk soyunma odasına giriyor. Anlatıcı: "Her şey o gün başladı. Ve o gün kimse bilmiyordu ki…" |
+
+Sonraki bölümler: Takıma uyum, egonun yarattığı çatışmalar, ilk maç. [BAŞKAN]'ın çocuğu fark ettiği an ise arc ortası.
+
+---
+
+## 8. Yapay zekâ üretim notları
+
+- **Karakter tutarlılığı:** Her karakter için sabit bir referans görseli (ön, profil, 3/4) ve sabit bir kıyafet seti. Prompt'larda aynı tanım kelimesi kelimesine tekrar edilecek.
+- **Aksaklık:** Yapay zekâ video modelleri aksak yürüyüşü tutarlı veremeyebilir. Bunun yerine **ima eden çekimler** kullanılacak: dizlik, merdivende dizini tutan el, oturmadan önce yüzünü buruşturması, uzaktan geniş plan. Aksaklığı ilk kez ve net olarak 1. bölümde, okula koşarken görüyoruz.
+- **Maç sahneleri:** Yapay zekâda en zor kısım bu. Kısa ve detaylı çekimler tercih edilecek: top ayakta, ağ sallanıyor, tribün tepkisi, ayak kontrolü yakın plan. Uzun aksiyon sekansları olmayacak.
+- **Sesler (4 ses):** Anlatıcı (yetişkin [OĞUL]), [TD], [BAŞKAN], [GENÇ]. Her biri için sabit bir ses profili kullanılacak. Karakterler kendi seslerini kısa ve etkili cümlelerde kullanacak, yükün çoğu anlatıcıda.
+- **Renk dili:** [TD]'nin dünyası soğuk, gri-mavi. Kulüp solmuş renklerde. [GENÇ]'in mahallesi gece, sarı sokak lambası. [BAŞKAN]'ın dünyası sıcak, altın tonlu, temiz (çekici olsun diye).
+
+---
+
+## 9. Açık kararlar
+
+- [ ] İsimler: [TD], [BAŞKAN], [GENÇ], [OĞUL], kulüp
+- [x] [GENÇ]'in sırrı → bahis oynayan baba
+- [~] [BAŞKAN]'ın sakatlıktaki payı → rafta
+- [ ] Anlatıcının ortaya çıkış anı: 1. bölümün sonu mu (haciz ile birlikte), yoksa 2. bölümün sonu mu?
+- [ ] Görsel üslup (bkz. sohbet: çizgi roman / hareketli illüstrasyon önerisi)
+- [ ] Anlatıcının "şimdiki zamanı": Kaç yıl sonra anlatıyor, bugün ne yapıyor? (İleride açılacak.)
+- [ ] Hikâyenin geçtiği şehir (kurgusal mı, gerçek bir şehir mi?)

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000}svg{display:block}</style></head>
+<body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="540" height="960">
+<defs>
+  <linearGradient id="walnut" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a3a24"/><stop offset="1" stop-color="#3a2416"/></linearGradient>
+  <radialGradient id="lamp" cx=".78" cy=".18" r=".9"><stop offset="0" stop-color="#ffd590" stop-opacity=".55"/><stop offset=".6" stop-color="#ffd590" stop-opacity=".08"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  <radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".45" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbf7ee"/><stop offset="1" stop-color="#ece4d2"/></linearGradient>
+  <linearGradient id="barrel" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0d0d0f"/><stop offset=".45" stop-color="#3a3d44"/><stop offset="1" stop-color="#0d0d0f"/></linearGradient>
+  <linearGradient id="sleeve" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b2e36"/><stop offset=".5" stop-color="#3a3e48"/><stop offset="1" stop-color="#1f2128"/></linearGradient>
+  <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1cba6"/><stop offset="1" stop-color="#cc9c78"/></linearGradient>
+  <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+  <filter id="blurS"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+
+<g id="cam">
+  <!-- desk -->
+  <rect x="-200" y="-200" width="1480" height="2320" fill="url(#walnut)"/>
+  <g stroke="#2e1c10" stroke-width="3" fill="none" opacity=".5">
+    <path d="M-200 300 Q300 280 1280 340"/><path d="M-200 760 Q500 720 1280 800"/><path d="M-200 1500 Q400 1460 1280 1540"/><path d="M-200 1850 Q600 1800 1280 1880"/>
+  </g>
+  <!-- leather blotter -->
+  <g transform="rotate(-6 540 1000)">
+    <rect x="90" y="430" width="900" height="1180" rx="18" fill="#2a1e1a" stroke="#1a120e" stroke-width="6"/>
+    <rect x="110" y="450" width="860" height="1140" rx="12" fill="none" stroke="#7a5a3c" stroke-width="3" stroke-dasharray="10 8" opacity=".6"/>
+  </g>
+  <!-- coffee cup corner (top-left) -->
+  <g transform="translate(40 230)">
+    <ellipse cx="80" cy="110" rx="120" ry="40" fill="#000" opacity=".35" filter="url(#blur)"/>
+    <ellipse cx="80" cy="80" rx="120" ry="44" fill="#fbf7ee" stroke="#2a2420" stroke-width="4"/>
+    <ellipse cx="80" cy="66" rx="64" ry="22" fill="#fbf7ee" stroke="#2a2420" stroke-width="4"/>
+    <ellipse cx="80" cy="64" rx="52" ry="16" fill="#3b2216"/>
+    <ellipse cx="70" cy="60" rx="16" ry="4" fill="#ffffff" opacity=".25"/>
+  </g>
+
+  <!-- document group (rotated) -->
+  <g id="doc" transform="rotate(-6 540 1000)">
+    <rect x="160" y="520" width="760" height="1000" fill="#000" opacity=".35" filter="url(#blur)" transform="translate(14 18)"/>
+    <rect x="160" y="520" width="760" height="1000" fill="url(#paper)" stroke="#2a2420" stroke-width="4"/>
+    <!-- crest + header -->
+    <circle cx="540" cy="612" r="40" fill="#D9652A" stroke="#2a2420" stroke-width="4"/>
+    <circle cx="540" cy="612" r="31" fill="none" stroke="#2a2420" stroke-width="3"/>
+    <path d="M526 626 Q540 586 554 626 Q540 616 526 626Z" fill="#2a2420"/>
+    <text x="540" y="694" text-anchor="middle" font-family="Inter" font-weight="800" font-size="30" letter-spacing="4" fill="#2a2420">DEVİR SÖZLEŞMESİ</text>
+    <text x="540" y="728" text-anchor="middle" font-family="Inter" font-weight="600" font-size="20" letter-spacing="3" fill="#6b625a">KARAOCAK DEMİRSPOR</text>
+    <line x1="230" y1="752" x2="850" y2="752" stroke="#2a2420" stroke-width="2"/>
+    <g fill="#b9b1a2">
+      <rect x="230" y="790" width="600" height="10" rx="5"/><rect x="230" y="818" width="560" height="10" rx="5"/><rect x="230" y="846" width="610" height="10" rx="5"/><rect x="230" y="874" width="420" height="10" rx="5"/>
+      <rect x="230" y="920" width="590" height="10" rx="5"/><rect x="230" y="948" width="600" height="10" rx="5"/><rect x="230" y="976" width="500" height="10" rx="5"/>
+      <rect x="230" y="1022" width="610" height="10" rx="5"/><rect x="230" y="1050" width="380" height="10" rx="5"/>
+    </g>
+    <text x="230" y="1150" font-family="Inter" font-weight="700" font-size="22" fill="#2a2420">Devreden</text>
+    <text x="560" y="1150" font-family="Inter" font-weight="700" font-size="22" fill="#2a2420">Devralan</text>
+    <path d="M232 1214 q30 -40 60 -6 q20 18 46 -10 q20 -16 40 4" stroke="#3a4c7a" stroke-width="4" fill="none" stroke-linecap="round" opacity=".85"/>
+    <line x1="230" y1="1240" x2="480" y2="1240" stroke="#2a2420" stroke-width="2"/>
+    <line x1="560" y1="1240" x2="850" y2="1240" stroke="#2a2420" stroke-width="2"/>
+    <text x="560" y="1272" font-family="Inter" font-weight="600" font-size="18" fill="#6b625a">K. SEZER</text>
+    <!-- the signature being drawn -->
+    <path id="sig" d="M572 1222 C580 1160 626 1160 618 1214 C614 1246 592 1236 604 1206 C616 1176 650 1184 656 1214 C662 1236 676 1196 692 1188 C708 1180 714 1220 730 1210 C746 1200 752 1170 774 1184 C790 1196 782 1222 806 1212 C826 1202 838 1180 860 1196"
+          stroke="#1d2a52" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#b9b1a2"><rect x="230" y="1330" width="610" height="10" rx="5"/><rect x="230" y="1358" width="480" height="10" rx="5"/></g>
+    <!-- pen + hand (origin = nib) -->
+    <g id="penShadow" opacity=".3" filter="url(#blur)"><g id="penShadowInner"></g></g>
+    <g id="hand"></g>
+  </g>
+</g>
+
+<!-- lamp light + vignette -->
+<rect width="1080" height="1920" fill="url(#lamp)"/>
+<rect width="1080" height="1920" fill="url(#vig)"/>
+<!-- flash -->
+<rect id="flash" width="1080" height="1920" fill="#ffffff" opacity="0"/>
+<!-- subtitles -->
+<g id="subs" font-family="Inter" font-weight="700" font-size="56" text-anchor="middle" fill="#fff" stroke="#000" stroke-width="10" paint-order="stroke" stroke-linejoin="round">
+  <text id="s1" x="540" y="1660" opacity="0"></text>
+  <text id="s2" x="540" y="1730" opacity="0"></text>
+</g>
+</svg>
+
+<script>
+const INK = '#2a2420';
+// Pen + hand artwork, origin at the nib (0,0), pen pointing down-left
+const handArt = `
+  <g transform="rotate(-38)">
+    <!-- sleeve + cuff come from upper-right, off-frame -->
+    <path d="M60 -330 L250 -330 L260 -900 L40 -900Z" fill="url(#sleeve)" stroke="${INK}" stroke-width="5"/>
+    <rect x="52" y="-360" width="206" height="70" rx="10" fill="#f6f4ee" stroke="${INK}" stroke-width="5"/>
+    <circle cx="232" cy="-325" r="11" fill="#c9a24a" stroke="${INK}" stroke-width="3"/>
+    <!-- pen barrel -->
+    <path d="M-9 -40 L9 -40 L14 -300 L-14 -300Z" fill="url(#barrel)" stroke="${INK}" stroke-width="4"/>
+    <rect x="-15" y="-150" width="30" height="16" fill="#c9a24a" stroke="${INK}" stroke-width="3"/>
+    <path d="M-9 -40 L0 0 L9 -40Z" fill="#c9a24a" stroke="${INK}" stroke-width="3"/>
+    <line x1="0" y1="-34" x2="0" y2="-6" stroke="${INK}" stroke-width="2"/>
+    <!-- hand -->
+    <path d="M30 -300 C110 -330 200 -310 230 -260 C250 -220 230 -150 190 -110 C150 -70 90 -70 60 -90 C40 -104 30 -130 26 -160Z" fill="url(#skin)" stroke="${INK}" stroke-width="5"/>
+    <path d="M30 -170 C10 -150 -6 -120 -10 -86 C-12 -70 4 -64 14 -76 C30 -100 40 -120 56 -134" fill="url(#skin)" stroke="${INK}" stroke-width="5"/>
+    <path d="M-4 -150 C-30 -160 -40 -190 -22 -214 C-6 -230 20 -220 26 -196" fill="url(#skin)" stroke="${INK}" stroke-width="5"/>
+    <path d="M90 -110 C110 -96 140 -96 160 -112 M110 -200 C140 -190 170 -200 190 -220" stroke="#b5835f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>`;
+const shadowArt = handArt.replace(/fill="[^"]*"/g, 'fill="#000"').replace(/stroke="[^"]*"/g, 'stroke="none"');
+document.getElementById('hand').innerHTML = handArt;
+document.getElementById('penShadowInner').innerHTML = shadowArt;
+
+const sig = document.getElementById('sig');
+const LEN = sig.getTotalLength();
+sig.style.strokeDasharray = LEN; sig.style.strokeDashoffset = LEN;
+
+const ease = (x) => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
+const clamp = (x) => Math.max(0, Math.min(1, x));
+
+// timeline (seconds)
+const T_DOWN0 = 0.3, T_DOWN1 = 1.2, T_SIG0 = 1.2, T_SIG1 = 3.1, T_UP1 = 3.6;
+const FLASHES = [3.55, 4.25, 4.75, 5.55];
+const SUBS = [
+  { a: 0.35, b: 3.35, l1: 'Bu şehirde bir kulübü', l2: 'iki sebeple alırsın.' },
+  { a: 3.45, b: 4.85, l1: 'Ya çok seversin…', l2: '' },
+  { a: 4.95, b: 6.6, l1: '…ya da başka', l2: 'çaren yoktur.' }
+];
+
+window.render = function (t) {
+  // camera slow push-in toward signature
+  const z = 1 + 0.10 * ease(t / 6.6);
+  document.getElementById('cam').setAttribute('transform', `translate(540 1000) scale(${z}) translate(-540 -1000) translate(${-30 * ease(t / 6.6)} ${-40 * ease(t / 6.6)})`);
+
+  // signature progress
+  const p = ease(clamp((t - T_SIG0) / (T_SIG1 - T_SIG0)));
+  sig.style.strokeDashoffset = LEN * (1 - p);
+  const start = sig.getPointAtLength(0);
+  const tip = sig.getPointAtLength(LEN * p);
+
+  // pen height: comes down, writes, lifts
+  let lift; // 0 = on paper
+  if (t < T_DOWN1) lift = 1 - ease(clamp((t - T_DOWN0) / (T_DOWN1 - T_DOWN0)));
+  else if (t < T_SIG1) lift = 0;
+  else lift = ease(clamp((t - T_SIG1) / (T_UP1 - T_SIG1)));
+  const base = t < T_SIG0 ? start : tip;
+  const hx = base.x + 70 * lift + (t >= T_SIG1 ? 20 * lift : 0);
+  const hy = base.y - 120 * lift;
+  const sc = 1 + 0.06 * lift;
+  // tiny writing jitter
+  const jit = (t > T_SIG0 && t < T_SIG1) ? Math.sin(t * 60) * 1.5 : 0;
+  document.getElementById('hand').setAttribute('transform', `translate(${hx + jit} ${hy}) scale(${sc})`);
+  document.getElementById('penShadow').setAttribute('transform', `translate(${hx + 30 + 60 * lift} ${hy + 40 + 90 * lift}) scale(${sc})`);
+  document.getElementById('penShadow').setAttribute('opacity', (0.32 - 0.12 * lift).toFixed(3));
+
+  // flashes
+  let f = 0;
+  for (const ft of FLASHES) { const d = t - ft; if (d >= 0 && d < 0.35) f = Math.max(f, 0.85 * Math.exp(-d * 14)); }
+  document.getElementById('flash').setAttribute('opacity', f.toFixed(3));
+
+  // subtitles (fade 0.12s)
+  const s1 = document.getElementById('s1'), s2 = document.getElementById('s2');
+  let shown = null;
+  for (const s of SUBS) if (t >= s.a && t <= s.b) shown = s;
+  if (shown) {
+    const o = Math.min(clamp((t - shown.a) / 0.12), clamp((shown.b - t) / 0.12));
+    s1.textContent = shown.l1; s2.textContent = shown.l2;
+    s1.setAttribute('opacity', o); s2.setAttribute('opacity', o);
+  } else { s1.setAttribute('opacity', 0); s2.setAttribute('opacity', 0); }
+};
+window.render(0);
+</script>
+</body></html>
