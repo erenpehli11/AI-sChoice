@@ -122,3 +122,107 @@ Dizi; gri bir sanayi şehrinde batmak üzere olan Karaocak Demirspor'u, sakatlı
   1. Cuma akşamı uzun metin.
   2. Cumartesi sabahı 30 saniyelik video.
   3. Bölüm yayınlandığında kısa metinler ve link.
+
+---
+
+## 7. Ek kısa metinler
+*X, Threads, hikâye paylaşımı. Hepsi 280 karakterin altında.*
+
+**Ret açısı**
+- **D:** "Güzel ama riskli." "Futbol dizisi tutmaz." "Tanınan bir isim lazım." Yıllarca bunları duydum. OCAK artık kimsenin onayını beklemiyor. Cumartesi başlıyor. [LİNK]
+- **E:** Kimse kapıyı açmadı. Ben de kendi kapımı yaptım. OCAK, yıllar önce yazdığım dizi, şimdi her gün bir bölüm. [LİNK]
+- **F:** Bir dizi yazdım. Satamadım. Vazgeçtim sandım. Vazgeçmemişim. OCAK. [LİNK]
+
+**Sahiplik açısı**
+- **G:** Herkes "bunu yapay zekâ mı yazdı" diye soracak. Hayır. Ben yazdım, [X] yıl önce. Yapay zekâ sadece çizdi. OCAK. [LİNK]
+- **H:** Senaryo benim. Karakterler benim. Şehir, kulüp, her replik benim. Sadece ekran değişti. OCAK. [LİNK]
+- **I:** Bu dizinin her cümlesini ben yazdım. Görüntüye dökmek için yıllarca birini bekledim. Artık beklemiyorum. [LİNK]
+
+**Hikâye açısı (kanca)**
+- **J:** Batmak üzere bir kulüp. Dizi sakat bir eski futbolcu. Ve onu "sadece bir kahve" için çağıran bir arkadaş. Kahveyi hiç içmedi. OCAK. [LİNK]
+- **K:** Karaocak'ta her şey griydi. Cumartesileri turuncuya dönerdi. Eskiden. Yıllar önce yazdığım dizi OCAK, cumartesi başlıyor. [LİNK]
+- **L:** Sol ayağıyla mahallede kaybolan 15 yaşında bir çocuk. Onu ilk gören, babasının unuttuğu bir çocuk. OCAK. [LİNK]
+
+**Duygu açısı**
+- **M:** Sektöre yenildim ama hikâyeme yenilmedim. OCAK, her gün bir bölüm. [LİNK]
+- **N:** Yıllarca bir klasörde bekledi. Bugün telefonunuzda. OCAK. [LİNK]
+- **O:** Bütçem yok, ekibim yok, yapımcım yok. Bir hikâyem var. Ve onu anlatıyorum. OCAK. [LİNK]
+
+**Soru ve etkileşim açısı**
+- **P:** Hiç yıllarca bir şeye emek verip kimseye gösteremediniz mi? Benimki bir diziydi. Şimdi gösteriyorum. OCAK. [LİNK]
+- **R:** Sizce bir hikâye satılamadı diye anlatılmamalı mı? Ben anlatmaya karar verdim. OCAK. [LİNK]
+
+---
+
+## 8. Ek orta metinler
+*Instagram ve Facebook gönderisi, Reels açıklaması*
+
+**Orta B: ret açısı**
+
+```
+"Güzel ama riskli."
+"Futbol dizisi tutmaz."
+"Tanınan bir isim lazım."
+
+[X] yıl boyunca OCAK için bunları duydum.
+Hikâye bir klasörde kaldı, ben de sektöre yenik düştüm.
+
+Ama karakterler gitmedi.
+Şimdi diziyi kendim anlatıyorum: yapay zekâ araçlarıyla, kısa bölümler hâlinde, her gün.
+
+Senaryo, karakterler ve hikâye bana ait.
+Cumartesi başlıyor 👇
+[LİNK]
+
+#ocak #futbol #dizi #senarist #animasyon
+```
+
+**Orta C: sahiplik açısı**
+
+```
+Önce şunu söyleyeyim: Bu hikâyeyi yapay zekâ yazmadı.
+
+OCAK'ı ben yazdım, [X] yıl önce.
+Gri bir sanayi şehri, batmak üzere bir kulüp, sakat bir eski futbolcu ve sol ayaklı bir çocuk.
+
+Yıllarca bir yapımcı bekledim. Gelmedi.
+Şimdi kâğıttaki her sahneyi yapay zekâ araçlarıyla görüntüye döküyorum.
+Fırça değişti. Hikâye aynı.
+
+İlk bölüm cumartesi 👇
+[LİNK]
+
+#ocak #futbol #dizi #yapayzeka #senarist
+```
+
+**Orta D: hikâye ağırlıklı**
+
+```
+Karaocak'ta her şey griydi. Cumartesileri turuncuya dönerdi… Eskiden.
+
+Yusuf Demirci bir zamanlar bu şehrin sol ayağıydı. Dizi sakatlandı, hayattan çekildi.
+Bir gün çocukluk arkadaşı Kerem arar: "Bir kahveme gel. Sadece bir kahve."
+
+Bu diziyi yıllar önce yazdım, kimseye satamadım.
+Şimdi kendim anlatıyorum: her gün bir bölüm.
+
+OCAK · Cumartesi başlıyor 👇
+[LİNK]
+
+#ocak #futbol #animasyon #dizi
+```
+
+**Orta E: kısa ve sert**
+
+```
+Bir dizi yazdım.
+Kapı çaldım.
+Açılmadı.
+
+Yıllar geçti.
+Şimdi kapıyı kendim açıyorum.
+
+OCAK: senaryosu bana ait, yapay zekâyla ekrana gelen bir futbol dizisi.
+Her gün yeni bölüm 👇
+[LİNK]
+```
