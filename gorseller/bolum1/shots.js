@@ -178,7 +178,7 @@ function scarf(x1, y1, x2, y2, sag, t) {
   for (const [ex, ey, dir] of [[x1, y1, -1], [x2, y2, 1]]) for (let k = 0; k < 6; k++) s += `<line x1="${ex}" y1="${ey - 26 + k * 10}" x2="${ex + dir * 26}" y2="${ey - 24 + k * 10 + 6}" ${LN(3, ORANGE)}/>`;
   return s;
 }
-function shot2a(u) { // 0..4.8
+function shot2a(u, t) { // 0..4.8
   const z = 1 + .05 * E(u / 4.8);
   let s = `<g transform="${camT(540, 900, z)}">`;
   // hall
@@ -197,7 +197,7 @@ function shot2a(u) { // 0..4.8
   s += keremBody();
   s += limb(`M-180 300 L${(lx - 180) / 2 - 40 * raise} ${(ly + 300) / 2 + 30} L${lx} ${ly}`, 64, '#30333b');
   s += limb(`M180 300 L${(rx + 180) / 2 + 40 * raise} ${(ry + 300) / 2 + 30} L${rx} ${ry}`, 64, '#30333b');
-  s += `<g transform="translate(0 ${-raise * 6})">${keremHead({ smile: 1, mouth: (u > .8 && u < 2.8) ? (.5 + .5 * Math.sin(u * 22)) * .8 : 0, brow: raise })}</g>`;
+  s += `<g transform="translate(0 ${-raise * 6})">${keremHead({ smile: 1, mouth: talk('kerem', t) * .8, brow: raise })}</g>`;
   s += scarf(lx - 30, ly - 40, rx + 30, ry - 40, lerp(40, 10, raise), u);
   s += `<g transform="translate(${lx} ${ly - 40}) scale(.75)">${hFist(SKIN_K)}</g><g transform="translate(${rx} ${ry - 40}) scale(-.75 .75)">${hFist(SKIN_K)}</g>`;
   s += `</g>`;
@@ -296,7 +296,7 @@ function closeYusuf(o, t, wetBg) {
   return s;
 }
 function shot3b(u, t) { // 0..2.4 eyes down, muttering
-  const mouth = (u > .2 && u < 2.2) ? Math.max(0, Math.sin(u * 16)) * .55 : 0;
+  const mouth = talk('yusuf', t) * .6;
   return `<g transform="${camT(540, 900, 1 + .04 * E(u / 2.4))}">${closeYusuf({ look: -1, mouth, tv: .1 + .04 * Math.sin(t * 9) }, t)}</g>`;
 }
 // S3c — TV broadcast (play)
@@ -400,10 +400,9 @@ function shot4b(u) { // 0..3.0 — rings, hand grabs, lifts
 }
 // S4c — split screen call
 function shot4c(u, t) { // 0..10.6
-  const talkK = (a, b) => (u > a && u < b) ? Math.max(0, Math.sin(u * 19)) * .8 : 0;
-  const kM = talkK(.2, 2.9) + talkK(5.8, 7.6) + talkK(8.4, 10.3);
-  const yM = talkK(3.2, 5.5);
-  const kSpeak = kM > 0 || (u < 3 || (u > 5.7));
+  const kM = talk('kerem', t) * .8;
+  const yM = talk('yusuf', t) * .8;
+  const ySpeak = speaking('yusuf', t), kSpeak = !ySpeak;
   let s = '';
   // TOP: Kerem in office
   s += `<clipPath id="top"><rect x="0" y="0" width="1080" height="950"/></clipPath><g clip-path="url(#top)">`;
@@ -416,7 +415,7 @@ function shot4c(u, t) { // 0..10.6
   s += `<rect x="0" y="970" width="1080" height="950" fill="#0e1214" opacity=".18"/>`;
   const yLook = u > 8.6 ? -0.6 : 0;
   s += `<g transform="translate(560 1300) scale(1.15)">${yusufBodyHome()}<g>${yusufHead({ look: yLook, mouth: yM, blink: (u > 6.1 && u < 6.25) ? 1 : 0 })}</g><g transform="translate(-160 46) rotate(-42)"><rect x="-40" y="-90" width="80" height="180" rx="14" fill="#15181b" ${S(4)}/><g transform="scale(-1 1)">${hGrip(SKIN_Y, 'url(#sweater)', 80)}</g></g></g>`;
-  s += `<rect x="0" y="970" width="1080" height="950" fill="#000" opacity="${yM > 0 || (u > 3 && u < 5.7) ? 0 : .22}"/></g>`;
+  s += `<rect x="0" y="970" width="1080" height="950" fill="#000" opacity="${ySpeak ? 0 : .22}"/></g>`;
   s += `<rect x="0" y="950" width="1080" height="20" fill="#0b0b0c"/>`;
   return s;
 }
@@ -552,8 +551,8 @@ function shot6a(u, t) { // 0..5.6 wide
   return s;
 }
 function shot6b(u, t) { // 0..4.0 two-shot
-  const kM = (u > .3 && u < 1.6) ? Math.max(0, Math.sin(u * 18)) * .8 : 0;
-  const mM = (u > 2.0 && u < 2.7) ? Math.max(0, Math.sin(u * 18)) * .8 : 0;
+  const kM = talk('malz', t) * .8;
+  const mM = talk('memur', t) * .8;
   let s = `<g transform="${camT(540, 1100, 1.02)}">`;
   s += `<g transform="translate(-300 -500) scale(1.55)">${gateScene(7, 0, t)}</g>`;
   s += `<rect width="1080" height="1920" fill="#c3c3bb" opacity=".25"/>`;
@@ -639,40 +638,40 @@ function titleCard(u, n = 1, name = 'BİR KAHVE', next = 'SOL KROŞE') {
 // =============================== TIMELINE ===============================
 const sp = (fn, k = 1, off = 0) => (u, t) => fn(u * k + off, t);
 const SHOTS = [
-  [0.0, 4.5, sp(shot1, 6.6 / 4.5)], [4.5, 8.3, sp(shot2a, 1.26)], [8.3, 10.5, sp(shot2b, 1, .9)],
-  [10.5, 12.5, sp(shot3a)], [12.5, 14.4, sp(shot3b, 1.26)], [14.4, 17.8, sp(shot3c, 1.29)], [17.8, 19.6, sp(shot3d, 1.44)],
-  [19.6, 22.4, sp(shot4a, 1.5)], [22.4, 24.4, sp(shot4b, 1.5)], [24.4, 33.4, sp(shot4c, 1.178)], [33.4, 34.2, sp(shot4c2)], [34.2, 36.2, sp(shot4d, 1.6)],
-  [36.2, 40.2, sp(shot5a, 1.2)], [40.2, 43.2, sp(shot5b, 1, 2.8)],
-  [43.2, 46.6, sp(shot6a, 1.2)], [46.6, 50.0, sp(shot6b)], [50.0, 51.6, sp(shot6c)],
-  [51.6, 55.0, sp(shot7a, 1.235)], [55.0, 57.4, sp(shot7b, 1.3)], [57.4, 64.4, sp(shot8, 1.086)], [64.4, 67.2, (u) => titleCard(u)]
+  [0.0, 6.4, sp(shot1, 6.6 / 6.4)], [6.4, 10.2, sp(shot2a, 1.26)], [10.2, 12.9, sp(shot2b, 1, .9)],
+  [12.9, 14.9, sp(shot3a)], [14.9, 17.1, sp(shot3b, 2.4 / 2.2)], [17.1, 20.5, sp(shot3c, 1.29)], [20.5, 22.3, sp(shot3d, 1.44)],
+  [22.3, 25.6, sp(shot4a, 4.2 / 3.3)], [25.6, 27.6, sp(shot4b, 1.5)], [27.6, 39.5, sp(shot4c, 10.6 / 11.9)], [39.5, 40.3, sp(shot4c2)], [40.3, 42.3, sp(shot4d, 1.6)],
+  [42.3, 48.0, sp(shot5a, 6.2 / 5.7)], [48.0, 51.6, sp(shot5b, 1, 2.2)],
+  [51.6, 55.0, sp(shot6a, 1.2)], [55.0, 58.8, sp(shot6b)], [58.8, 60.4, sp(shot6c)],
+  [60.4, 63.8, sp(shot7a, 1.235)], [63.8, 66.2, sp(shot7b, 1.3)], [66.2, 73.4, sp(shot8, 7.6 / 7.2)], [73.4, 76.2, (u) => titleCard(u)]
 ];
-const FLASHES = [2.6, 3.2, 3.8, 5.3, 5.9, 6.6, 7.3, 7.9, 8.5];
+const FLASHES = [3.7, 4.55, 5.4, 7.2, 7.8, 8.5, 9.2, 9.8, 10.4];
 const SUBS = [
-  [0.20, 2.30, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
-  [2.40, 3.30, '', 'Ya çok seversin…', ''],
-  [3.40, 4.45, '', '…ya da başka', 'çaren yoktur.'],
-  [4.90, 6.60, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
-  [6.80, 9.60, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
-  [12.60, 14.30, 'YUSUF', 'Sol bek içeri kayacak…', ''],
-  [15.60, 16.90, 'YUSUF', 'Bak. Bak.', ''],
-  [19.80, 22.30, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
-  [24.57, 26.86, 'KEREM', 'Yusuf. Bir kahveme gel.', 'Sadece bir kahve.'],
-  [27.12, 29.07, 'YUSUF', 'Kero…', 'Ben o işleri bıraktım.'],
-  [29.32, 30.85, 'KEREM', 'Kahve diyorum oğlum.', 'Kahve.'],
-  [31.53, 33.20, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
-  [36.40, 38.00, '', 'Karaocak\'ta her şey griydi.', ''],
-  [38.10, 40.10, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
-  [40.40, 43.00, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
-  [46.90, 48.20, 'MALZEMECİ', 'Şekerli mi?', ''],
-  [48.60, 49.80, 'MEMUR', 'İki.', ''],
-  [51.80, 54.80, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
-  [57.70, 60.20, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
-  [60.40, 61.70, '', 'Kahveyi hiç içmedi.', ''],
-  [61.90, 64.00, '', 'Ama bir daha da', 'oradan ayrılmadı.']
+  [0.25, 2.70, '', 'Bu şehirde bir kulübü', 'iki sebeple alırsın.'],
+  [3.05, 4.20, '', 'Ya çok seversin…', ''],
+  [4.50, 6.15, '', '…ya da başka', 'çaren yoktur.'],
+  [6.75, 9.07, 'KEREM', 'Karaocak yeniden bağıracak!', ''],
+  [9.35, 12.17, '', 'Kerem Sezer hangisi olduğunu', 'hiç söylemedi.'],
+  [15.00, 16.96, 'YUSUF', 'Sol bek içeri kayacak…', ''],
+  [18.25, 19.86, 'YUSUF', 'Bak. Bak.', ''],
+  [22.50, 25.38, '', 'Yusuf Demirci o telefonu', 'üç kere açmadı.'],
+  [27.80, 30.92, 'KEREM', 'Yusuf. Bir kahveme gel.', 'Sadece bir kahve.'],
+  [31.25, 33.72, 'YUSUF', 'Kero…', 'Ben o işleri bıraktım.'],
+  [34.00, 36.39, 'KEREM', 'Kahve diyorum oğlum.', 'Kahve.'],
+  [36.75, 39.07, 'KEREM', 'Sen sade içerdin,', 'değil mi?'],
+  [42.45, 44.55, '', 'Karaocak\'ta her şey griydi.', ''],
+  [44.85, 47.87, '', 'Cumartesileri turuncuya dönerdi.', 'Eskiden.'],
+  [48.20, 51.23, '', 'Sol dizi yağmurdan önce', 'hep sızlardı.'],
+  [55.30, 56.30, 'MALZEMECİ', 'Şekerli mi?', ''],
+  [56.90, 58.54, 'MEMUR', 'İki.', ''],
+  [60.60, 63.92, '', 'O otobüsün en arka koltuğu', 'yıllarca onundu.'],
+  [66.50, 68.98, '', 'Babam o gün oraya', 'bir kahve içmeye gitmişti.'],
+  [69.50, 70.65, '', 'Kahveyi hiç içmedi.', ''],
+  [71.15, 72.73, '', 'Ama bir daha da', 'oradan ayrılmadı.']
 ];
-const CAPTIONS = [[10.6, 12.4, 'Birkaç hafta sonra.']];
-const TOTAL = 67.2;
-const END_T = 64.4;
+const CAPTIONS = [[13.0, 14.8, 'Birkaç hafta sonra.']];
+const TOTAL = 76.2;
+const END_T = 73.4;
 
 function renderFrame(t) {
   let body = '';
