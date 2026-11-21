@@ -1,15 +1,15 @@
-# Bölüm 3 — "Düdük" · Taslak v1
+# Bölüm 3 — "Düdük" · Taslak v1.1 (Kerem → Erkan)
 
 > **Süre:** ~72 sn · **Sahne:** 8 · **Ses:** Anlatıcı ~30 kelime + 11 kısa replik
 > **Çizim stili:** A + C karışımı
-> **İsimler çalışma adıdır:** Yusuf Demirci, Kerem Sezer, Karaocak Demirspor
+> **İsimler çalışma adıdır:** Yusuf Demirci, Erkan Sezer, Karaocak Demirspor
 > **Bu bölümün işi:** Yusuf'u kulübe bağlamak, takımı ilk kez göstermek, ilk maça geri sayımı başlatmak ve Yusuf'un oğluna ilk adımını atması.
 
 ---
 
 **SAHNE 1 · Sabah** (0–6 sn)
 Ekran yazısı: **Bölüm 3**
-Yusuf'un salonu, sabah. Sandalyenin üstünde, Kerem'in ofisinde unutulan turuncu-siyah atkı duruyor. Yusuf atkıyı katlayıp ceketinin cebine koyuyor.
+Yusuf'un salonu, sabah. Sandalyenin üstünde, Erkan'ın ofisinde unutulan turuncu-siyah atkı duruyor. Yusuf atkıyı katlayıp ceketinin cebine koyuyor.
 > **ANLATICI:** Ertesi sabah babam kulübe "hayır" demeye gitti.
 
 **SAHNE 2 · Yağmurda antrenman** (6–18 sn)
@@ -40,11 +40,11 @@ Malzemeci bir fikstür kâğıdı uzatıyor.
 > **YUSUF:** Otobüs?
 > **MALZEMECİ:** *(çayından bir yudum alır)* Hangi otobüs?
 
-**SAHNE 7 · Kerem** (51–59 sn)
-Kerem ofisinin penceresinden sahayı izliyor. Yusuf'u düdük çalarken görüyor, içten bir gülümseme. Masada Yusuf'un dün içmeden bıraktığı kahve fincanı duruyor. Kerem onu alıp bir yudum alıyor.
-> **KEREM:** *(kendi kendine, gülümseyerek)* Soğumuş.
+**SAHNE 7 · Erkan** (51–59 sn)
+Erkan ofisinin penceresinden sahayı izliyor. Yusuf'u düdük çalarken görüyor, içten bir gülümseme. Masada Yusuf'un dün içmeden bıraktığı kahve fincanı duruyor. Erkan onu alıp bir yudum alıyor.
+> **ERKAN:** *(kendi kendine, gülümseyerek)* Soğumuş.
 
-Masadaki telefon titriyor. Kerem bakmadan telefonu ters çeviriyor ve izlemeye devam ediyor.
+Masadaki telefon titriyor. Erkan bakmadan telefonu ters çeviriyor ve izlemeye devam ediyor.
 
 **SAHNE 8 · Mesaj** (59–72 sn)
 Akşam, Yusuf'un salonu. Atkı hâlâ boynunda. Telefonda oğlunun mesajı: **"Baba, cumartesi geliyor musun?"**
@@ -63,5 +63,5 @@ Ekran siyaha geçiyor.
 - **"Sol!":** 1. bölümdeki TV anının ("Sol bek içeri kayacak") karşılığı. Bu sefer ekrana değil sahaya söylüyor.
 - **Kaptanın övgüsü:** Abartısız. "Efsaneydin" değil, "Babam beni senin maçlarına götürürdü".
 - **Atkı:** Kabulünü söze dökmeden gösteriyor.
-- **Kerem ve soğuk kahve:** 1. bölümdeki "Kahveyi hiç içmedi" cümlesine bağlanıyor. Ters çevrilen telefon çok hafif bir ipucu, Yusuf'a karşı olumsuz bir işaret yok.
+- **Erkan ve soğuk kahve:** 1. bölümdeki "Kahveyi hiç içmedi" cümlesine bağlanıyor. Ters çevrilen telefon çok hafif bir ipucu, Yusuf'a karşı olumsuz bir işaret yok.
 - **Mesaj:** 1. bölümdeki "Üç kere açmadı, dördüncüde açtı" ile ayna. "Seni bir yere götüreceğim" cümlesi nereye gideceklerini söylemiyor. İzleyicide merak bırakıyor.
