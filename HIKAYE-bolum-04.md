@@ -1,16 +1,16 @@
-# Bölüm 4 — "Veresiye" · Taslak v1
+# Bölüm 4 — "Veresiye" · Taslak v2 (kısaltıldı, Erkan → Erkan)
 
-> **Süre:** ~80 sn · **Sahne:** 6 · **Ses:** Anlatıcı ~35 kelime + kısa replikler
+> **Süre:** ~68 sn · **Sahne:** 6 · **Ses:** Anlatıcı ~35 kelime + kısa replikler
 > **Çizim stili:** A + C karışımı
-> **İsimler çalışma adıdır:** Yusuf Demirci, Kerem Sezer, Emir Kılıç, Karaocak Demirspor
-> **Bu bölümün işi:** Takımla tanışma, eksik 10 numaranın ortaya çıkması, Kerem'in "para yok" demesi ve bölümün Emir ile bitmesi.
+> **İsimler çalışma adıdır:** Yusuf Demirci, Erkan Sezer, Emir Kılıç, Karaocak Demirspor
+> **Bu bölümün işi:** Takımla tanışma, eksik 10 numaranın ortaya çıkması, Erkan'ın "para yok" demesi ve bölümün Emir ile bitmesi.
 
 ---
 
 **SAHNE 1 · Nalbur** (0–8 sn)
 Ekran yazısı: **Bölüm 4**
 Sabah. Mahallenin eski nalburu: tavana kadar raflar, çivi kutuları, boya kovaları. Yusuf tezgâha kablo, ampul, boya ve fırça bırakıyor. Boynunda turuncu-siyah atkı.
-> **ANLATICI:** Kerem amca bir futbol kulübü satın aldı. Peki babam neden nalburdaydı?
+> **ANLATICI:** Erkan amca bir futbol kulübü satın aldı. Peki babam neden nalburdaydı?
 
 **SAHNE 2 · Defter** (8–14 sn)
 Yusuf cebinden buruşuk paralarını çıkarıp sayıyor. Yetmiyor. Nalbur (yaşlı, gözlüklü) Yusuf'un elini kapatıp parayı geri itiyor.
@@ -20,13 +20,12 @@ Tezgâhın altından eski bir defter çıkarıp tezgâha koyuyor. Kapakta elle y
 
 **SAHNE 3 · Fısıltı** (14–24 sn)
 Stadyumun önü. Yusuf kollarında poşetler, elinde boya kovalarıyla aksayarak kapıya yürüyor. Antrenmana gelen birkaç oyuncu onu uzaktan görüp duruyor.
-> **OYUNCU 1:** *(fısıltıyla)* Kabul etti galiba.
-> **OYUNCU 2:** Elinde boya var oğlum. Kabul etti tabii.
+> **OYUNCU:** *(fısıltıyla)* Elinde boya var. Kabul etti.
 > **CENGİZ:** Hoca boya mı yapacak?
 
 **SAHNE 4 · Soyunma odası** (24–52 sn)
 Elektriği olmayan soyunma odası. Tek ışık, yüksekteki küçük pencereden giren gün ışığı. Oyuncular banklarda oturuyor. Yusuf poşetleri yere bırakıp karşılarına geçiyor.
-> **YUSUF:** Ben Yusuf. Bazılarınız beni hatırlıyor, bazılarınız babasından duydu. Taktiği, sistemi sonra konuşacağız. Şimdilik bir şeyi bilin yeter: Bu takım güzel futbol oynayacak. Maçta önce tribündekiler keyif alacak, maçtan sonra da siz. Kazansak da kaybetsek de bu soyunma odasından kimse mutsuz çıkmayacak.
+> **YUSUF:** Ben Yusuf. Bazılarınız beni hatırlıyor, bazılarınız babasından duydu. Tek bir şey bilin: Bu takım güzel futbol oynayacak. Kazansak da kaybetsek de buradan kimse mutsuz çıkmayacak.
 
 Kısa bir sessizlik.
 > **YUSUF:** Mevkiniz nedir?
@@ -48,13 +47,13 @@ Yusuf hepsine tek tek bakıyor.
 Sessizlik. Kadir, Tolga'ya bakıyor. Tolga yere bakıyor.
 > **YUSUF:** Hadi sahaya çıkalım. Bir de orada görelim kim nerede oynuyormuş.
 
-**SAHNE 5 · Kerem ve Yusuf** (52–67 sn)
-Antrenman sonrası. Yusuf eşofmanlı, terli, Kerem'in ofisinin kapısını açıyor. İçeride Kerem, koyu paltolu iki adamla oturmuş kahve içiyor. Kahve makinesi çalışıyor, fincanlar parlıyor. Adamlardan biri Yusuf'a kısa bir bakış atıp fincanına dönüyor.
-> **KEREM:** *(hemen gülümseyerek ayağa kalkar)* Bekle Yusuf'um, hemen geliyorum.
+**SAHNE 5 · Erkan ve Yusuf** (52–67 sn)
+Antrenman sonrası. Yusuf eşofmanlı, terli, Erkan'ın ofisinin kapısını açıyor. İçeride Erkan, koyu paltolu iki adamla oturmuş kahve içiyor. Kahve makinesi çalışıyor, fincanlar parlıyor. Adamlardan biri Yusuf'a kısa bir bakış atıp fincanına dönüyor.
+> **ERKAN:** *(hemen gülümseyerek ayağa kalkar)* Bekle Yusuf'um, hemen geliyorum.
 
-Kerem kapıyı arkasından kapatıyor. Çürümüş koridorda, damlayan kovanın yanında konuşuyorlar.
+Erkan kapıyı arkasından kapatıyor. Çürümüş koridorda, damlayan kovanın yanında konuşuyorlar.
 > **YUSUF:** Takım iyi, Kero. Bu işi yaparız. Ama eksiğiz. Bize en az beş oyuncu daha lazım.
-> **KEREM:** *(gülümser, iki elini açar)* Beş oyuncu mu? Yusuf, otobüsü bile götürdüler. *(kısa bir sessizlik)* Bedavaya bul, imzayı ben atarım.
+> **ERKAN:** *(gülümser, iki elini açar)* Beş oyuncu mu? Yusuf, otobüsü bile götürdüler. *(kısa bir sessizlik)* Bedavaya bul, imzayı ben atarım.
 
 **SAHNE 6 · Emir** (67–80 sn)
 Akşam, mahalle. Emir tek başına bir duvara top sektiriyor. Dudağında kavgadan kalma bir yara kabuğu. Duvarın üstünde küçük kardeşi oturuyor.
@@ -70,12 +69,14 @@ Ekran siyaha geçiyor.
 
 ## Bu bölümde bilerek yaptıklarım
 
-- **Kanca:** "Kerem amca bir futbol kulübü satın aldı. Peki babam neden nalburdaydı?" Hikâyenin ana çelişkisini koruyor ve sahte yoksulluğu sessizce hatırlatıyor.
-- **Defter kapağı:** Nalburun kulübün eski bir taraftarı olduğunu sözsüz gösteriyor. Ayrıca bir ironi: Kerem'in parası var, ilk masrafı Yusuf ve nalbur karşılıyor.
+- **Kanca:** "Erkan amca bir futbol kulübü satın aldı. Peki babam neden nalburdaydı?" Hikâyenin ana çelişkisini koruyor ve sahte yoksulluğu sessizce hatırlatıyor.
+- **Defter kapağı:** Nalburun kulübün eski bir taraftarı olduğunu sözsüz gösteriyor. Ayrıca bir ironi: Erkan'ın parası var, ilk masrafı Yusuf ve nalbur karşılıyor.
 - **Karanlık soyunma odası:** Elektrik hâlâ yok. Tadilat ilerleyen bölümlerde.
+- **Kısaltma (v2):** Yusuf'un konuşması ve fısıltı sahnesi kısaltıldı; hedef ~68 sn.
+- **Açık karar:** "Kero" lakabı Erkan adına göre değişecek (öneri: "Erko").
 - **Altı oyuncu, altı cümle:** Cengiz'in esprisi, kaptanın sessiz bakışı, Kadir ve Tolga'nın üstten tavrı, sol taraftaki altın ikili.
 - **Eksik 10 numara:** "Sizden aldığını Tolga'ya kim ulaştırıyor?" sorusu takımın boşluğunu gösteriyor ve Emir'e zemin hazırlıyor.
-- **Ofisteki iki adam:** Kim oldukları söylenmiyor. Kerem, Yusuf'u içeri almıyor ve konuşma dışarıda geçiyor. Gizem böylece daha iyi oturuyor.
+- **Ofisteki iki adam:** Kim oldukları söylenmiyor. Erkan, Yusuf'u içeri almıyor ve konuşma dışarıda geçiyor. Gizem böylece daha iyi oturuyor.
 - **"Para yok":** İçeride kahve ikram edilirken dışarıda, çürümüş koridorda ve damlayan kovanın yanında söyleniyor. Yusuf'u parasız oyuncu aramaya itiyor.
 - **Defter:** Nalbur bir şey yazmıyor, sadece defteri gösteriyor. Kapak her şeyi söylüyor.
 - **Barış konuşmuyor:** Utangaçlığını sessizliği anlatıyor. Ufuk ikisi adına konuşuyor.
