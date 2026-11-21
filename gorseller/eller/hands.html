@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><script src="defs.js"></script><script src="lib.js"></script><script src="shots.js"></script><script src="lib2.js"></script><script src="futbol.js"></script><script src="hands2.js"></script></head>
+<body style="margin:0;background:#1a1816"><svg id="s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1500" width="1200" height="750"></svg>
+<script>
+let g = DEFS + DEFS2 + `<rect width="2400" height="1500" fill="#1a1816"/>`;
+let ci=0;const cell=(x,y,sc,inner,label)=>{ci++;const cx=ci<=4?[310,900,1490,2080][ci-1]:[310,900,1490,2080][ci-5], cy=ci<=4?380:1100;return `<clipPath id="c${ci}"><rect x="${cx-280}" y="${cy-330}" width="560" height="660" rx="24"/></clipPath><rect x="${cx-280}" y="${cy-330}" width="560" height="660" rx="24" fill="#efe6d6"/><g clip-path="url(#c${ci})"><g transform="translate(${x} ${y}) scale(${sc})">${inner}</g></g><text x="${cx}" y="${cy+300}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="34" fill="#2a2420">${label}</text>`};
+g+=cell(310,420,1.05,hOpenBack(SKIN_Y,'url(#sweater)'),'1 · Açık el (sırt)');
+g+=cell(900,420,1.05,hPalm(SKIN_K,'url(#suit)'),'2 · Avuç (el sallama)');
+g+=cell(1490,330,1.5,hFist(SKIN_E,'url(#tee)'),'3 · Yumruk');
+g+=cell(2080,330,1.3,hPoint(SKIN_K,'url(#suit)'),'4 · İşaret');
+g+=cell(310,1060,1.25,`<rect x="-40" y="-90" width="80" height="180" rx="14" fill="#15181b"/>`+hGrip(SKIN_Y,'url(#sweater)',80),'5 · Kavrama (telefon)');
+g+=cell(900,1060,1.2,`<path d="M-50 -70 h100 v70 q0 40 -50 40 q-50 0 -50 -40Z" fill="#fbf7ee" stroke="#2a2420" stroke-width="4"/>`+hGrip(SKIN_K,'url(#suit)',100),'6 · Fincan');
+g+=cell(1490,1150,.95,`<g transform="rotate(-38)">${hPenV2(SKIN_K,'url(#suit)')}</g>`,'7 · Kalem');
+g+=cell(2080,1060,1.2,hRest(SKIN_F,'url(#kahve)'),'8 · Dinlenen el');
+document.getElementById('s').innerHTML=g;
+</script></body></html>

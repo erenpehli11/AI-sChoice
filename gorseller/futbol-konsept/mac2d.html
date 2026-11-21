@@ -1,0 +1,140 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}svg{display:block}</style></head>
+<body><svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="540" height="960"></svg>
+<script>
+// ===== 2D maç pozisyonu: Karaocak Demirspor hızlı hücum =====
+const ORANGE = '#D9652A', INK = '#1a1714';
+const C = x => Math.max(0, Math.min(1, x)), E = x => { x = C(x); return x * x * (3 - 2 * x); }, lerp = (a, b, k) => a + (b - a) * k;
+// pitch in metres: X 0..68 (left->right), Y 0..105 (our goal bottom -> their goal top)
+const PX = { x0: 90, x1: 990, y0: 300, y1: 1700 };
+const mx = X => PX.x0 + X / 68 * (PX.x1 - PX.x0), my = Y => PX.y1 - Y / 105 * (PX.y1 - PX.y0);
+function at(k, t) { // keyframes [[t,X,Y],...]
+  if (t <= k[0][0]) return [k[0][1], k[0][2]];
+  for (let i = 1; i < k.length; i++) if (t <= k[i][0]) { const [a, x0, y0] = k[i - 1], [b, x1, y1] = k[i]; const e = E((t - a) / (b - a)); return [lerp(x0, x1, e), lerp(y0, y1, e)]; }
+  const l = k[k.length - 1]; return [l[1], l[2]];
+}
+// ---- our team (orange) ----
+const US = {
+  GK: { n: 1, name: 'Cengiz', k: [[0, 34, 5], [8, 34, 9]] },
+  RB: { n: 2, k: [[0, 56, 30], [3, 58, 44], [8, 60, 60]] },
+  CB4: { n: 4, name: 'Murat', k: [[0, 40, 28], [8, 40, 46]] },
+  CB5: { n: 5, k: [[0, 27, 28], [8, 26, 44]] },
+  LB: { n: 3, name: 'Ufuk', k: [[0, 14, 40], [2.6, 16, 50], [4.4, 18, 68], [5.6, 22, 83], [6.9, 28, 90], [8, 29, 91], [10, 40, 100]] },
+  DM: { n: 6, name: 'Kadir', k: [[0, 33, 41], [1.5, 35, 46], [2.4, 35, 47], [4, 36, 56], [8, 36, 66]] },
+  CM: { n: 8, k: [[0, 46, 48], [3, 47, 60], [7, 47, 78], [10, 40, 98]] },
+  RW: { n: 7, k: [[0, 60, 60], [3, 59, 74], [7, 52, 92], [10, 42, 100]] },
+  ST: { n: 9, name: 'Tolga', k: [[0, 36, 68], [3, 34, 74], [5.4, 32, 82], [7.0, 36, 94], [7.4, 37, 95], [8.4, 58, 102], [10, 62, 103]] },
+  LW: { n: 11, name: 'Barış', k: [[0, 10, 58], [2.5, 8, 58], [3.1, 8, 59], [5.3, 8, 82], [5.6, 9, 84], [8, 14, 92], [10, 50, 101]] },
+  AM: { n: 17, k: [[0, 28, 60], [3, 27, 70], [7, 26, 86], [10, 44, 99]] }
+};
+// ---- opponent (grey) ----
+const THEM = {
+  GK: { n: 1, k: [[0, 34, 101], [7.3, 34, 100.5], [7.6, 30, 102], [8.4, 29, 102.5]] },
+  RBo: { n: 2, k: [[0, 14, 76], [3.4, 10, 80], [5.4, 9, 85], [8, 11, 89]] },
+  CB1: { n: 4, k: [[0, 28, 86], [5.6, 27, 90], [7.0, 31, 94], [8, 33, 96]] },
+  CB2: { n: 5, k: [[0, 42, 86], [6, 41, 92], [8, 39, 96]] },
+  LBo: { n: 3, k: [[0, 56, 80], [8, 50, 92]] },
+  CM8: { n: 8, k: [[0, 40, 54], [1.5, 37, 48], [2.2, 36, 50], [4, 33, 62], [8, 30, 78]] },
+  CM6: { n: 6, k: [[0, 26, 57], [4, 25, 66], [8, 24, 82]] },
+  RMo: { n: 7, k: [[0, 60, 53], [8, 55, 78]] },
+  LMo: { n: 11, k: [[0, 12, 50], [2.8, 13, 54], [5.5, 17, 72], [8, 20, 86]] },
+  ST1: { n: 9, k: [[0, 30, 38], [8, 32, 58]] },
+  ST2: { n: 10, k: [[0, 46, 36], [8, 46, 56]] }
+};
+// ---- ball: owner timeline + passes ----
+const BALL = [ // [t0, t1, type, from, to] ; 'own' = stick to player
+  [0, 1.5, 'own', 'T:CM8'], [1.5, 1.7, 'tackle', 'T:CM8', 'U:DM'], [1.7, 2.4, 'own', 'U:DM'],
+  [2.4, 3.1, 'pass', 'U:DM', 'U:LW'], [3.1, 5.4, 'own', 'U:LW'], [5.4, 5.9, 'pass', 'U:LW', 'U:LB'],
+  [5.9, 6.9, 'own', 'U:LB'], [6.9, 7.35, 'pass', 'U:LB', 'U:ST'], [7.35, 7.7, 'shot', 'U:ST', [38.5, 105.6]], [7.7, 99, 'goal']
+];
+const pos = (id, t) => { const [s, k] = id.split(':'); return at((s === 'U' ? US : THEM)[k].k, t); };
+function ballAt(t) {
+  for (const [a, b, type, f, to] of BALL) if (t >= a && t < b) {
+    const k = (t - a) / (b - a);
+    if (type === 'own') { const p = pos(f, t); return { p: [p[0] + .8, p[1] + 1.2], h: 0, owner: f }; }
+    if (type === 'tackle') { const p = pos(to, t); return { p: [p[0] + .6, p[1] + 1], h: 0, owner: null }; }
+    if (type === 'pass') { const p0 = pos(f, a), p1 = pos(to, b); return { p: [lerp(p0[0], p1[0], k), lerp(p0[1] + 1, p1[1] + 1, k)], h: 0, owner: null, pass: [p0, p1] }; }
+    if (type === 'shot') { const p0 = pos(f, a); return { p: [lerp(p0[0], to[0], k), lerp(p0[1], to[1], k)], h: Math.sin(k * Math.PI) * 1.6, owner: null, pass: [p0, to] }; }
+    if (type === 'goal') return { p: [38.5 + Math.sin(t * 6) * .1, 106.6], h: 0, owner: null, goal: true };
+  }
+  return { p: [38.5, 106.6], h: 0, goal: true };
+}
+const NAMES = { 'U:DM': 'Kadir', 'U:LW': 'Barış', 'U:LB': 'Ufuk', 'U:ST': 'Tolga', 'T:CM8': 'Rakip 8' };
+const FEED = [[0.2, '23\' Rakip baskı kuruyor.'], [1.6, 'Kadir topu kaptı!'], [2.5, 'Kadir → Barış'], [3.4, 'Barış çizgide ilerliyor…'], [4.4, 'Ufuk içeriden bindiriyor!'], [5.5, 'Barış → Ufuk'], [6.9, 'Ufuk → Tolga'], [7.4, 'Tolga vurdu…'], [7.8, 'GOOOL! Tolga\'nın gol orucu bitti!']];
+
+function pitch() {
+  let s = `<rect x="${PX.x0 - 40}" y="${PX.y0 - 40}" width="${PX.x1 - PX.x0 + 80}" height="${PX.y1 - PX.y0 + 80}" fill="#2f6236"/>`;
+  for (let i = 0; i < 14; i++) s += `<rect x="${PX.x0 - 40}" y="${PX.y0 + i * 100}" width="${PX.x1 - PX.x0 + 80}" height="50" fill="#fff" opacity=".035"/>`;
+  const L = `stroke="#e9f0e6" stroke-width="4" fill="none" opacity=".9"`;
+  s += `<rect x="${PX.x0}" y="${PX.y0}" width="${PX.x1 - PX.x0}" height="${PX.y1 - PX.y0}" ${L}/>`;
+  s += `<line x1="${PX.x0}" y1="${my(52.5)}" x2="${PX.x1}" y2="${my(52.5)}" ${L}/><circle cx="${mx(34)}" cy="${my(52.5)}" r="${9.15 / 68 * 900}" ${L}/><circle cx="${mx(34)}" cy="${my(52.5)}" r="5" fill="#e9f0e6"/>`;
+  for (const [y0, dir] of [[105, -1], [0, 1]]) {
+    s += `<rect x="${mx(13.85)}" y="${Math.min(my(y0), my(y0 + dir * 16.5))}" width="${mx(54.15) - mx(13.85)}" height="${Math.abs(my(y0 + dir * 16.5) - my(y0))}" ${L}/>`;
+    s += `<rect x="${mx(24.85)}" y="${Math.min(my(y0), my(y0 + dir * 5.5))}" width="${mx(43.15) - mx(24.85)}" height="${Math.abs(my(y0 + dir * 5.5) - my(y0))}" ${L}/>`;
+    s += `<circle cx="${mx(34)}" cy="${my(y0 + dir * 11)}" r="4" fill="#e9f0e6"/>`;
+    s += `<rect x="${mx(30.34)}" y="${dir < 0 ? my(107) : my(0)}" width="${mx(37.66) - mx(30.34)}" height="${my(105) - my(107)}" fill="#fff" opacity=".25" stroke="#fff" stroke-width="3"/>`;
+  }
+  return s;
+}
+function token(p, team, n, z, highlight) {
+  const r = 32 / z, x = mx(p[0]), y = my(p[1]);
+  const fill = team === 'U' ? ORANGE : '#d9dde0', tc = team === 'U' ? '#fff' : '#2a2f33', st = team === 'U' ? INK : '#4a5156';
+  return `<g transform="translate(${x} ${y})"><ellipse cx="${3 / z}" cy="${6 / z}" rx="${r}" ry="${r * .55}" fill="#000" opacity=".25"/>${highlight ? `<circle r="${r + 9 / z}" fill="none" stroke="#fff" stroke-width="${4 / z}" opacity=".9"/>` : ''}<circle r="${r}" fill="${fill}" stroke="${st}" stroke-width="${4 / z}"/><text y="${11 / z}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="${30 / z}" fill="${tc}">${n}</text></g>`;
+}
+function label(p, name, z, team) {
+  const x = mx(p[0]), y = my(p[1]) + 60 / z, w = (name.length * 19 + 34) / z;
+  return `<g transform="translate(${x} ${y})"><rect x="${-w / 2}" y="${-21 / z}" width="${w}" height="${42 / z}" rx="${21 / z}" fill="${team === 'U' ? '#fff' : '#2a2f33'}" opacity=".95"/><text y="${10 / z}" text-anchor="middle" font-family="Inter" font-weight="800" font-size="${28 / z}" fill="${team === 'U' ? INK : '#fff'}">${name}</text></g>`;
+}
+function trail(k, t0, t, z, col = '#fff') { // dotted run trail
+  const pts = []; for (let u = t0; u <= t; u += .08) { const p = at(k, u); pts.push(`${mx(p[0])},${my(p[1])}`); }
+  return pts.length > 1 ? `<polyline points="${pts.join(' ')}" fill="none" stroke="${col}" stroke-width="${5 / z}" stroke-dasharray="${2 / z} ${14 / z}" stroke-linecap="round" opacity=".7"/>` : '';
+}
+const TOTAL = 12.5;
+window.render = function (t) {
+  const B = ballAt(t);
+  // camera: follow smoothed ball
+  let cx = 0, cy = 0, n = 0; for (let u = Math.max(0, t - .7); u <= t; u += .1) { const q = ballAt(u).p; cx += q[0]; cy += q[1]; n++; }
+  cx /= n; cy /= n;
+  const z = lerp(1.85, 2.15, E((t - 5) / 2)) - (t > 8.2 ? .5 * E((t - 8.2) / 1.6) : 0);
+  let X = mx(cx), Y = my(cy) - 40;
+  const halfW = 540 / z, halfH = 760 / z;
+  X = Math.max(PX.x0 - 40 + halfW, Math.min(PX.x1 + 40 - halfW, X)); Y = Math.max(PX.y0 - 60 + halfH, Math.min(PX.y1 + 40 - halfH, Y));
+  let s = `<rect width="1080" height="1920" fill="#0e1410"/>`;
+  s += `<clipPath id="pc"><rect x="0" y="230" width="1080" height="1500"/></clipPath><g clip-path="url(#pc)"><g transform="translate(540 980) scale(${z}) translate(${-X} ${-Y})">`;
+  s += pitch();
+  // net bulge on goal
+  if (B.goal) s += `<path d="M${mx(30.34)} ${my(105)} Q${mx(34)} ${my(108.5)} ${mx(37.66)} ${my(105)}" stroke="#fff" stroke-width="4" fill="none"/>`;
+  // run trails
+  if (t > 2.6) s += trail(US.LB.k, 2.6, Math.min(t, 6.9), z, ORANGE);
+  if (t > 3.1) s += trail(US.LW.k, 3.1, Math.min(t, 5.6), z, '#ffffff');
+  if (t > 5.4) s += trail(US.ST.k, 5.4, Math.min(t, 7.4), z, ORANGE);
+  // pass line
+  if (B.pass) s += `<line x1="${mx(B.pass[0][0])}" y1="${my(B.pass[0][1])}" x2="${mx(B.pass[1][0])}" y2="${my(B.pass[1][1])}" stroke="#fff" stroke-width="${3 / z}" stroke-dasharray="${10 / z} ${10 / z}" opacity=".6"/>`;
+  // tokens
+  for (const k in THEM) s += token(at(THEM[k].k, t), 'T', THEM[k].n, z, B.owner === 'T:' + k);
+  for (const k in US) s += token(at(US[k].k, t), 'U', US[k].n, z, B.owner === 'U:' + k);
+  // ball
+  const bx = mx(B.p[0]), by = my(B.p[1]);
+  s += `<ellipse cx="${bx + 4 / z + B.h * 10}" cy="${by + 6 / z + B.h * 12}" rx="${9 / z}" ry="${5 / z}" fill="#000" opacity=".35"/><circle cx="${bx}" cy="${by - B.h * 14}" r="${(12 + B.h * 4) / z}" fill="#fff" stroke="#111" stroke-width="${2.5 / z}"/>`;
+  // name label under carrier
+  if (B.owner && NAMES[B.owner]) s += label(pos(B.owner, t), NAMES[B.owner], z, B.owner[0]);
+  // tackle flash
+  if (t > 1.45 && t < 1.9) { const p = pos('U:DM', t); s += `<circle cx="${mx(p[0])}" cy="${my(p[1])}" r="${(30 + (t - 1.45) * 120) / z}" fill="none" stroke="#fff" stroke-width="${5 / z}" opacity="${1 - (t - 1.45) / .45}"/>`; }
+  s += `</g></g>`;
+  // top bar: score + clock
+  const goal = t >= 7.75;
+  s += `<rect x="0" y="0" width="1080" height="230" fill="#0e1410"/>`;
+  s += `<g font-family="Inter"><rect x="60" y="80" width="960" height="100" rx="16" fill="#1c241f" stroke="#2f3a33" stroke-width="3"/>`;
+  s += `<rect x="60" y="80" width="16" height="100" rx="8" fill="${ORANGE}"/><text x="100" y="146" font-weight="900" font-size="40" fill="#efe8dc">KARAOCAK</text>`;
+  s += `<text x="540" y="148" text-anchor="middle" font-weight="900" font-size="56" fill="#fff">${goal ? 1 : 0} – 0</text>`;
+  s += `<text x="900" y="146" text-anchor="end" font-weight="900" font-size="40" fill="#b9c0c4">RAKİP</text><text x="990" y="146" text-anchor="end" font-weight="700" font-size="32" fill="#8a9a8f">${t < 6 ? "23'" : "24'"}</text></g>`;
+  // commentary feed
+  s += `<rect x="0" y="1730" width="1080" height="190" fill="#0e1410"/>`;
+  let cur = FEED.filter(f => t >= f[0]); const last = cur.slice(-2);
+  last.forEach((f, i) => { const isLast = i === last.length - 1; const o = isLast ? C((t - f[0]) / .2) : .45; s += `<text x="80" y="${isLast ? 1860 : 1800}" font-family="Inter" font-weight="${isLast ? 800 : 600}" font-size="${isLast ? 40 : 30}" fill="${f[1].startsWith('GO') ? ORANGE : '#efe8dc'}" opacity="${o}">${f[1]}</text>`; });
+  // goal banner
+  if (goal) { const o = C((t - 7.75) / .2) * (1 - C((t - 11.2) / .4)); const sc = 1 + .08 * Math.max(0, 1 - (t - 7.75) * 3); s += `<g opacity="${o}" transform="translate(540 980) scale(${sc}) translate(-540 -980)"><rect x="0" y="900" width="1080" height="160" fill="${ORANGE}" opacity=".92"/><text x="540" y="1010" text-anchor="middle" font-family="Inter" font-weight="900" font-size="110" letter-spacing="16" fill="#fff">GOL!</text></g><g opacity="${o}"><rect x="340" y="1080" width="400" height="70" rx="35" fill="#fff"/><text x="540" y="1128" text-anchor="middle" font-family="Inter" font-weight="900" font-size="38" fill="${INK}">9 · Tolga</text></g>`; }
+  if (t > TOTAL - .6) s += `<rect width="1080" height="1920" fill="#000" opacity="${E((t - (TOTAL - .6)) / .5)}"/>`;
+  document.getElementById('svg').innerHTML = s;
+};
+window.render(0);
+</script></body></html>
