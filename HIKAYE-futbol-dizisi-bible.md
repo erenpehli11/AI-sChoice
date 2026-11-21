@@ -38,6 +38,10 @@
 - **Ortak yapım: Parasite Series.** Paylaşımlarda "Parasite Series iş birliğiyle" ibaresi ve Parasite Series logosu kullanılır.
 - **Yusuf'un yaşı: 40'ların ortası (~45).** Kaptan Murat (34) çocukken babasıyla Yusuf'un maçlarına gidiyordu (Bölüm 3).
 - **Atkı ipucu (ileriye not):** Bölüm 3'te Erkan'ın ofisindeki atkı Yusuf'un evinde çıkıyor; açıklanmıyor. İleride Erkan'a "Atkıyı kim koydu sanıyorsun?" gibi bir replik verilecek.
+- **Saklanan diyalog (ileride kullanılacak, seçme bölümünde):** Ömer, seçmeyi tel örgünün dışından izleyen Emir'in küçük kardeşini fark eder.
+  > **KARDEŞ:** Abim gelmez. Ona kimse sormadı.
+  > **ÖMER:** *(babasına bakar, sonra çocuğa)* Abin nerede?
+- **Bekleyen fikirler:** "Tribün" (Yusuf, Ömer'i rakip izlemeye götürür; ilk maçtan önce) ve "Otobüs" (servis şoförü eski takım arkadaşı; deplasman bölümünün yan hikâyesi).
 - **Çalışma düzeni:** Senaryo bu oturumda yazılır; çizim ve render ayrı bir oturumda yapılır (her bölüm için zip paketi).
 
 ## 0l. Sesler (kullanıcı)
