@@ -36,6 +36,9 @@
 
 - **Kerem Sezer'in adı artık Erkan Sezer.** Eski dokümanlarda geçen "Kerem" Erkan'dır. Yusuf'un ona taktığı lakap "Kero" da değişmeli (öneri: "Erko"). Bölüm 1'in sesinde "Kerem Sezer" ve "Kero" geçen iki replik yeniden çekilmeli.
 - **Ortak yapım: Parasite Series.** Paylaşımlarda "Parasite Series iş birliğiyle" ibaresi ve Parasite Series logosu kullanılır.
+- **Yusuf'un yaşı: 40'ların ortası (~45).** Kaptan Murat (34) çocukken babasıyla Yusuf'un maçlarına gidiyordu (Bölüm 3).
+- **Atkı ipucu (ileriye not):** Bölüm 3'te Erkan'ın ofisindeki atkı Yusuf'un evinde çıkıyor; açıklanmıyor. İleride Erkan'a "Atkıyı kim koydu sanıyorsun?" gibi bir replik verilecek.
+- **Çalışma düzeni:** Senaryo bu oturumda yazılır; çizim ve render ayrı bir oturumda yapılır (her bölüm için zip paketi).
 
 ## 0l. Sesler (kullanıcı)
 
