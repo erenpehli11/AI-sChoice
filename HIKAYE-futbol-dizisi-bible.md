@@ -38,6 +38,7 @@
 - **Ortak yapım: Parasite Series.** Paylaşımlarda "Parasite Series iş birliğiyle" ibaresi ve Parasite Series logosu kullanılır.
 - **Yusuf'un yaşı: 40'ların ortası (~45).** Kaptan Murat (34) çocukken babasıyla Yusuf'un maçlarına gidiyordu (Bölüm 3).
 - **Atkı ipucu (ileriye not):** Bölüm 3'te Erkan'ın ofisindeki atkı Yusuf'un evinde çıkıyor; açıklanmıyor. İleride Erkan'a "Atkıyı kim koydu sanıyorsun?" gibi bir replik verilecek.
+- **Bölüm 6 = Seçmeler.** Bölüm 5, Yusuf'un "Karaocak'ın oyuncusu Karaocak'tan çıkacak" sözüyle biter.
 - **Saklanan diyalog (ileride kullanılacak, seçme bölümünde):** Ömer, seçmeyi tel örgünün dışından izleyen Emir'in küçük kardeşini fark eder.
   > **KARDEŞ:** Abim gelmez. Ona kimse sormadı.
   > **ÖMER:** *(babasına bakar, sonra çocuğa)* Abin nerede?

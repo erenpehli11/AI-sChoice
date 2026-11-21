@@ -1,4 +1,4 @@
-# Bölüm 5 — "Işık" · Taslak v1.1
+# Bölüm 5 — "Işık" · Taslak v1.2
 
 > **Süre:** ~66 sn · **Sahne:** 5 · **Ses:** Anlatıcı ~30 kelime + kısa replikler
 > **Çizim stili:** A + C karışımı
@@ -53,7 +53,7 @@ Oyuncular ısınıyor. Ömer sahadakileri gözüyle sayıyor, bir kere daha say�
 > **CENGİZ:** *(uzaktan)* Eksiğiz hocam! Çocuk doğru söylüyor.
 
 Yusuf oğluna bakıyor. Sonra sahaya. Uzun bir an.
-> **YUSUF:** Bu şehre dışarıdan kimse oyuncu getirmez. Karaocak'ın oyuncusu Karaocak'tan çıkacak.
+> **YUSUF:** İmkânlarımızı siz de biliyorsunuz beyler. Hatta benden iyi biliyorsunuz. O yüzden Karaocak'ın oyuncusu Karaocak'tan çıkacak.
 
 Ekran siyaha geçiyor.
 
@@ -67,5 +67,5 @@ Ekran siyaha geçiyor.
 - **Murat sessiz:** Kaptan konuşmuyor, yönünü değiştiriyor. Herkesi içeri o sokuyor.
 - **Erkan'ın telefonu:** "Durumlar hazır olur" cümlesi iki anlama gelebiliyor: takım hazırlığı da olabilir, başka bir şey de. İzleyici henüz bilmiyor. Bahis ipini sessizce ekiyor.
 - **Cumartesi sözü:** 3. bölümdeki "Seni bir yere götüreceğim" mesajının cevabı: kulüp. Anlatıcı bunu tek cümleyle bağlıyor.
-- **Kapanış repliği (v1.1):** Yusuf "seçme" kelimesini söylemiyor; "Karaocak'ın oyuncusu Karaocak'tan çıkacak" diyor. "Bizi biz kurtaracağız" ruhu. Seçme fikri bir sonraki bölümde somutlaşır. Eksikliği ilk fark eden Ömer; Emir'e giden öneri zincirinin başlangıcı.
+- **Kapanış repliği (v1.1):** Yusuf "seçme" kelimesini söylemiyor; oyunculara konuşuyor, fedakârlıklarını onurlandırıyor ve "Karaocak'ın oyuncusu Karaocak'tan çıkacak" diyor (kullanıcının cümlesi). "Bizi biz kurtaracağız" ruhu. Seçmeler 6. bölümde yapılacak. Eksikliği ilk fark eden Ömer; Emir'e giden öneri zincirinin başlangıcı.
 - **Eller (çizim oturumu için):** Boyama, merdiven, şalter ve poğaça hareketleri el içeriyor. Çizimde el kütüphanesi v2 ya da elsiz çözümler (alet/obje yakın çekimi, kesme) kullanılmalı.
